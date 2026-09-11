@@ -1,359 +1,141 @@
-# ELEICOES — Mega Prompt Canônico
-
-**Versão:** 0.2.0  
-**Status:** Constituição científica viva do projeto  
-**Repositório:** `Drmcoelho/Eleicoes`  
-**Regra-mãe:** **COLETAR → INVENTARIAR SEM TESTAR DESFECHOS → PRÉ-REGISTRAR → DESBLOQUEAR RESULTADOS → TESTAR → CONGELAR → PREVER.**
-
-> Este documento é o contrato epistemológico do projeto. Alterações relevantes exigem versão, commit, justificativa e changelog. Nenhum resultado politicamente conveniente autoriza mudança retrospectiva de regra.
-
-## 1. Missão
-
-Construir uma base eleitoral brasileira ampla, rastreável e reproduzível e, sobre ela, testar rigorosamente hipóteses sobre erro de pesquisas, comportamento eleitoral, cristalização de voto, comparecimento, indecisão, brancos/nulos, efeitos de método, house effects e transferência de padrões históricos para 2026.
-
-O projeto nasceu da lente investigativa **“A Opinião da Extrema Direita”**. Essa lente pode gerar perguntas e hipóteses politicamente assimétricas. O motor quantitativo, porém, é deliberadamente agnóstico: **a lente formula perguntas; os dados decidem respostas.**
-
-É proibido calibrar parâmetros, selecionar janelas, excluir institutos ou alterar definições com a finalidade de favorecer Lula, Flávio Bolsonaro, Jair Bolsonaro ou qualquer candidato.
-
-## 2. Taxonomia epistêmica obrigatória
-
-Toda afirmação deve ser classificável como:
-
-- **DADO_OBSERVADO** — valor publicado/extraído de fonte identificada;
-- **DADO_OFICIAL** — resultado ou cadastro oficial;
-- **TRANSFORMAÇÃO** — cálculo reproduzível sobre dados;
-- **INFERÊNCIA** — conclusão apoiada pelos dados, mas não diretamente observada;
-- **HIPÓTESE** — proposição falsificável ainda em teste;
-- **CONTRAFACTUAL** — cenário condicional;
-- **MODELO** — resultado de especificação estatística declarada;
-- **ALEGAÇÃO_POLÍTICA** — afirmação de ator ou campo político;
-- **NÃO_VERIFICADO** — informação ainda sem validação.
-
-Nunca converter alegação em dado, inferência em dado oficial, correlação em causalidade, erro de pesquisa em fraude ou ausência de evidência em evidência de ausência.
-
-## 3. Dois trilhos: confirmatório e exploratório
-
-### 3.1 Confirmatório
-Hipóteses, métricas, denominadores, janela temporal, população, critérios de inclusão/exclusão, direção do teste, tratamento de missingness e critério de refutação devem ser pré-registrados **antes de cruzar a variável com o desfecho eleitoral usado para testá-la**.
-
-Cada prereg deve ter commit SHA e timestamp. Mudanças posteriores geram nova versão e não substituem silenciosamente a anterior.
+# ELEICOES — MEGA PROMPT CANÔNICO
 
-### 3.2 Exploratório
-Pode procurar relações livremente. Achados exploratórios são geradores de hipótese e **não podem ser promovidos retroativamente a confirmação**. Devem ser testados em holdout, eleição subsequente ou outro painel independente.
+**Versão:** 0.2.0 | **Status:** contrato científico vivo | **Repo:** `Drmcoelho/Eleicoes`
 
-## 4. Pipeline obrigatório
+> **Regra-mãe:** COLETAR → INVENTARIAR SEM TESTAR DESFECHOS → PRÉ-REGISTRAR → DESBLOQUEAR RESULTADOS → TESTAR → CONGELAR → PREVER.
 
-1. **Coleta exaustiva**
-2. **Inventário cego ao desfecho quando aplicável**
-3. **Auditoria de proveniência e integridade**
-4. **Normalização sem inferência substantiva**
-5. **Pré-registro dos experimentos confirmatórios**
-6. **Desbloqueio dos desfechos históricos**
-7. **Testes variável por variável**
-8. **Backtest / validação fora da amostra**
-9. **Classificação A/B/C/D das variáveis**
-10. **Especificação do modelo**
-11. **Congelamento criptográfico/versionado**
-12. **Aplicação prospectiva**
-13. **Análise de sensibilidade / red team**
-14. **Simulação probabilística**
-15. **Auditoria pós-eleição**
+Este arquivo é a constituição epistemológica do projeto. Mudança substantiva exige commit, versão, justificativa e CHANGELOG. Nenhum resultado politicamente conveniente autoriza mudança retrospectiva de regra.
 
-Não construir o megamodelo antes de suas peças demonstrarem utilidade.
+## 1. Missão e lente
+Construir uma base eleitoral brasileira ampla, reproduzível e auditável e testar hipóteses sobre erro de pesquisas, comportamento eleitoral, espontânea/estimulada, comparecimento, indecisão, brancos/nulos, modo, house effects, mobilização e transferência histórica para 2026.
 
-## 5. Universo de dados
+O projeto nasceu da investigação **“A Opinião da Extrema Direita”**. Essa lente pode gerar perguntas. O motor quantitativo é agnóstico: **a lente pergunta; os dados respondem**. É proibido escolher parâmetros, janelas, pesos, exclusões ou transformações para favorecer qualquer candidato.
 
-Coletar antes de selecionar. Dez institutos são piso desejável para inferências agregadas, **não teto de ingestão**.
+## 2. Taxonomia epistêmica
+Toda afirmação deve ser classificável como `DADO_OBSERVADO`, `DADO_OFICIAL`, `TRANSFORMAÇÃO`, `INFERÊNCIA`, `HIPÓTESE`, `CONTRAFACTUAL`, `MODELO`, `ALEGAÇÃO_POLÍTICA` ou `NÃO_VERIFICADO`. Nunca converter alegação em dado; correlação em causalidade; erro em fraude; ausência de evidência em evidência de ausência.
 
-Prioridade de fontes:
-1. TSE / PesqEle / dados abertos;
-2. resultados eleitorais oficiais;
-3. relatórios e questionários originais dos institutos;
-4. microdados, quando disponíveis;
-5. releases metodológicos;
-6. bases acadêmicas/documentais;
-7. fontes secundárias somente para preencher lacunas, sempre marcadas.
+## 3. Dois trilhos
+**Confirmatório:** hipótese, endpoint, denominador, janela, população, inclusão/exclusão, direção, missingness e critério de refutação são pré-registrados antes do cruzamento com o desfecho usado no teste. Prereg tem SHA e timestamp.
 
-Eleições presidenciais prioritárias: 2014, 2018, 2022 e 2026. Eleições para governador tornam-se **painel obrigatório** para estimar house effects e propriedades metodológicas, porque o número de eleições presidenciais é insuficiente. Senado e eleições municipais podem ser usados em modelos hierárquicos quando a comparabilidade for defensável, nunca como observações intercambiáveis.
+**Exploratório:** pode descobrir livremente, mas achado exploratório nunca vira confirmação retroativa. Deve ganhar holdout, eleição futura ou painel independente.
 
-## 6. Estrutura de dados e imutabilidade
+## 4. Pipeline
+1. coleta exaustiva; 2. inventário; 3. auditoria; 4. normalização; 5. prereg; 6. desbloqueio de desfechos; 7. testes variável por variável; 8. backtest/holdout; 9. classificação A/B/C/D; 10. especificação; 11. freeze; 12. aplicação prospectiva; 13. sensibilidade/red team; 14. simulação; 15. auditoria pós-eleição.
 
-```text
-data/
-  raw/          # originais imutáveis
-  staging/      # extrações e parsing
-  canonical/    # esquema normalizado
-  derived/      # somente variáveis calculadas
-sources/
-  tse/
-  institutes/
-  questionnaires/
-  methodology/
-methodology/
-  hypotheses/
-  preregistration/
-  experiments/
-  model_specifications/
-  decisions/
-  red_team/
-src/
-  ingestion/
-  parsing/
-  normalization/
-  validation/
-  statistics/
-  simulation/
-notebooks/
-  exploration/
-  experiments/
-  backtests/
-  2026/
-tests/
-reports/
-docs/
-```
+## 5. Universo
+Coletar antes de selecionar. Dez famílias institucionais independentes são piso desejável para inferências agregadas, não teto. Prioridade: TSE/PesqEle → resultados oficiais → documentos/questionários/microdados dos institutos → academia → secundárias apenas para lacunas, marcadas.
 
-`data/raw/` nunca é alterado silenciosamente. Correção = novo artefato + proveniência + justificativa.
+Presidenciais: 2014, 2018, 2022, 2026. **Governador é painel obrigatório** para house effects e propriedades metodológicas. Senado/municipais podem integrar modelos hierárquicos quando comparáveis, nunca como observações intercambiáveis.
 
-## 7. Proveniência mínima
+## 6. Arquitetura
+`data/{raw,staging,canonical,derived}/`, `sources/{tse,institutes,questionnaires,methodology}/`, `methodology/{hypotheses,preregistration,experiments,model_specifications,decisions,red_team}/`, `src/{ingestion,parsing,normalization,validation,statistics,simulation}/`, `notebooks/{exploration,experiments,backtests,2026}/`, `tests/`, `reports/`, `docs/`.
 
-Quando disponível, cada observação deve preservar:
+`data/raw` é imutável. Correção gera novo artefato + proveniência.
 
-`source_id`, `source_type`, `source_url`, `source_file`, `source_date`, `retrieved_at`, `institution`, `institution_family`, `poll_id`, `tse_registration`, `election_id`, `fieldwork_start`, `fieldwork_end`, `publication_date`, `document_page`, `table`, `question_number`, `question_text`, `questionnaire_signature`, `original_variable`, `original_value`, `original_denominator`, `canonical_variable`, `transformation`, `transformation_version`, `quality_flag`, `notes`.
+## 7. Proveniência e missingness
+Preservar, quando disponível: `source_id`, tipo, URL/arquivo, datas, instituto, família, `poll_id` (preferir PesqEle), registro TSE, eleição, início/fim de campo, publicação, página/tabela/pergunta, texto literal, `questionnaire_signature`, variável/valor/denominador originais, variável canônica, transformação/versão, qualidade e notas.
 
-`poll_id` deve preferencialmente usar o registro PesqEle quando aplicável.
+Missingness: `NA`, `NOT_ASKED`, `NOT_PUBLISHED`, `NOT_FOUND`, `UNRECOVERABLE`, `NOT_APPLICABLE`. Zero nunca substitui missing.
 
-Missingness tipada obrigatória:
+## 8. Coleta máxima
+Coletar metodologia, amostra, margem, confiança, universo, desenho, cotas, pesos, base demográfica, modo, ordem/rotação; intenção espontânea/estimulada e todos os cenários; indecisos/NS/NR/nenhum/branco/nulo/não votaria; certeza/mudança/rejeição/segunda opção/interesse/entusiasmo/comparecimento declarado/memória de voto/aprovação/identificação; demografia e cruzamentos. Do TSE: aptos, comparecimento, abstenção, válidos, brancos, nulos e votos por candidato em granularidades úteis.
 
-`NA`, `NOT_ASKED`, `NOT_PUBLISHED`, `NOT_FOUND`, `UNRECOVERABLE`, `NOT_APPLICABLE`.
+## 9. Denominadores
+Denominador é dado. Manter representação sobre total e, quando legítimo, equivalente a válidos. Nunca recalcular silenciosamente. Endpoint de erro declara denominador no prereg.
 
-Zero nunca substitui missing.
+## 10. Tempo
+Recência usa **fim do campo**, não publicação. Testar erro × dias até pleito em janelas declaradas. Separar late swing de erro metodológico.
 
-## 8. Variáveis a coletar
+## 11. n pequeno
+Poucas presidenciais não estimam com segurança parâmetros globais. `lambda_G`/`lambda_H` são priors/cenários com sensibilidade, não falsa precisão. Usar leave-one-election-out e painel estadual/hierárquico.
 
-### Pesquisa/metodologia
-Instituto, família/controlador, contratante, pagador, registro TSE, amostra, margem, confiança, abrangência, modo de coleta, desenho amostral, cotas, universo, estratificação, pesos, base demográfica usada, ordem/rotação de candidatos, sequência do questionário e formulação literal.
+## 12. Escala do erro
+Manter benchmarks `e_add=R-P` e `K=R/P`, mas não privilegiar K: shares são composicionais. Testar `e_logit=logit(R)-logit(P)` e ALR/CLR/ILR, preferindo ILR quando apropriado. Escolha confirmatória deve ser preregistrada ou validada fora da amostra.
 
-### Intenção
-Espontânea, estimulada, todos os cenários de primeiro e segundo turno, indecisos, não sabe, não respondeu, nenhum, branco, nulo, não votaria.
+## 13. Erro global, house e modo
+`erro observado = erro global + house effect + efeito de modo/questionário + ruído`. House effect só é transportável se demonstrar estabilidade OOS. Mapear famílias/sucessões para evitar pseudorreplicação.
 
-### Comportamento
-Certeza do voto, possibilidade de mudança, segunda opção, rejeição, interesse, entusiasmo, preocupação, certeza declarada de comparecimento, memória do voto anterior, aprovação do governo, identificação partidária/ideológica.
-
-### Demografia
-Sexo, idade, renda, escolaridade, região, UF, religião, raça/cor, capital/interior, porte municipal e demais cruzamentos disponíveis.
-
-### Resultado oficial
-Eleitorado apto, comparecimento, abstenção, votos totais, válidos, brancos, nulos, votos por candidato, share sobre válidos, share sobre comparecimento e share sobre eleitorado apto; Brasil/UF/município/zona/seção quando útil.
-
-## 9. Denominadores são dados, não detalhe
-
-Nunca comparar percentuais sem identificar o denominador.
-
-Manter pelo menos duas representações paralelas:
-
-1. **total da amostra/eleitorado**;
-2. **base equivalente a votos válidos**, quando matematicamente legítimo.
-
-Para erro pesquisa×urna, declarar previamente qual representação é o endpoint. Não recalcular para válidos silenciosamente.
-
-## 10. Tempo: usar fim do campo
-
-Recência é ancorada prioritariamente em `fieldwork_end`, não em publicação.
-
-Não usar apenas “última pesquisa” como verdade universal. Testar curva erro × dias até a eleição em janelas pré-registradas (ex.: D-1, D-3, D-7, D-14, D-30). Late swing deve ser distinguido de erro metodológico.
-
-## 11. Problema estrutural: poucas eleições presidenciais
-
-Com 2014/2018/2022, parâmetros globais anuais possuem n extremamente pequeno. Portanto:
-
-- não vender λG ou λH como estimativas precisas obtidas de três eleições;
-- usar priors/cenários e análise de sensibilidade;
-- usar `leave-one-election-out` sempre que possível;
-- expandir graus de liberdade com painel de governador e outras eleições comparáveis;
-- usar modelos hierárquicos, preservando diferenças entre cargos e ciclos.
-
-## 12. Erro eleitoral: múltiplas escalas
-
-Manter benchmarks aditivos e multiplicativos por interpretabilidade:
-
-`e_add = R - P`
-
-`K = R / P`
-
-Mas não privilegiar K como modelo principal, porque shares eleitorais são composicionais.
-
-Testar erro em logit:
-
-`e_logit = logit(R) - logit(P)`
-
-E, para composição multicandidato, ALR/CLR/ILR, com preferência por ILR quando adequado. A escolha final deve ser pré-registrada ou comparada fora da amostra.
-
-## 13. Erro global e house effect
-
-Conceito:
-
-`erro observado = erro global da eleição + house effect + efeito de modo + ruído`.
-
-O house effect só merece transporte temporal se demonstrar estabilidade fora da amostra. O instituto que errou mais que a média em uma eleição não recebe automaticamente a mesma correção quatro anos depois.
-
-Famílias institucionais devem ser explicitamente mapeadas (ex.: sucessões/controladores/metodologias herdadas) para evitar pseudorreplicação.
-
-## 14. Hipóteses espelho obrigatórias
-
-Para toda hipótese direcional relevante registrar, quando logicamente possível:
-
-- H+;
-- H−;
-- H0.
-
-Exemplo:
-- H+: pesquisas subestimam Bolsonaro;
-- H−: pesquisas superestimam Bolsonaro;
-- H0: não existe direção persistente do erro.
-
-Investigar também hipóteses contrárias à narrativa original: house effect pró-direita, superestimação em modos específicos, voto útil, erros de ponderação demográfica, mudanças de base Censo/PNAD etc.
+## 14. Hipóteses espelho
+Toda hipótese direcional relevante recebe H+, H− e H0. Ex.: subestima Bolsonaro / superestima / sem direção persistente. Testar também house effect pró-direita, voto útil, erros de ponderação, Censo/PNAD etc. Neutralidade existe na entrada e na saída.
 
 ## 15. Espontânea × estimulada
-
-Definir:
-
-`S_c = espontânea`
-
-`E_c = estimulada`
-
-Benchmarks exploratórios:
-
-`CI = S/E`
-
-`SG = E-S`
-
-CI é instável para E pequeno e não deve ser usado cegamente. Preferir também diferença em escala logit quando possível:
-
-`SG_logit = logit(E) - logit(S)`.
-
-Toda análise deve ser estratificada por modo de coleta e assinatura do questionário.
-
-Hipótese a testar, não premissa: maior cristalização espontânea pode predizer persistência/comparecimento/menor erro.
+`S=espontânea`, `E=estimulada`. Benchmarks: `CI=S/E`, `SG=E-S`, `SG_logit=logit(E)-logit(S)`. CI é instável com E pequeno. Estratificar por modo e questionário. Hipótese, não axioma: maior cristalização prediz persistência, turnout ou menor erro.
 
 ## 16. Turnout e “eleitor preguiçoso”
+`T_c=P(comparecer|preferência c)` é geralmente latente. Só estimar por microdados/painel, proxy marcado, inferência ecológica especificada ou fonte identificável. Hipótese: `P(comparecer|espontâneo)>P(comparecer|apenas estimulado)`. Sem identificação, não fabricar estimativa.
 
-`T_c = P(comparecer | preferência c)` é variável latente na maioria das pesquisas publicadas. Não fingir observabilidade.
+## 17. Brancos/nulos/abstenção
+São distintos e não votos automáticos para líder. Comparecimento diferencial pode alterar válidos. Modelar separadamente abstenção, branco, nulo, indecisão e não votaria. Nunca redistribuir arbitrariamente.
 
-Só estimar por:
-- microdados/painel apropriado;
-- proxy explicitamente marcado (certeza declarada de comparecimento);
-- inferência ecológica cuidadosamente especificada;
-- outras fontes identificáveis.
+## 18. Preferência não capturada
+`U=R-E` é benchmark. Subestimação não prova “voto envergonhado”. Concorrentes: late swing, nonresponse, turnout, sampling/weighting, mode effect, social desirability. Preferência oculta é latente.
 
-Hipótese específica:
+## 19. Piso/foto/teto
+Testar, sem assumir: espontânea ≈ piso; estimulada ≈ fotografia; `1-rejeição` ≈ teto. Medir historicamente violações.
 
-`P(comparecer | espontâneo) > P(comparecer | apenas estimulado)`.
+## 20. Bolsonaro→Flávio
+Não assumir equivalência. `rho_BF` é cenário/parâmetro informado por identificação bolsonarista, memória de voto, demografia, S/E, rejeição e fidelidade. `rho_BF=1` é cenário, não fato.
 
-Sem microdados ou desenho adequado, tratar como hipótese não identificada, não como fato.
+## 21. Modo e questionário
+Estratificar presencial, telefone, online, híbrido etc. `questionnaire_signature` inclui formulação, ordem, rotação, cartão/lista, perguntas precedentes e sequência S→E. Não confundir efeito de questionário com house effect.
 
-## 17. Brancos, nulos e abstenção
+## 22. Ponderação/universo
+Registrar base demográfica usada por instituto/ano. Investigar Censo 2010→2022 e erros de escolaridade, renda, idade, região, religião etc.
 
-São fenômenos distintos.
+## 23. Agregação temporal
+Ondas repetidas informam trajetória, não multiplicam o peso institucional. Testar state-space/local trend/kernel ou alternativas, preservando correlação intrainstituto. Hiperparâmetros preregistrados ou OOS.
 
-Abstenção, branco e nulo não são votos automáticos para o líder. Comparecimento diferencial pode, porém, alterar a composição dos válidos.
-
-Coletar e modelar separadamente:
-- abstenção;
-- branco;
-- nulo;
-- indecisão;
-- “não votaria”.
-
-Comparar declaração pré-eleitoral com resultado real e testar conversão tardia sem redistribuição arbitrária.
-
-## 18. Voto não capturado e preferência latente
-
-Benchmark:
-
-`U_c = R_c - E_c`.
-
-Se houver subestimação sistemática, não rotulá-la automaticamente como “voto envergonhado”. Concorrentes causais incluem late swing, nonresponse bias, turnout diferencial, sampling/weighting error, mode effect e social desirability.
-
-## 19. Rejeição, piso e teto
-
-Tratar como hipótese:
-
-- espontânea pode aproximar piso cristalizado;
-- estimulada pode aproximar fotografia corrente;
-- `1 - rejeição` pode aproximar teto.
-
-Testar historicamente. Eleitores podem atravessar rejeição declarada; nenhuma dessas equivalências é axioma.
-
-## 20. Bolsonaro → Flávio
-
-Não assumir equivalência entre Jair Bolsonaro 2022 e Flávio Bolsonaro 2026.
-
-Representar transferência por `rho_BF`, submetido a sensibilidade e evidência de identificação bolsonarista, memória de voto, demografia, espontânea/estimulada, rejeição e fidelidade. `rho_BF = 1` é cenário, não default factual.
-
-## 21. Modo de coleta e questionário
-
-Estratificar e testar presencial, telefone, online, híbrido e demais métodos. Investigar interação entre modo, instituto, eleição, escolaridade, renda, região e preferência.
-
-Criar `questionnaire_signature` com formulação, ordem, rotação, cartão/lista, perguntas precedentes e sequência espontânea→estimulada. Efeito de questionário não deve ser confundido com house effect.
-
-## 22. Ponderação e universo
-
-Registrar qual base demográfica cada instituto usou em cada eleição: Censo, PNAD, projeções, eleitorado TSE ou combinação. Investigar impacto da transição Censo 2010 → Censo 2022 e possíveis erros de escolaridade, renda, região, idade, religião e outras dimensões.
-
-## 23. Agregação temporal intrainstituto
-
-Múltiplas ondas do mesmo instituto aumentam informação sobre sua trajetória, não o número de “votos” do instituto na meta-análise.
-
-Testar modelos temporais adequados (state-space, local linear trend, kernel ou alternativas), com hiperparâmetros pré-registrados ou validados fora da amostra. Preservar correlação entre ondas do mesmo instituto/painel.
-
-## 24. Peso e meta-análise
-
-Peso não é reputação editorial. Pode considerar tamanho amostral efetivo, erro histórico fora da amostra, transparência, recência, cobertura, método e qualidade documental.
-
-Evitar que uma família domine por frequência de publicação. Reportar heterogeneidade e não escondê-la atrás da média. Considerar random effects/hierarchical pooling quando adequado.
+## 24. Peso/meta-análise
+Peso não é reputação editorial. Pode refletir n efetivo, desempenho OOS, transparência, recência, cobertura, método e qualidade. Limitar dominação por família. Reportar heterogeneidade; considerar random effects/hierarchical pooling.
 
 ## 25. Identificabilidade
+Antes de estimar: é observado? identificável? proxy? depende de hipótese não testável? Parâmetro não identificável não recebe falsa precisão.
 
-Antes de testar qualquer parâmetro perguntar:
+## 26. Teste unitário de cada variável
+Cada variável enfrenta efeito médio, heterogeneidade entre institutos/modos/eleições, denominador, janela, OOS, hipóteses espelho e placebo/negative controls. Classificar: **A robusta**, **B sinal limitado**, **C inconclusiva**, **D contradita**. Critérios numéricos são preregistrados.
 
-1. ele é observado?
-2. é identificável com os dados existentes?
-3. é apenas proxy?
-4. depende de hipótese não testável?
+## 27. Backtest
+Explicar 2022 não basta. Usar validação temporal, leave-one-election-out, painel estadual e holdouts. Selecionar e avaliar nas mesmas poucas eleições não constitui confirmação.
 
-Parâmetros não identificáveis não recebem estimativa pontual disfarçada de fato.
+## 28. 2026: dois cofres
+**Cofre A:** modelo mínimo, simples, preregistrado e congelado para teste prospectivo verdadeiro.
 
-## 26. Testes variável por variável
+**Cofre B:** megamodelo em desenvolvimento. Pode ingerir pesquisas 2026 como inputs prospectivos, mas não calibrar contra resultado 2026. Antes da urna: tag `pre-election-freeze-2026`, hashes de PROMPT, AGENTS, prereg, dataset, código e model spec. Resultado TSE entra depois como dado novo. Versão pós-2026 é explicitamente retrospectiva.
 
-Cada variável candidata deve enfrentar isoladamente:
-- efeito médio;
-- heterogeneidade entre institutos;
-- heterogeneidade entre modos;
-- estabilidade entre eleições;
-- sensibilidade ao denominador;
-- sensibilidade à janela temporal;
-- desempenho fora da amostra;
-- hipóteses espelho;
-- placebo/negative controls quando possível.
+## 29. Simulação
+Monte Carlo/Bayes preserva dependência e composição. Nada de shares independentes. Declarar correlação, incerteza de house/mode/turnout/indecisos e priors. Reportar distribuição, intervalos, probabilidade de vitória e decomposição, não só placar.
 
-Classificação:
-- **A — robusta:** candidata ao modelo principal;
-- **B — sinal consistente, evidência limitada:** somente sensibilidade/cenários;
-- **C — inconclusiva:** não altera previsão;
-- **D — contradita:** excluída do mecanismo preditivo.
+## 30. Red Team estatístico
+Toda conclusão politicamente interessante enfrenta: leave-one-institute-out; leave-one-family-out; apenas presencial/telefone/online; janelas e denominadores alternativos; com/sem pequenos institutos; ponderado/não; aditivo/logit/ILR; especificações alternativas; placebo; negative controls; influência/leverage; múltiplas comparações. Só chamar **ROBUSTA** se sobreviver ao corredor de facas preregistrado.
 
-Critérios numéricos devem ser pré-registrados por experimento.
+## 31. Multiplicidade
+Registrar universo de testes e usar FDR/ajustes quando cabível. Não cherry-pickar p-values. Exploratórios exibem multiplicidade.
 
-## 27. Backtest e seleção
+## 32. Testes automatizados
+Validar esquema, tipos, ranges, somas, duplicatas, unicidade de poll_id, datas, denominadores, hashes raw, integridade referencial, missingness e transformações. Pipeline falha alto: dado inválido não é corrigido silenciosamente.
 
-“Explicar 2022” não basta. Evitar overfitting retrospectivo.
+## 33. Reprodutibilidade
+Toda tabela/gráfico/número derivado deve ser reconstruível por código versionado a partir de raw + manifest. Seeds fixadas quando aplicável; ambiente/dependências registrados; outputs derivados nunca viram fonte primária.
 
-Usar leave-one-election-out, validação temporal, painel estadual e holdouts explícitos. Seleção de variáveis nas mesmas três eleições usadas para avaliá-las é proibida como evidência confirmatória.
+## 34. Critério de parada
+Não refinar porque resultado desagrada. Mudança pós-freeze exige novo modelo/versionamento e perde status prospectivo original.
 
-## 28. 2026: protocolo prospectivo
+## 35. Saída obrigatória
+Declarar pergunta; confirmatório/exploratório; dataset/versão; institutos/famílias/ondas; janela; denominador; transformação; missingness; modelo; incerteza; heterogeneidade; sensibilidade; limitações; A/B/C/D; conclusão factual; interpretação política separada.
 
-Manter dois cofres:
+## 36. Skill “A Opinião da Extrema Direita”
+Na narrativa, fontes editoriais seguem o universo definido pela skill. Na camada quantitativa, **dados primários de qualquer instituto são admissíveis como objetos de medição**, inclusive Datafolha/Ipec. Um instituto isolado nunca cria hipótese estrutural. Fontes oficiais/primárias prevalecem.
 
-### Cofre A — Modelo mínimo prospectivo
-Congelar o quanto antes uma especificação simples e preregistrada para produzir verdadeiro teste out-of-s
+## 37. Proibições
+Nunca inventar dados; preencher missing por conveniência; misturar total/válidos; tratar publicação como microdado; inferir turnout individual de agregado sem método; escolher institutos favoráveis; ocultar resultado adverso; recalibrar pós-urna e chamar de previsão; confundir previsão com causalidade; usar anedota como estimador populacional.
+
+## 38. Evolução
+O protocolo deve melhorar. Mudança preserva versão anterior, explica motivo/impacto, não é retroativa e distingue bugfix, mudança metodológica e hipótese nova.
+
+## 39. Mandato imediato
+Antes do megacálculo: construir inventário mestre; ingerir raw; criar esquema/dicionário; mapear famílias/modos; registrar questionários; auditar cobertura/missingness; definir identificabilidade; preregistrar bateria inicial; somente então abrir desfechos confirmatórios.
+
+## 40. Princípio final
+O objetivo não é fabricar “a previsão da extrema direita”. É construir a versão **mais forte, quantitativa, falsificável e auditável** das hipóteses que motivaram a investigação e submetê-las a dados capazes de derrotá-las.
+
+**Se sobreviver, fica mais interessante. Se morrer, aprendemos mais. A urna é o árbitro final, não a narrativa.**
