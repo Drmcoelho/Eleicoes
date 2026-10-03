@@ -1,0 +1,172 @@
+{
+  "year": 2018,
+  "rows": [
+    {
+      "turn": 1,
+      "candidate_id": "280000601016",
+      "name_original": "GUILHERME BOULOS",
+      "votes": 617122,
+      "valid_votes_total": 107050749,
+      "R": 0.005764761160148445,
+      "source_type": "DADO_OFICIAL",
+      "source_manifest": "data/raw/tse/2018-c495390fbb87.csv.manifest.json",
+      "vote_column": "QT_VOTOS_NOMINAIS_VALIDOS"
+    },
+    {
+      "turn": 1,
+      "candidate_id": "280000601173",
+      "name_original": "VERA",
+      "votes": 55762,
+      "valid_votes_total": 107050749,
+      "R": 0.0005208931326580443,
+      "source_type": "DADO_OFICIAL",
+      "source_manifest": "data/raw/tse/2018-c495390fbb87.csv.manifest.json",
+      "vote_column": "QT_VOTOS_NOMINAIS_VALIDOS"
+    },
+    {
+      "turn": 1,
+      "candidate_id": "280000602477",
+      "name_original": "GERALDO ALCKMIN",
+      "votes": 5096350,
+      "valid_votes_total": 107050749,
+      "R": 0.04760685980814576,
+      "source_type": "DADO_OFICIAL",
+      "source_manifest": "data/raw/tse/2018-c495390fbb87.csv.manifest.json",
+      "vote_column": "QT_VOTOS_NOMINAIS_VALIDOS"
+    },
+    {
+      "turn": 1,
+      "candidate_id": "280000602500",
+      "name_original": "CABO DACIOLO",
+      "votes": 1348323,
+      "valid_votes_total": 107050749,
+      "R": 0.012595175770325531,
+      "source_type": "DADO_OFICIAL",
+      "source_manifest": "data/raw/tse/2018-c495390fbb87.csv.manifest.json",
+      "vote_column": "QT_VOTOS_NOMINAIS_VALIDOS"
+    },
+    {
+      "turn": 1,
+      "candidate_id": "280000605589",
+      "name_original": "CIRO GOMES",
+      "votes": 13344371,
+      "valid_votes_total": 107050749,
+      "R": 0.1246546252562885,
+      "source_type": "DADO_OFICIAL",
+      "source_manifest": "data/raw/tse/2018-c495390fbb87.csv.manifest.json",
+      "vote_column": "QT_VOTOS_NOMINAIS_VALIDOS"
+    },
+    {
+      "turn": 1,
+      "candidate_id": "280000607640",
+      "name_original": "JOÃO AMOÊDO",
+      "votes": 2679745,
+      "valid_votes_total": 107050749,
+      "R": 0.025032473149720794,
+      "source_type": "DADO_OFICIAL",
+      "source_manifest": "data/raw/tse/2018-c495390fbb87.csv.manifest.json",
+      "vote_column": "QT_VOTOS_NOMINAIS_VALIDOS"
+    },
+    {
+      "turn": 1,
+      "candidate_id": "280000614517",
+      "name_original": "JAIR BOLSONARO",
+      "votes": 49277010,
+      "valid_votes_total": 107050749,
+      "R": 0.4603144813120364,
+      "source_type": "DADO_OFICIAL",
+      "source_manifest": "data/raw/tse/2018-c495390fbb87.csv.manifest.json",
+      "vote_column": "QT_VOTOS_NOMINAIS_VALIDOS"
+    },
+    {
+      "turn": 1,
+      "candidate_id": "280000618462",
+      "name_original": "ALVARO DIAS",
+      "votes": 859601,
+      "valid_votes_total": 107050749,
+      "R": 0.00802984573232645,
+      "source_type": "DADO_OFICIAL",
+      "source_manifest": "data/raw/tse/2018-c495390fbb87.csv.manifest.json",
+      "vote_column": "QT_VOTOS_NOMINAIS_VALIDOS"
+    },
+    {
+      "turn": 1,
+      "candidate_id": "280000622171",
+      "name_original": "MARINA SILVA",
+      "votes": 1069578,
+      "valid_votes_total": 107050749,
+      "R": 0.009991317295687488,
+      "source_type": "DADO_OFICIAL",
+      "source_manifest": "data/raw/tse/2018-c495390fbb87.csv.manifest.json",
+      "vote_column": "QT_VOTOS_NOMINAIS_VALIDOS"
+    },
+    {
+      "turn": 1,
+      "candidate_id": "280000622281",
+      "name_original": "HENRIQUE MEIRELLES",
+      "votes": 1288950,
+      "valid_votes_total": 107050749,
+      "R": 0.012040550972698004,
+      "source_type": "DADO_OFICIAL",
+      "source_manifest": "data/raw/tse/2018-c495390fbb87.csv.manifest.json",
+      "vote_column": "QT_VOTOS_NOMINAIS_VALIDOS"
+    },
+    {
+      "turn": 1,
+      "candidate_id": "280000624082",
+      "name_original": "JOÃO GOULART FILHO",
+      "votes": 30176,
+      "valid_votes_total": 107050749,
+      "R": 0.0002818849964328601,
+      "source_type": "DADO_OFICIAL",
+      "source_manifest": "data/raw/tse/2018-c495390fbb87.csv.manifest.json",
+      "vote_column": "QT_VOTOS_NOMINAIS_VALIDOS"
+    },
+    {
+      "turn": 1,
+      "candidate_id": "280000624085",
+      "name_original": "EYMAEL",
+      "votes": 41710,
+      "valid_votes_total": 107050749,
+      "R": 0.0003896282874209502,
+      "source_type": "DADO_OFICIAL",
+      "source_manifest": "data/raw/tse/2018-c495390fbb87.csv.manifest.json",
+      "vote_column": "QT_VOTOS_NOMINAIS_VALIDOS"
+    },
+    {
+      "turn": 1,
+      "candidate_id": "280000629808",
+      "name_original": "FERNANDO HADDAD",
+      "votes": 31342051,
+      "valid_votes_total": 107050749,
+      "R": 0.2927775031261108,
+      "source_type": "DADO_OFICIAL",
+      "source_manifest": "data/raw/tse/2018-c495390fbb87.csv.manifest.json",
+      "vote_column": "QT_VOTOS_NOMINAIS_VALIDOS"
+    },
+    {
+      "turn": 2,
+      "candidate_id": "280000614517",
+      "name_original": "JAIR BOLSONARO",
+      "votes": 57797847,
+      "valid_votes_total": 104838753,
+      "R": 0.5513023128003058,
+      "source_type": "DADO_OFICIAL",
+      "source_manifest": "data/raw/tse/2018-c495390fbb87.csv.manifest.json",
+      "vote_column": "QT_VOTOS_NOMINAIS_VALIDOS"
+    },
+    {
+      "turn": 2,
+      "candidate_id": "280000629808",
+      "name_original": "FERNANDO HADDAD",
+      "votes": 47040906,
+      "valid_votes_total": 104838753,
+      "R": 0.44869768719969416,
+      "source_type": "DADO_OFICIAL",
+      "source_manifest": "data/raw/tse/2018-c495390fbb87.csv.manifest.json",
+      "vote_column": "QT_VOTOS_NOMINAIS_VALIDOS"
+    }
+  ],
+  "transformation": "tse_br_nominal_validos_v1",
+  "geography": "Brazil including overseas (ZZ), no duplicated BRASIL/UF files"
+}

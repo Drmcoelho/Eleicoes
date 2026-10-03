@@ -1,0 +1,9 @@
+{
+  "year": 2018,
+  "path": "data/raw/pesqele/2018-6c26a1510b5a.zip",
+  "sha256": "6c26a1510b5aa1c55f34c099234689f278c0796bd448b6fabe598cfcd6b7b2c4",
+  "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/pesquisa_eleitoral/pesquisa_eleitoral_2018.zip",
+  "retrieved_at": "2026-10-03T07:56:56.578132+00:00",
+  "source_type": "DADO_OFICIAL",
+  "purpose": "registration inventory; not published poll result"
+}

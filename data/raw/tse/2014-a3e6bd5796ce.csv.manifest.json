@@ -1,0 +1,13 @@
+{
+  "year": 2014,
+  "source_type": "DADO_OFICIAL",
+  "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_candidato_munzona/votacao_candidato_munzona_2014.zip",
+  "retrieved_at": "2026-10-03T07:48:58.101960+00:00",
+  "archive_sha256": "f41bceb427820c068b2b14b87befa69d8c333638644eea0e8337534f9b349fd3",
+  "archive_bytes": 494100168,
+  "member": "votacao_candidato_munzona_2014_BR.csv",
+  "member_sha256": "a3e6bd5796ce353f24e30028ecfc5b767f671075eeebfe498d8ff60087a739de",
+  "path": "data/raw/tse/2014-a3e6bd5796ce.csv.gz",
+  "sha256": "d43cb87a2efbe88b0af1370814f5c0d5bbe1faa010667769972aa4ddce5faff5",
+  "storage": "gzip lossless; mtime=0; original member bytes unchanged"
+}

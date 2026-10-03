@@ -1,0 +1,13 @@
+{
+  "year": 2022,
+  "source_type": "DADO_OFICIAL",
+  "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_candidato_munzona/votacao_candidato_munzona_2022.zip",
+  "retrieved_at": "2026-10-03T07:56:51.554892+00:00",
+  "archive_sha256": "805a0568e8cf0e5d6768d18389ef9c02c04c8441587a6a6997150bd3f6a4c094",
+  "archive_bytes": 577205776,
+  "member": "votacao_candidato_munzona_2022_BR.csv",
+  "member_sha256": "5b81790dac8163dd00e733a8f8dfca78716e861bae8431068deed3dec4d4da52",
+  "path": "data/raw/tse/2022-5b81790dac81.csv.gz",
+  "sha256": "fdb94d8cc9913338536cbda24a60d866600e237b95ea43a490a688338927498b",
+  "storage": "gzip lossless; mtime=0; original member bytes unchanged"
+}

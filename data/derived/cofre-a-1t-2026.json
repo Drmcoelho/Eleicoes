@@ -1,0 +1,90 @@
+{
+  "artifact_sha256": {
+    ".github/workflows/cofre-a.yml": "3ababd1843c0049405cc5a987e9a09a69b54c7ac0811d9ea76368eb99a71369d",
+    ".gitignore": "4cad133d4f0a6cf4bba15f1b8bbae48d6a55f20b94f75487c51a93cc6a5af59f",
+    "AGENTS.md": "c0b2b7a948191711f75b5c60c1dd4fce244a4c7587547a7f4777b8f6d906fd9f",
+    "PROMPT.md": "c4454166b67296897ad8d0e2c67343d32c8d78fd7a627c9c53e94d1502aa170e",
+    "data/canonical/historical-coverage.json": "9ce483eb544c6e9454585b8ab006cbc7668d4c16b3bfccf5c6c20f2cd9af659c",
+    "data/canonical/pesqele-inventory-2014.json": "3f4e01032e20b802b444e431699be28d71a0057902a9f22f19f29d8abf5e3be2",
+    "data/canonical/pesqele-inventory-2018.json": "ae6c46db08dd5796fc42036ee1b2cd08afa8b3c1146ef0e58b9200fc64dcc46a",
+    "data/canonical/pesqele-inventory-2022.json": "8ac9c08b96b087f171f7d0e773109e42b069c31c9e18f0deaaf6572e88c0374a",
+    "data/canonical/prospective-1t-status.json": "b5cfe99f65d19f2dc5a1e77b8c643df4030b7ce02c3dd500f601c6f48b520b46",
+    "data/canonical/tse-results-2014.json": "27037bb1282fa864aed309c0ac3e275f9791c417e9b275bf257dd718eb4b548c",
+    "data/canonical/tse-results-2018.json": "3e1551adb1d8569fff7e8712924db6fb7e0d9b505d105ea671abeebcf6ccdf27",
+    "data/canonical/tse-results-2022.json": "c526e4c2e195be1d270aca243226a349a394b61b5c75bbe55b0c325db8b9f5ac",
+    "data/raw/pesqele/2014-e6781bab1a0b.manifest.json": "b82167ddbe009bc0fc005a0d7ec441abc62eede05599a614a4dd69d595ee4bad",
+    "data/raw/pesqele/2014-e6781bab1a0b.zip": "e6781bab1a0b83759f7ca3b415f3ed4526efa4b252c30e5f067a72db6cffcce6",
+    "data/raw/pesqele/2018-6c26a1510b5a.manifest.json": "8d796b185420fbb96de09d3a202a6f5fad8bb733a9738e6855b9a7705c8f03dd",
+    "data/raw/pesqele/2018-6c26a1510b5a.zip": "6c26a1510b5aa1c55f34c099234689f278c0796bd448b6fabe598cfcd6b7b2c4",
+    "data/raw/pesqele/2022-5565b63ced39.manifest.json": "6143cbb08b27abc755eef3a6fc9e6650cf7eee5b1b33465600699b96e0b96a4a",
+    "data/raw/pesqele/2022-5565b63ced39.zip": "5565b63ced39655005a3c7a0b51e3209ff787da5815a9124ae264b5671b3038b",
+    "data/raw/tse/2014-a3e6bd5796ce.csv.gz": "d43cb87a2efbe88b0af1370814f5c0d5bbe1faa010667769972aa4ddce5faff5",
+    "data/raw/tse/2014-a3e6bd5796ce.csv.manifest.json": "93c8971c68127edc6b40681d90af705fe34de94d2577c023de365775c1ad446d",
+    "data/raw/tse/2018-c495390fbb87.csv.gz": "357f1af4df89ac24fc1208ab65e8b9254b3524e379850fdca1e419ef0a9fd6b5",
+    "data/raw/tse/2018-c495390fbb87.csv.manifest.json": "70b21c5ddba04bc22165323ca77a5434b793f9066e92359d658afda17f089e81",
+    "data/raw/tse/2022-5b81790dac81.csv.gz": "fdb94d8cc9913338536cbda24a60d866600e237b95ea43a490a688338927498b",
+    "data/raw/tse/2022-5b81790dac81.csv.manifest.json": "e9ff04bb4af7835666b4d5195644dc6530387cd7ce075af3c91654e68749fedb",
+    "docs/cofre-a-freeze.md": "5547882dc6768443b5a4c2a63402dfce57e7d630f13edc29da412a850570ad5f",
+    "methodology/model_specifications/cofre-a-1t-v1.md": "6744f30028dfa5621c45ac227441c594e0513394ef1801b23d0be388b13dc1fc",
+    "methodology/preregistration/0001-cofre-A-2026.md": "b5757670a716af3f297808d5ef33c47f242bcbfa09918085ff138924a88aade1",
+    "requirements.txt": "0969da99a0bc2a1b71ed50584560f4588a37567ac63af3ddbaf3c4617ca5621a",
+    "sources/institutes/families.yaml": "3c9366db234f13e4261efd58a9f5b678f19ce322544b2b843165c929f0a01f1f",
+    "src/ingestion/pesqele.py": "da69c9f40c2f2b04dcf4f8fa6304917f7ede1f46c87216788dcd29835b455397",
+    "src/ingestion/tse.py": "2513eb8fd8e915bd8927a7026f43284249a1a1321355c661d76cee8de78401a7",
+    "src/statistics/cofre_a.py": "0d7eed38773c4a5ea5f9e7e54535b72b2dbb117d97b5dd037578486c09a050cb",
+    "src/statistics/freeze_1t.py": "1a67db1082d5b3d9ab743ead5f9213c08d338e66f9b9feb02f20a0963ee19afe",
+    "tests/test_cofre_a.py": "39719f7e91878239e863d94bc147ce746a880f86ea5fcc77a24be73c0de1c3c7",
+    "tests/test_freeze.py": "2bf93ccb09ac6beed12f0f1d99a7b9d2560dba0dea1728d9d67e1e07546da268"
+  },
+  "blockers": [
+    "No complete historical calibration with numeric reference, q90 and sample SD",
+    "Inputs prospectivos não adquiridos: falta inventário PesqEle nacional, cenários estimulados e proveniência; candidaturas deferidas e endosso de c* não verificados. A janela de campo termina em 03/10/2026 e o cutoff de publicação é 04/10/2026 12:00 BRT. Não declarar INPUTS_INCOMPLETE como NÃO_ESTIMÁVEL por menos de três famílias."
+  ],
+  "calibration": {
+    "E_hist": [],
+    "E_hist_size": 0,
+    "e_ref_1T": null,
+    "excluded_years": [
+      {
+        "detail": "Resultados TSE e inventário de registros PesqEle adquiridos; abrangência nacional, divulgação de resultados e cenários elegíveis das pesquisas de ambos os turnos ainda não auditados. Inventário contém registros locais e duplicações de origem que não podem virar famílias/ondas extras. Excluir o ano inteiro pela §4.6; sem imputação.",
+        "reason": "UNRECOVERABLE",
+        "year": 2014
+      },
+      {
+        "detail": "Resultados TSE e inventário de registros PesqEle adquiridos; abrangência nacional, divulgação de resultados e cenários elegíveis das pesquisas de ambos os turnos ainda não auditados. Inventário contém registros locais e duplicações de origem que não podem virar famílias/ondas extras. Excluir o ano inteiro pela §4.6; sem imputação.",
+        "reason": "UNRECOVERABLE",
+        "year": 2018
+      },
+      {
+        "detail": "Resultados TSE e inventário de registros PesqEle adquiridos; abrangência nacional, divulgação de resultados e cenários elegíveis das pesquisas de ambos os turnos ainda não auditados. Inventário contém registros locais e duplicações de origem que não podem virar famílias/ondas extras. Excluir o ano inteiro pela §4.6; sem imputação.",
+        "reason": "UNRECOVERABLE",
+        "year": 2022
+      }
+    ],
+    "included_years": [],
+    "q2_status": "UNAVAILABLE",
+    "q90": null,
+    "quantile_method": "Hyndman-Fan type 7 (linear)",
+    "sd_ddof": 1,
+    "sigma_hat": null,
+    "status": "BLOCKED"
+  },
+  "classification": "CONFIRMATORY_PROSPECTIVE preparation; historical calibration CONFIRMATORY_RETROSPECTIVE",
+  "freeze_deadline": "2026-10-04T17:00:00-03:00",
+  "late_discovery": [],
+  "outcomes_2026_consulted": false,
+  "output_1T": {
+    "P": null,
+    "adv": null,
+    "c_star": null,
+    "excluded": [],
+    "families": [],
+    "intervals": null,
+    "poll_ids": [],
+    "status": "INPUTS_INCOMPLETE"
+  },
+  "prereg_commit": "c377991a9dd645ec77df903179b0b44f4b54bfc7",
+  "prereg_sha256": "b5757670a716af3f297808d5ef33c47f242bcbfa09918085ff138924a88aade1",
+  "publication_cutoff": "2026-10-04T12:00:00-03:00",
+  "status": "BLOCKED"
+}

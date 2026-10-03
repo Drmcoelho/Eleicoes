@@ -1,0 +1,9 @@
+{
+  "year": 2014,
+  "path": "data/raw/pesqele/2014-e6781bab1a0b.zip",
+  "sha256": "e6781bab1a0b83759f7ca3b415f3ed4526efa4b252c30e5f067a72db6cffcce6",
+  "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/pesquisa_eleitoral/pesquisa_eleitoral_2014.zip",
+  "retrieved_at": "2026-10-03T07:56:56.840950+00:00",
+  "source_type": "DADO_OFICIAL",
+  "purpose": "registration inventory; not published poll result"
+}

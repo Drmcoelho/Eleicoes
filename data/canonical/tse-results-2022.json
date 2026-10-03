@@ -1,0 +1,150 @@
+{
+  "year": 2022,
+  "rows": [
+    {
+      "turn": 1,
+      "candidate_id": "280001600167",
+      "name_original": "SOFIA MANZANO",
+      "votes": 45620,
+      "valid_votes_total": 118229719,
+      "R": 0.0003858589903271275,
+      "source_type": "DADO_OFICIAL",
+      "source_manifest": "data/raw/tse/2022-5b81790dac81.csv.manifest.json",
+      "vote_column": "QT_VOTOS_NOMINAIS_VALIDOS"
+    },
+    {
+      "turn": 1,
+      "candidate_id": "280001602702",
+      "name_original": "LÉO PÉRICLES",
+      "votes": 53519,
+      "valid_votes_total": 118229719,
+      "R": 0.0004526696033169122,
+      "source_type": "DADO_OFICIAL",
+      "source_manifest": "data/raw/tse/2022-5b81790dac81.csv.manifest.json",
+      "vote_column": "QT_VOTOS_NOMINAIS_VALIDOS"
+    },
+    {
+      "turn": 1,
+      "candidate_id": "280001603612",
+      "name_original": "FELIPE D AVILA",
+      "votes": 559708,
+      "valid_votes_total": 118229719,
+      "R": 0.004734071980666723,
+      "source_type": "DADO_OFICIAL",
+      "source_manifest": "data/raw/tse/2022-5b81790dac81.csv.manifest.json",
+      "vote_column": "QT_VOTOS_NOMINAIS_VALIDOS"
+    },
+    {
+      "turn": 1,
+      "candidate_id": "280001607829",
+      "name_original": "LULA",
+      "votes": 57259504,
+      "valid_votes_total": 118229719,
+      "R": 0.48430719859868737,
+      "source_type": "DADO_OFICIAL",
+      "source_manifest": "data/raw/tse/2022-5b81790dac81.csv.manifest.json",
+      "vote_column": "QT_VOTOS_NOMINAIS_VALIDOS"
+    },
+    {
+      "turn": 1,
+      "candidate_id": "280001607831",
+      "name_original": "VERA",
+      "votes": 25625,
+      "valid_votes_total": 118229719,
+      "R": 0.0002167390755618729,
+      "source_type": "DADO_OFICIAL",
+      "source_manifest": "data/raw/tse/2022-5b81790dac81.csv.manifest.json",
+      "vote_column": "QT_VOTOS_NOMINAIS_VALIDOS"
+    },
+    {
+      "turn": 1,
+      "candidate_id": "280001607833",
+      "name_original": "SIMONE TEBET",
+      "votes": 4915423,
+      "valid_votes_total": 118229719,
+      "R": 0.041575189737192896,
+      "source_type": "DADO_OFICIAL",
+      "source_manifest": "data/raw/tse/2022-5b81790dac81.csv.manifest.json",
+      "vote_column": "QT_VOTOS_NOMINAIS_VALIDOS"
+    },
+    {
+      "turn": 1,
+      "candidate_id": "280001612393",
+      "name_original": "CIRO GOMES",
+      "votes": 3599287,
+      "valid_votes_total": 118229719,
+      "R": 0.030443166324365535,
+      "source_type": "DADO_OFICIAL",
+      "source_manifest": "data/raw/tse/2022-5b81790dac81.csv.manifest.json",
+      "vote_column": "QT_VOTOS_NOMINAIS_VALIDOS"
+    },
+    {
+      "turn": 1,
+      "candidate_id": "280001618036",
+      "name_original": "JAIR BOLSONARO",
+      "votes": 51072345,
+      "valid_votes_total": 118229719,
+      "R": 0.43197552554446994,
+      "source_type": "DADO_OFICIAL",
+      "source_manifest": "data/raw/tse/2022-5b81790dac81.csv.manifest.json",
+      "vote_column": "QT_VOTOS_NOMINAIS_VALIDOS"
+    },
+    {
+      "turn": 1,
+      "candidate_id": "280001644128",
+      "name_original": "SORAYA THRONICKE",
+      "votes": 600955,
+      "valid_votes_total": 118229719,
+      "R": 0.005082943654801378,
+      "source_type": "DADO_OFICIAL",
+      "source_manifest": "data/raw/tse/2022-5b81790dac81.csv.manifest.json",
+      "vote_column": "QT_VOTOS_NOMINAIS_VALIDOS"
+    },
+    {
+      "turn": 1,
+      "candidate_id": "280001677435",
+      "name_original": "CONSTITUINTE EYMAEL",
+      "votes": 16604,
+      "valid_votes_total": 118229719,
+      "R": 0.0001404384628538278,
+      "source_type": "DADO_OFICIAL",
+      "source_manifest": "data/raw/tse/2022-5b81790dac81.csv.manifest.json",
+      "vote_column": "QT_VOTOS_NOMINAIS_VALIDOS"
+    },
+    {
+      "turn": 1,
+      "candidate_id": "280001734029",
+      "name_original": "PADRE KELMON",
+      "votes": 81129,
+      "valid_votes_total": 118229719,
+      "R": 0.000686198027756456,
+      "source_type": "DADO_OFICIAL",
+      "source_manifest": "data/raw/tse/2022-5b81790dac81.csv.manifest.json",
+      "vote_column": "QT_VOTOS_NOMINAIS_VALIDOS"
+    },
+    {
+      "turn": 2,
+      "candidate_id": "280001607829",
+      "name_original": "LULA",
+      "votes": 60345999,
+      "valid_votes_total": 118552353,
+      "R": 0.5090240511717216,
+      "source_type": "DADO_OFICIAL",
+      "source_manifest": "data/raw/tse/2022-5b81790dac81.csv.manifest.json",
+      "vote_column": "QT_VOTOS_NOMINAIS_VALIDOS"
+    },
+    {
+      "turn": 2,
+      "candidate_id": "280001618036",
+      "name_original": "JAIR BOLSONARO",
+      "votes": 58206354,
+      "valid_votes_total": 118552353,
+      "R": 0.49097594882827844,
+      "source_type": "DADO_OFICIAL",
+      "source_manifest": "data/raw/tse/2022-5b81790dac81.csv.manifest.json",
+      "vote_column": "QT_VOTOS_NOMINAIS_VALIDOS"
+    }
+  ],
+  "transformation": "tse_br_nominal_validos_v1",
+  "geography": "Brazil including overseas (ZZ), no duplicated BRASIL/UF files"
+}

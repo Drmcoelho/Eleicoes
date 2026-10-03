@@ -1,0 +1,150 @@
+{
+  "year": 2014,
+  "rows": [
+    {
+      "turn": 1,
+      "candidate_id": "280000000001",
+      "name_original": "ZÉ MARIA",
+      "votes": 91209,
+      "valid_votes_total": 104023802,
+      "R": 0.0008768089441683741,
+      "source_type": "DADO_OFICIAL",
+      "source_manifest": "data/raw/tse/2014-a3e6bd5796ce.csv.manifest.json",
+      "vote_column": "QT_VOTOS_NOMINAIS"
+    },
+    {
+      "turn": 1,
+      "candidate_id": "280000000021",
+      "name_original": "LEVY FIDELIX",
+      "votes": 446878,
+      "valid_votes_total": 104023802,
+      "R": 0.004295920658620034,
+      "source_type": "DADO_OFICIAL",
+      "source_manifest": "data/raw/tse/2014-a3e6bd5796ce.csv.manifest.json",
+      "vote_column": "QT_VOTOS_NOMINAIS"
+    },
+    {
+      "turn": 1,
+      "candidate_id": "280000000041",
+      "name_original": "MAURO IASI",
+      "votes": 47845,
+      "valid_votes_total": 104023802,
+      "R": 0.00045994281193452246,
+      "source_type": "DADO_OFICIAL",
+      "source_manifest": "data/raw/tse/2014-a3e6bd5796ce.csv.manifest.json",
+      "vote_column": "QT_VOTOS_NOMINAIS"
+    },
+    {
+      "turn": 1,
+      "candidate_id": "280000000043",
+      "name_original": "LUCIANA GENRO",
+      "votes": 1612186,
+      "valid_votes_total": 104023802,
+      "R": 0.01549824145054802,
+      "source_type": "DADO_OFICIAL",
+      "source_manifest": "data/raw/tse/2014-a3e6bd5796ce.csv.manifest.json",
+      "vote_column": "QT_VOTOS_NOMINAIS"
+    },
+    {
+      "turn": 1,
+      "candidate_id": "280000000061",
+      "name_original": "EDUARDO JORGE",
+      "votes": 630099,
+      "valid_votes_total": 104023802,
+      "R": 0.006057257934102428,
+      "source_type": "DADO_OFICIAL",
+      "source_manifest": "data/raw/tse/2014-a3e6bd5796ce.csv.manifest.json",
+      "vote_column": "QT_VOTOS_NOMINAIS"
+    },
+    {
+      "turn": 1,
+      "candidate_id": "280000000065",
+      "name_original": "PASTOR EVERALDO",
+      "votes": 780513,
+      "valid_votes_total": 104023802,
+      "R": 0.0075032154660142104,
+      "source_type": "DADO_OFICIAL",
+      "source_manifest": "data/raw/tse/2014-a3e6bd5796ce.csv.manifest.json",
+      "vote_column": "QT_VOTOS_NOMINAIS"
+    },
+    {
+      "turn": 1,
+      "candidate_id": "280000000067",
+      "name_original": "EYMAEL",
+      "votes": 61250,
+      "valid_votes_total": 104023802,
+      "R": 0.0005888075500259066,
+      "source_type": "DADO_OFICIAL",
+      "source_manifest": "data/raw/tse/2014-a3e6bd5796ce.csv.manifest.json",
+      "vote_column": "QT_VOTOS_NOMINAIS"
+    },
+    {
+      "turn": 1,
+      "candidate_id": "280000000081",
+      "name_original": "RUI COSTA PIMENTA",
+      "votes": 12324,
+      "valid_votes_total": 104023802,
+      "R": 0.00011847288565745751,
+      "source_type": "DADO_OFICIAL",
+      "source_manifest": "data/raw/tse/2014-a3e6bd5796ce.csv.manifest.json",
+      "vote_column": "QT_VOTOS_NOMINAIS"
+    },
+    {
+      "turn": 1,
+      "candidate_id": "280000000083",
+      "name_original": "DILMA",
+      "votes": 43267668,
+      "valid_votes_total": 104023802,
+      "R": 0.41594007494553986,
+      "source_type": "DADO_OFICIAL",
+      "source_manifest": "data/raw/tse/2014-a3e6bd5796ce.csv.manifest.json",
+      "vote_column": "QT_VOTOS_NOMINAIS"
+    },
+    {
+      "turn": 1,
+      "candidate_id": "280000000085",
+      "name_original": "AÉCIO NEVES",
+      "votes": 34897211,
+      "valid_votes_total": 104023802,
+      "R": 0.3354733275370958,
+      "source_type": "DADO_OFICIAL",
+      "source_manifest": "data/raw/tse/2014-a3e6bd5796ce.csv.manifest.json",
+      "vote_column": "QT_VOTOS_NOMINAIS"
+    },
+    {
+      "turn": 1,
+      "candidate_id": "280000000121",
+      "name_original": "MARINA SILVA",
+      "votes": 22176619,
+      "valid_votes_total": 104023802,
+      "R": 0.2131879298162934,
+      "source_type": "DADO_OFICIAL",
+      "source_manifest": "data/raw/tse/2014-a3e6bd5796ce.csv.manifest.json",
+      "vote_column": "QT_VOTOS_NOMINAIS"
+    },
+    {
+      "turn": 2,
+      "candidate_id": "280000000083",
+      "name_original": "DILMA",
+      "votes": 54501118,
+      "valid_votes_total": 105542273,
+      "R": 0.5163913610236536,
+      "source_type": "DADO_OFICIAL",
+      "source_manifest": "data/raw/tse/2014-a3e6bd5796ce.csv.manifest.json",
+      "vote_column": "QT_VOTOS_NOMINAIS"
+    },
+    {
+      "turn": 2,
+      "candidate_id": "280000000085",
+      "name_original": "AÉCIO NEVES",
+      "votes": 51041155,
+      "valid_votes_total": 105542273,
+      "R": 0.4836086389763465,
+      "source_type": "DADO_OFICIAL",
+      "source_manifest": "data/raw/tse/2014-a3e6bd5796ce.csv.manifest.json",
+      "vote_column": "QT_VOTOS_NOMINAIS"
+    }
+  ],
+  "transformation": "tse_br_nominal_validos_v1",
+  "geography": "Brazil including overseas (ZZ), no duplicated BRASIL/UF files"
+}
