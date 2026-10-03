@@ -1,0 +1,14 @@
+name: Cofre A tests and artifact reproduction
+on: [push, pull_request]
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install -r requirements.txt
+      - run: python -m unittest discover -s tests -v
+      - run: python -m src.statistics.freeze_1t
+      - run: git diff --exit-code -- data/derived/cofre-a-1t-2026.json methodology/preregistration/0001-freeze-manifest.md

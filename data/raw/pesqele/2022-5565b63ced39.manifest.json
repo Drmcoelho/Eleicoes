@@ -1,0 +1,9 @@
+{
+  "year": 2022,
+  "path": "data/raw/pesqele/2022-5565b63ced39.zip",
+  "sha256": "5565b63ced39655005a3c7a0b51e3209ff787da5815a9124ae264b5671b3038b",
+  "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/pesquisa_eleitoral/pesquisa_eleitoral_2022.zip",
+  "retrieved_at": "2026-10-03T07:56:56.634737+00:00",
+  "source_type": "DADO_OFICIAL",
+  "purpose": "registration inventory; not published poll result"
+}

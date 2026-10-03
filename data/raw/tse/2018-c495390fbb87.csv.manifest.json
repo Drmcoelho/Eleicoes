@@ -1,0 +1,13 @@
+{
+  "year": 2018,
+  "source_type": "DADO_OFICIAL",
+  "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_candidato_munzona/votacao_candidato_munzona_2018.zip",
+  "retrieved_at": "2026-10-03T07:48:59.896353+00:00",
+  "archive_sha256": "f880848ef4ba340b15cb91ff0754aa370d34ca7b7e605d6607c0f2a75009adc8",
+  "archive_bytes": 395389280,
+  "member": "votacao_candidato_munzona_2018_BR.csv",
+  "member_sha256": "c495390fbb87d6c59374570fd9b81adebf19e983a5d3329bb1e82cdcd91c28ac",
+  "path": "data/raw/tse/2018-c495390fbb87.csv.gz",
+  "sha256": "357f1af4df89ac24fc1208ab65e8b9254b3524e379850fdca1e419ef0a9fd6b5",
+  "storage": "gzip lossless; mtime=0; original member bytes unchanged"
+}
