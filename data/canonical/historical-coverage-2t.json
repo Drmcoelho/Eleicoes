@@ -1,0 +1,26 @@
+[
+  {
+    "year": 2014,
+    "collection_complete": false,
+    "reason": "Resultados TSE e inventário de registros PesqEle adquiridos; abrangência nacional, divulgação de resultados e cenários elegíveis das pesquisas de ambos os turnos ainda não auditados. Inventário contém registros locais e duplicações de origem que não podem virar famílias/ondas extras. Excluir o ano inteiro pela §4.6; sem imputação.",
+    "coverage_evidence": [],
+    "turns": {},
+    "registration_inventory": "data/canonical/pesqele-inventory-2014.json"
+  },
+  {
+    "year": 2018,
+    "collection_complete": false,
+    "reason": "Resultados TSE e inventário de registros PesqEle adquiridos; abrangência nacional, divulgação de resultados e cenários elegíveis das pesquisas de ambos os turnos ainda não auditados. Inventário contém registros locais e duplicações de origem que não podem virar famílias/ondas extras. Excluir o ano inteiro pela §4.6; sem imputação.",
+    "coverage_evidence": [],
+    "turns": {},
+    "registration_inventory": "data/canonical/pesqele-inventory-2018.json"
+  },
+  {
+    "year": 2022,
+    "collection_complete": false,
+    "reason": "Resultados TSE e inventário de registros PesqEle adquiridos; abrangência nacional, divulgação de resultados e cenários elegíveis das pesquisas de ambos os turnos ainda não auditados. Inventário contém registros locais e duplicações de origem que não podem virar famílias/ondas extras. Excluir o ano inteiro pela §4.6; sem imputação.",
+    "coverage_evidence": [],
+    "turns": {},
+    "registration_inventory": "data/canonical/pesqele-inventory-2022.json"
+  }
+]

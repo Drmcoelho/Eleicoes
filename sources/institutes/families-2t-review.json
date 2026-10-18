@@ -1,0 +1,7 @@
+{
+  "complete": false,
+  "reviewer": null,
+  "table_sha256": null,
+  "families": {},
+  "reason": "Exact aliases copied from the PR #2 table; legal identities and IBOPE/Ipec continuity require raw evidence review before certification. Unknown institutes retain their own family with UNMAPPED_FAMILY."
+}
