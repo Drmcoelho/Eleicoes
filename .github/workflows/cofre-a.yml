@@ -5,10 +5,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
       - run: python -m pip install -r requirements.txt
       - run: python -m unittest discover -s tests -v
-      - run: python -m src.statistics.freeze_1t
-      - run: git diff --exit-code -- data/derived/cofre-a-1t-2026.json methodology/preregistration/0001-freeze-manifest.md
+      - name: Reproduce original 1T at its own immutable baseline
+        run: |
+          git worktree add --detach /tmp/cofre-a-1t d92008b5bae107c0c380209931c31f07a911cba4
+          cd /tmp/cofre-a-1t
+          python -m src.statistics.freeze_1t
+          git diff --exit-code -- data/derived/cofre-a-1t-2026.json methodology/preregistration/0001-freeze-manifest.md
+      - name: Reproduce separate 2T preparation (BLOCKED is expected without evidence)
+        run: python -m src.statistics.freeze_2t --verify-artifacts

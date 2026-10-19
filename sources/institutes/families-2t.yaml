@@ -1,0 +1,28 @@
+version: 1
+status: PRE_FREEZE
+policy: exact aliases only; unknown institute becomes its own family with UNMAPPED_FAMILY
+families:
+  ibope_ipec:
+    aliases: [IBOPE, IBOPE Inteligência, Ipec, IPEC]
+    basis: continuity of former IBOPE Inteligência leadership and research operation; not Kantar audience measurement
+    evidence_type: SECONDARY_SOURCE
+    evidence_url: https://pt.wikipedia.org/wiki/IBOPE_Intelig%C3%AAncia
+    limitation: primary Ipec site returned HTTP 403 during acquisition; verify against registration legal identities before certifying coverage
+  datafolha:
+    aliases: [Datafolha]
+    basis: identity; no cross-institute merger inferred
+  atlas:
+    aliases: [AtlasIntel]
+    basis: identity; no cross-institute merger inferred
+  quaest:
+    aliases: [Quaest]
+    basis: identity; no cross-institute merger inferred
+  parana:
+    aliases: [Paraná Pesquisas]
+    basis: identity; no cross-institute merger inferred
+  poderdata:
+    aliases: [PoderData]
+    basis: identity; no cross-institute merger inferred
+  fsb:
+    aliases: [FSB Pesquisa]
+    basis: identity; no cross-institute merger inferred
