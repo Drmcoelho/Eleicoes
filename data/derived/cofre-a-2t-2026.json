@@ -10,7 +10,7 @@
     "data/canonical/prospective-2t-inventory.json": "8ee7032da3468ef454480dc8673e76827ed80900fb993e5356781a76dd88138c",
     "data/canonical/prospective-2t-status.json": "6f98c9f99987250dbda6df761d7afe7729707e16dbee1cef1661a7a11264b38a",
     "data/derived/cofre-a-1t-2026.json": "39c352b883142aa5797015e346f0a48b906fb18f97c5d0065d137f44fc5a22cb",
-    "docs/cofre-a-freeze-2t.md": "3496ad122d95556ee3e20d200866a161e7edd6ab24c7b6b55527c6df20aa5bca",
+    "docs/cofre-a-freeze-2t.md": "b8b1c41e31f1507b7421424833ae5c116feb623b67d4d9cce65cb15badb37d45",
     "docs/cofre-a-freeze.md": "5547882dc6768443b5a4c2a63402dfce57e7d630f13edc29da412a850570ad5f",
     "methodology/model_specifications/cofre-a-1t-v1.md": "6744f30028dfa5621c45ac227441c594e0513394ef1801b23d0be388b13dc1fc",
     "methodology/model_specifications/cofre-a-2t-v1.md": "edcfe8a6e5697e7bb5be298fbfda761c1a2be469ee10b3bdfc070d2fb8ab9f3a",
@@ -25,11 +25,11 @@
     "src/ingestion/tse.py": "2513eb8fd8e915bd8927a7026f43284249a1a1321355c661d76cee8de78401a7",
     "src/statistics/cofre_a.py": "0d7eed38773c4a5ea5f9e7e54535b72b2dbb117d97b5dd037578486c09a050cb",
     "src/statistics/freeze_1t.py": "1a67db1082d5b3d9ab743ead5f9213c08d338e66f9b9feb02f20a0963ee19afe",
-    "src/statistics/freeze_2t.py": "4ae024658bb6b637e98c2c74cf0f1f714a0041103af4379425c03697696e7e0f",
-    "src/validation/prospective.py": "aa6065978f153be163021e87715b97de988963bd4b3c2dfeaae96bfa063d7c79",
+    "src/statistics/freeze_2t.py": "aa28e828e459d40a5f2da8ee9f18a0ba11731dcdbf58edf1710a76334fe0f05c",
+    "src/validation/prospective.py": "02b00e6bcb58532047684251d2a63da4978f518786baf40ec9efa2b1a25dd2dc",
     "tests/test_cofre_a.py": "39719f7e91878239e863d94bc147ce746a880f86ea5fcc77a24be73c0de1c3c7",
     "tests/test_freeze.py": "2bf93ccb09ac6beed12f0f1d99a7b9d2560dba0dea1728d9d67e1e07546da268",
-    "tests/test_freeze_2t.py": "63907aa24c7abfded00640cb8d6864d4a94cd10f0a5e8e6e64686724b19241aa"
+    "tests/test_freeze_2t.py": "68e2e4a7279725bff51e80d819c2a531ba0314c5a9c2b8b722aa327b3ffd161c"
   },
   "baseline_1t_commit": "d92008b5bae107c0c380209931c31f07a911cba4",
   "blockers": [
@@ -84,6 +84,7 @@
   },
   "intended_reference": "pre-election-freeze-2026-2t",
   "late_discovery": [],
+  "latest_source_at": null,
   "limitation": "No calibrated forecast or completed coverage is asserted by a BLOCKED preparation",
   "outcome_policy": "2026 outcomes are forbidden; source-content fidelity requires human audit",
   "output_2T": {
