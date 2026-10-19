@@ -7,6 +7,8 @@ annotated, never-replaced reference; publication is a separate Git push.
 from __future__ import annotations
 
 import argparse
+import hashlib
+import sys
 from datetime import datetime, timezone
 import json
 from pathlib import Path
@@ -15,7 +17,7 @@ import subprocess
 from src.statistics.cofre_a import DataError, intervals
 from src.statistics.freeze_1t import PREREG, PREREG_HASH, PREREG_COMMIT, historical, sha
 from src.validation.prospective import (Audit, CUTOFF, DEADLINE, ELECTION, FAMILIES,
-                                        FAMILY_REVIEW, families, family_review, packet, timestamp)
+                                        FAMILY_REVIEW, families, family_review, packet, timestamp, strict_json)
 
 BASE = 'd92008b5bae107c0c380209931c31f07a911cba4'
 STATUS = 'data/canonical/prospective-2t-status.json'
@@ -133,7 +135,7 @@ def build(root: Path) -> dict:
                 classification='CONFIRMATORY_PROSPECTIVE preparation; historical calibration CONFIRMATORY_RETROSPECTIVE',
                 election_date=ELECTION.isoformat(), fieldwork_window=['2026-10-11', '2026-10-24'],
                 publication_cutoff=CUTOFF.isoformat(), freeze_deadline=DEADLINE.isoformat(),
-                coverage_as_of=coverage_as_of, calibration=calibration, output_2T=output,
+                coverage_as_of=coverage_as_of, latest_source_at=audit.latest_source_at.isoformat() if audit.latest_source_at else None, calibration=calibration, output_2T=output,
                 blockers=blockers, inputs=inputs, artifact_sha256=dict(sorted(audit.hashes.items())),
                 late_discovery=late,
                 outcome_policy='2026 outcomes are forbidden; source-content fidelity requires human audit',
@@ -177,12 +179,33 @@ def time_gate(result: dict, now: datetime) -> None:
         raise DataError('real clock requires timezone')
     if not CUTOFF <= now < DEADLINE:
         raise DataError('outside freeze interval: publication cutoff <= now < 17:00 BRT deadline')
+    if result.get('latest_source_at') and timestamp(result['latest_source_at']) > now:
+        raise DataError('source acquisition timestamp is in the future')
     if not result['coverage_as_of'] or timestamp(result['coverage_as_of']) > now:
         raise DataError('coverage attestation is missing or in the future')
 
 
 def git(root: Path, *args: str) -> str:
     return subprocess.check_output(['git', *args], cwd=root, text=True).strip()
+
+
+
+def committed_seal(root: Path, result: dict) -> None:
+    """First committed READY manifest closes inputs, even before tag creation."""
+    for commit in git(root, 'log', '--format=%H', '--', OUTPUT).splitlines():
+        previous = strict_json(git(root, 'show', f'{commit}:{OUTPUT}'))
+        if previous.get('status') == 'READY_FOR_FREEZE' and previous != result:
+            raise DataError('committed READY input seal cannot be revised; record late discovery separately')
+
+
+def committed_bytes(root: Path, head: str, result: dict) -> None:
+    """Git status alone can hide assume-unchanged/skip-worktree modifications."""
+    expected = dict(result['artifact_sha256'])
+    expected.update({OUTPUT: sha(root / OUTPUT), MANIFEST: sha(root / MANIFEST)})
+    for name, digest in expected.items():
+        raw = subprocess.check_output(['git', 'show', f'{head}:{name}'], cwd=root)
+        if hashlib.sha256(raw).hexdigest() != digest:
+            raise DataError('working bytes differ from committed artifact: ' + name)
 
 
 def check(root: Path) -> tuple[dict, str]:
@@ -206,6 +229,8 @@ def check(root: Path) -> tuple[dict, str]:
     for name in result['artifact_sha256']:
         subprocess.run(['git', 'ls-files', '--error-unmatch', '--', name], cwd=root,
                        check=True, stdout=subprocess.DEVNULL)
+    committed_bytes(root, head, result)
+    committed_seal(root, result)
     return result, head
 
 
@@ -214,7 +239,7 @@ def freeze(root: Path) -> None:
     if git(root, 'tag', '--list', TAG):
         raise DataError('immutable 2T reference already exists; never overwrite')
     # A freeze never trusts a manually asserted tests_passed flag.
-    subprocess.run(['python', '-m', 'unittest', 'discover', '-s', 'tests', '-v'], cwd=root, check=True)
+    subprocess.run([sys.executable, '-m', 'unittest', 'discover', '-s', 'tests', '-v'], cwd=root, check=True)
     result, checked_head = check(root)
     if head != checked_head:
         raise DataError('HEAD changed during tests')
@@ -251,6 +276,8 @@ def main() -> None:
                 # Do not regenerate a sealed set even if late discoveries exist.
                 if (root / '.git').exists() and git(root, 'tag', '--list', TAG):
                     raise DataError('2T reference exists; sealed artifacts cannot be regenerated')
+                if (root / '.git').exists():
+                    committed_seal(root, result)
                 (root / OUTPUT).parent.mkdir(parents=True, exist_ok=True)
                 (root / OUTPUT).write_text(serialized(result), encoding='utf-8')
                 (root / MANIFEST).write_text(markdown(result), encoding='utf-8')

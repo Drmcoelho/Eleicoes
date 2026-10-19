@@ -134,3 +134,23 @@ A implementação de 1T inclui todos os arquivos novos no hash global. Regenerá
 na árvore do 2T modificaria seu manifesto. Por isso o CI reproduz 1T num checkout
 isolado do commit base original e 2T na árvore atual, além dos testes de preservação.
 Esse isolamento é operacional; o prereg e o estimador permanecem byte a byte iguais.
+
+## Integridade adicional do fechamento
+
+O primeiro commit com saída `READY_FOR_FREEZE` sela o manifesto, mesmo antes da
+criação da tag. A preparação `BLOCKED` pode evoluir; um manifesto pronto já
+commitado não pode ser substituído silenciosamente para incorporar descobertas.
+O verificador consulta o histórico desse arquivo, além da existência da tag.
+Depois do selo, registrar novas pesquisas separadamente como late_discovery.
+
+Antes de congelar, cada dependência e os dois artefatos são comparados byte a byte
+com o conteúdo do commit exato. Isso também detecta alterações ocultas por flags
+`assume-unchanged`/`skip-worktree` que um `git status` limpo não denuncia.
+
+JSON não aceita chaves repetidas nem NaN/Infinity/overflow numérico; YAML não
+aceita redefinição de famílias por chaves duplicadas. Caminhos de evidência devem
+ser relativos e canônicos. Timestamps de aquisição são verificados também para
+fontes históricas e famílias: devem anteceder o prazo e não podem estar no futuro
+na hora da checagem final. Datas civis de publicação são interpretadas em Brasília
+mesmo quando o timestamp original está em UTC. A suíte de freeze usa o mesmo
+interpretador Python que executa o comando.

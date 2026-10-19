@@ -7,6 +7,7 @@ import json
 from pathlib import Path
 import shutil
 import subprocess
+import sys
 import tempfile
 import unittest
 from unittest.mock import patch
@@ -352,7 +353,7 @@ class GitFreezeTests(Fixture):
     def test_deadline_rechecked_after_test_suite(self):
         original = subprocess.run
         def run(args, **kwargs):
-            if args[:3] == ['python', '-m', 'unittest']:
+            if args[:3] == [sys.executable, '-m', 'unittest']:
                 self.clock.now.return_value = DEADLINE
                 return subprocess.CompletedProcess(args, 0)
             return original(args, **kwargs)
@@ -363,7 +364,7 @@ class GitFreezeTests(Fixture):
     def test_successful_freeze_creates_annotated_exact_head_reference(self):
         original = subprocess.run
         def run(args, **kwargs):
-            if args[:3] == ['python', '-m', 'unittest']:
+            if args[:3] == [sys.executable, '-m', 'unittest']:
                 return subprocess.CompletedProcess(args, 0)
             return original(args, **kwargs)
         head = self.g('rev-parse', 'HEAD')
@@ -372,15 +373,75 @@ class GitFreezeTests(Fixture):
         self.assertEqual(self.g('rev-parse', flow.TAG + '^{}'), head)
         self.assertIn('manifest_sha256', self.g('cat-file', '-p', flow.TAG))
 
+    def test_pre_tag_ready_commit_seals_inputs(self):
+        r = flow.build(self.root)
+        changed = copy.deepcopy(r)
+        changed['inputs']['poll_ids'].append('late-poll')
+        with self.assertRaisesRegex(DataError, 'seal cannot be revised'):
+            flow.committed_seal(self.root, changed)
+
+    def test_assume_unchanged_cannot_hide_uncommitted_bytes(self):
+        name = 'docs/cofre-a-freeze-2t.md'
+        self.g('update-index', '--assume-unchanged', name)
+        path = self.root / name
+        path.write_text(path.read_text() + '\nHidden edit\n')
+        r = flow.build(self.root)
+        # Attacker also updates derived files and hides those changes from status.
+        for output in (flow.OUTPUT, flow.MANIFEST):
+            self.g('update-index', '--assume-unchanged', output)
+        self.write(flow.OUTPUT, r)
+        (self.root / flow.MANIFEST).write_text(flow.markdown(r))
+        self.assertEqual(self.g('status', '--porcelain'), '')
+        with self.assertRaisesRegex(DataError, 'working bytes differ'):
+            flow.check(self.root)
+
     def test_failed_tests_never_create_reference(self):
         original = subprocess.run
         def run(args, **kwargs):
-            if args[:3] == ['python', '-m', 'unittest']:
+            if args[:3] == [sys.executable, '-m', 'unittest']:
                 raise subprocess.CalledProcessError(1, args)
             return original(args, **kwargs)
         with patch.object(flow.subprocess, 'run', side_effect=run):
             with self.assertRaises(subprocess.CalledProcessError): flow.freeze(self.root)
         self.assertFalse(self.g('tag', '--list', flow.TAG))
+
+
+class DocumentValidationTests(Fixture):
+    def test_duplicate_json_keys_are_rejected(self):
+        path = self.root / flow.STATUS
+        path.write_text('{"collection_complete": false, "collection_complete": true}')
+        with self.assertRaisesRegex(DataError, 'duplicate'): Audit(self.root).read(flow.STATUS)
+
+    def test_nonfinite_json_numbers_are_rejected(self):
+        from src.validation.prospective import strict_json
+        for value in ('NaN', 'Infinity', '-Infinity', '1e999'):
+            with self.subTest(value=value):
+                with self.assertRaises(DataError): strict_json('{"value":' + value + '}')
+
+    def test_duplicate_yaml_family_definition_is_rejected(self):
+        path = self.root / 'sources/institutes/families-2t.yaml'
+        path.write_text(path.read_text() + '\n  ibope_ipec:\n    aliases: [SomethingElse]\n    basis: synthetic\n')
+        with self.assertRaisesRegex(DataError, 'duplicate'): families(Audit(self.root))
+
+    def test_absolute_or_noncanonical_evidence_paths_are_rejected(self):
+        for name in (str(self.root / self.ref['path']), 'data/../data/raw/synthetic-evidence.txt', './data/raw/synthetic-evidence.txt'):
+            with self.assertRaises(DataError): Audit(self.root).track(name)
+
+    def test_family_evidence_after_deadline_is_rejected(self):
+        ref = dict(self.ref, retrieved_at=DEADLINE.isoformat())
+        with self.assertRaisesRegex(DataError, 'deadline'): Audit(self.root).sources([ref])
+
+    def test_any_source_in_future_blocks_freeze_clock_gate(self):
+        with self.assertRaisesRegex(DataError, 'future'):
+            flow.time_gate(dict(coverage_as_of=CUTOFF.isoformat(), latest_source_at='2026-10-25T14:00:00-03:00'),
+                           datetime.fromisoformat('2026-10-25T13:00:00-03:00'))
+
+    def test_publication_calendar_is_brasilia_even_when_timestamp_is_utc(self):
+        for poll, row in zip(self.polls, self.inventory['rows']):
+            poll['published_at'] = row['published_at'] = '2026-10-24T01:00:00+00:00'
+        self.write('data/canonical/prospective-2t-inventory.json', self.inventory)
+        self.p['coverage']['inventory_sha256'] = sha(self.root / 'data/canonical/prospective-2t-inventory.json')
+        with self.assertRaisesRegex(DataError, 'before end'): self.load()
 
 
 class AcquisitionTests(unittest.TestCase):

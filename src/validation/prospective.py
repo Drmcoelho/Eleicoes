@@ -1,8 +1,9 @@
 """Audit the input contract; no assertion here can replace source review."""
 from __future__ import annotations
 
-from datetime import date, datetime
+from datetime import date, datetime, timedelta, timezone
 import json
+import math
 from pathlib import Path
 from urllib.parse import urlparse
 import unicodedata
@@ -19,6 +20,40 @@ FAMILIES = 'sources/institutes/families-2t.yaml'
 FAMILY_REVIEW = 'sources/institutes/families-2t-review.json'
 FORBIDDEN = {'r', 'results', 'outcomes', 'official_results', 'votes',
              'valid_votes_total', 'e_logit', 'winner', 'vote_count'}
+
+
+
+def unique_pairs(pairs):
+    result = {}
+    for key, value in pairs:
+        if key in result:
+            raise DataError('duplicate document key: ' + str(key))
+        result[key] = value
+    return result
+
+
+def strict_json(text: str):
+    def invalid(value):
+        raise DataError('non-finite JSON constant: ' + value)
+    def finite(value):
+        number = float(value)
+        if not math.isfinite(number):
+            raise DataError('non-finite JSON number')
+        return number
+    return json.loads(text, object_pairs_hook=unique_pairs, parse_constant=invalid, parse_float=finite)
+
+
+class UniqueLoader(yaml.SafeLoader):
+    pass
+
+
+def yaml_mapping(loader, node, deep=False):
+    loader.flatten_mapping(node)
+    return unique_pairs((loader.construct_object(k, deep=deep),
+                         loader.construct_object(v, deep=deep)) for k, v in node.value)
+
+
+UniqueLoader.add_constructor(yaml.resolver.BaseResolver.DEFAULT_MAPPING_TAG, yaml_mapping)
 
 
 def timestamp(value: str) -> datetime:
@@ -43,8 +78,11 @@ class Audit:
     def __init__(self, root: Path):
         self.root = root.resolve()
         self.hashes: dict[str, str] = {}
+        self.latest_source_at: datetime | None = None
 
     def track(self, name: str) -> Path:
+        if not isinstance(name, str) or Path(name).is_absolute() or name != Path(name).as_posix() or '..' in Path(name).parts:
+            raise DataError('source path must be canonical and repository-relative')
         path = resolve(self.root, name)
         current = self.root
         for part in Path(name).parts:
@@ -57,7 +95,7 @@ class Audit:
         return path
 
     def read(self, name: str):
-        return json.loads(self.track(name).read_text(encoding='utf-8'))
+        return strict_json(self.track(name).read_text(encoding='utf-8'))
 
     def sources(self, refs: list[dict], *, latest: datetime | None = None) -> None:
         evidence(self.root, refs)
@@ -65,12 +103,17 @@ class Audit:
             self.track(ref['path'])
             if urlparse(ref['url']).scheme not in ('https', 'http'):
                 raise DataError('original source URL required')
-            if latest is not None and timestamp(ref['retrieved_at']) > latest:
+            acquired = timestamp(ref['retrieved_at'])
+            if acquired >= DEADLINE:
+                raise DataError('source acquired after prospective deadline')
+            if self.latest_source_at is None or acquired > self.latest_source_at:
+                self.latest_source_at = acquired
+            if latest is not None and acquired > latest:
                 raise DataError('source retrieved after coverage attestation')
 
 
 def families(audit: Audit) -> dict[str, str]:
-    table = yaml.safe_load(audit.track(FAMILIES).read_text())
+    table = yaml.load(audit.track(FAMILIES).read_text(), Loader=UniqueLoader)
     mapping, normalized = {}, {}
     for family, row in table['families'].items():
         if not isinstance(family, str) or not family.strip() or not row.get('basis') or not row.get('aliases'):
@@ -168,7 +211,7 @@ def packet(audit: Audit, path: str, inventory_path: str, mapping: dict) -> tuple
             raise DataError('same legal institute split across independent families; review aliases')
         legal_families[legal] = family
         publication = timestamp(poll['published_at'])
-        if publication.date() < date.fromisoformat(poll['fieldwork_end']) or publication > as_of:
+        if publication.astimezone(timezone(timedelta(hours=-3))).date() < date.fromisoformat(poll['fieldwork_end']) or publication > as_of:
             raise DataError('publication before end of fieldwork or after audit')
         audit.sources(poll['sources'], latest=as_of)
         for scenario in poll['scenarios']:
