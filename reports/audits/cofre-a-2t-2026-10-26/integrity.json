@@ -1,0 +1,272 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-10-26T17:54:27.219448+00:00",
+  "scope": "Audit and exploratory files; excludes this index. Git commit anchors the index.",
+  "files": [
+    {
+      "path": ".github/workflows/post-election-audit.yml",
+      "sha256": "201d0d50a8bee7ace1a5464a55ec1cc9cdad4d91c237bb8d5ba9554080218770",
+      "bytes": 461
+    },
+    {
+      "path": "analysis/exploratory/2026-2t/README.md",
+      "sha256": "738fd4e81a0335e70f5ef9497b34a4d78c32e402546a9b037f9cba5f9d2c3d48",
+      "bytes": 6082
+    },
+    {
+      "path": "analysis/exploratory/2026-2t/official-outcome.json",
+      "sha256": "24c935ad720f08933c6323105693906a5cc1af0ea2a24447f0e6d1399e36352b",
+      "bytes": 2826
+    },
+    {
+      "path": "analysis/exploratory/2026-2t/raw/tse-config-91d1c4fe50db.json",
+      "sha256": "91d1c4fe50dbe92067b83677d77a4f1856f5deca69a04b013a679ff690791721",
+      "bytes": 26574
+    },
+    {
+      "path": "analysis/exploratory/2026-2t/raw/tse-ea20-9355fb0ab2c9.pdf",
+      "sha256": "9355fb0ab2c918f9d80b252e3e5416ff8304ee3f710ea2f5288d9600d95e307d",
+      "bytes": 598853
+    },
+    {
+      "path": "analysis/exploratory/2026-2t/raw/tse-result-2t-67fae708b0c7.json",
+      "sha256": "67fae708b0c7977fc9847d36100c63313621bff971178c48f2da99969707c263",
+      "bytes": 3233
+    },
+    {
+      "path": "analysis/exploratory/2026-2t/raw/tse-technical-b044c65c6ffc.html",
+      "sha256": "b044c65c6ffc32c444020a6015ceeb2a481e11f99e563e788f0097becd483b16",
+      "bytes": 133849
+    },
+    {
+      "path": "analysis/exploratory/2026-2t/raw/tse-totalizacao-br-0fb4dd31623a.zip",
+      "sha256": "0fb4dd31623af16bc6d5b4471a69c7391e4273c9af1c2b0350885abea39696b1",
+      "bytes": 287009
+    },
+    {
+      "path": "analysis/exploratory/2026-2t/reproduce.py",
+      "sha256": "1b3a14e835c8377abb50b9bbbb61eaf3bb25d77b5a7bc1ba7f01687bcaa76327",
+      "bytes": 6975
+    },
+    {
+      "path": "analysis/exploratory/2026-2t/sources.json",
+      "sha256": "44eeffd23804e4c8f1b08e5bb415bdd34b03a0ff99a303c67dfcb4f99b267c0d",
+      "bytes": 9455
+    },
+    {
+      "path": "analysis/exploratory/2026-2t/test_reproduce.py",
+      "sha256": "9a3413fa00c9d1c537d35416280c8a4704ad9cc5cde35b3bac9917d66412a03e",
+      "bytes": 2349
+    },
+    {
+      "path": "analysis/exploratory/2026-2t/validation.json",
+      "sha256": "25f7e1a60e38d40e2f96ebee958466fc014599a402ab13b11db031723c20e18d",
+      "bytes": 2819
+    },
+    {
+      "path": "reports/audits/cofre-a-2t-2026-10-26/README.md",
+      "sha256": "a068144297137e399e3f9cee0230555e8f75f2360a06a642985f31b3dfc7a616",
+      "bytes": 13877
+    },
+    {
+      "path": "reports/audits/cofre-a-2t-2026-10-26/evidence/artifacts-error.json",
+      "sha256": "f8a2e68bd4beccf9931aae93e0a7acf481fe5c2b0379c63f4a5df5f173b58f48",
+      "bytes": 232
+    },
+    {
+      "path": "reports/audits/cofre-a-2t-2026-10-26/evidence/artifacts_37108568991.json",
+      "sha256": "782800f84d72d27afdd07380f6cc205db0d43f63289129d2fc4b48c0a20b6034",
+      "bytes": 227
+    },
+    {
+      "path": "reports/audits/cofre-a-2t-2026-10-26/evidence/artifacts_37108595826.json",
+      "sha256": "9307a1e82a8c0a80c069741ecca5823778cf9956174957e5c7b49ce37e4c86b6",
+      "bytes": 227
+    },
+    {
+      "path": "reports/audits/cofre-a-2t-2026-10-26/evidence/artifacts_39170926977.json",
+      "sha256": "551d2aaabc7fb03f4d9ea6ea2aa293af699113eaa3dd85c792839d7b0ed1e4a0",
+      "bytes": 227
+    },
+    {
+      "path": "reports/audits/cofre-a-2t-2026-10-26/evidence/artifacts_39170946355.json",
+      "sha256": "4c238724da31690ac79693eb494d18ac0069add0bda19aaaaebf47048205ed49",
+      "bytes": 227
+    },
+    {
+      "path": "reports/audits/cofre-a-2t-2026-10-26/evidence/artifacts_39181271394.json",
+      "sha256": "0960920eb8e973fc758b57bb569fbd030fbcced15be789dda8a0639eacb0b08b",
+      "bytes": 227
+    },
+    {
+      "path": "reports/audits/cofre-a-2t-2026-10-26/evidence/artifacts_run.json",
+      "sha256": "b82bf7c7946ab444c2391a5c478c1c01f7d82d8506ffea78c8afe574e5f7c80b",
+      "bytes": 227
+    },
+    {
+      "path": "reports/audits/cofre-a-2t-2026-10-26/evidence/ci-job-log.txt",
+      "sha256": "17dffb0f016156fcbbc9db22fbc752c6a52dfdcb639a73aa1a15bd931b44c42c",
+      "bytes": 28811
+    },
+    {
+      "path": "reports/audits/cofre-a-2t-2026-10-26/evidence/comments.json",
+      "sha256": "9fa9deed6cb7456c7f2204668b9f54cfb24eddbcab0ecd699ac825e8761e7ca1",
+      "bytes": 165
+    },
+    {
+      "path": "reports/audits/cofre-a-2t-2026-10-26/evidence/dependency-hashes.json",
+      "sha256": "26ed666a714d46c73f7769c3f7476509a7bff15091d06c938ba33df8690d0658",
+      "bytes": 7643
+    },
+    {
+      "path": "reports/audits/cofre-a-2t-2026-10-26/evidence/families_review.json",
+      "sha256": "0bb37411be3bd6775d8951356a2c999fefcbcc0db1205b791dbab92676874aa3",
+      "bytes": 302
+    },
+    {
+      "path": "reports/audits/cofre-a-2t-2026-10-26/evidence/history_0.json",
+      "sha256": "fa135cef62a03249a072e0ad197719ad959870febf4f05673a4e1883ace2a6a8",
+      "bytes": 24500
+    },
+    {
+      "path": "reports/audits/cofre-a-2t-2026-10-26/evidence/history_1.json",
+      "sha256": "66df39692f7e819a77a5b8170e95e3cc09373bef094eede7b2c4dfb20fae78e7",
+      "bytes": 28918
+    },
+    {
+      "path": "reports/audits/cofre-a-2t-2026-10-26/evidence/history_2.json",
+      "sha256": "5a786ff19aaad95b918389299411b6020f136201a50fbb325aa64dffef8ff974",
+      "bytes": 46188
+    },
+    {
+      "path": "reports/audits/cofre-a-2t-2026-10-26/evidence/history_3.json",
+      "sha256": "c65fec8e91afab6e086be0632a0961524039551408825487d34bb51f7ea69742",
+      "bytes": 12264
+    },
+    {
+      "path": "reports/audits/cofre-a-2t-2026-10-26/evidence/inventory_current.json",
+      "sha256": "8ee7032da3468ef454480dc8673e76827ed80900fb993e5356781a76dd88138c",
+      "bytes": 264
+    },
+    {
+      "path": "reports/audits/cofre-a-2t-2026-10-26/evidence/jobs.json",
+      "sha256": "bed213571a724b9dc49a016ebfa4e5a550d54227e19429d3320dfd8af2a0138b",
+      "bytes": 4241
+    },
+    {
+      "path": "reports/audits/cofre-a-2t-2026-10-26/evidence/official-download-attempt.json",
+      "sha256": "dd85d32e2db8294f16ccd1fed534dc0d2b10d0c51325478c2abc65ff67f7c0ff",
+      "bytes": 265
+    },
+    {
+      "path": "reports/audits/cofre-a-2t-2026-10-26/evidence/output_current.json",
+      "sha256": "c5517d1ee7c6df134367695ce6e98137300fed1ed6a7e0ec0c921eeb274312df",
+      "bytes": 6586
+    },
+    {
+      "path": "reports/audits/cofre-a-2t-2026-10-26/evidence/output_history.json",
+      "sha256": "5d7a5fdbcd01683b3d37095863181b5ae4954a323de248c97c7fbadfab6cb754",
+      "bytes": 8784
+    },
+    {
+      "path": "reports/audits/cofre-a-2t-2026-10-26/evidence/output_initial.json",
+      "sha256": "86a2c39907c2418100c7d862dcfdb84945d35b6b04fbc69568f09c5df2c0722c",
+      "bytes": 7029
+    },
+    {
+      "path": "reports/audits/cofre-a-2t-2026-10-26/evidence/pr.json",
+      "sha256": "de531da67e2d4de8decb96251e1b93feb78a16ac0bc32e6a0644c72b7ca8644b",
+      "bytes": 21733
+    },
+    {
+      "path": "reports/audits/cofre-a-2t-2026-10-26/evidence/pr_commits.json",
+      "sha256": "1b9ec53de7bed3e8f1d6ca811491e36f0c23d7210154c056643bcc14ec2566f1",
+      "bytes": 17435
+    },
+    {
+      "path": "reports/audits/cofre-a-2t-2026-10-26/evidence/pr_list.json",
+      "sha256": "58edf0cc675e5c3629f97cfffe65b3e78c4c696df2b507bd08cdb82ce63fc8a4",
+      "bytes": 64927
+    },
+    {
+      "path": "reports/audits/cofre-a-2t-2026-10-26/evidence/refs.json",
+      "sha256": "9f4916997ed03a978bad3286667b288cc119295853df1de3f1ed2cde3468fd8c",
+      "bytes": 4590
+    },
+    {
+      "path": "reports/audits/cofre-a-2t-2026-10-26/evidence/refs_recheck.json",
+      "sha256": "38f43a42b04e0880c58b2afc762b09ddb14599e2a3cc8b6bebb4ed927ed6bf6e",
+      "bytes": 4590
+    },
+    {
+      "path": "reports/audits/cofre-a-2t-2026-10-26/evidence/releases.json",
+      "sha256": "26032178a46f2c38e731420bb78f4db07bf7b99987ee0daa35e194c5780e6b50",
+      "bytes": 156
+    },
+    {
+      "path": "reports/audits/cofre-a-2t-2026-10-26/evidence/repo_events-error.json",
+      "sha256": "8a45d23a65116b0699e5936779b5e4e3a685e8b8c8f9ba117a6d50e70e6953b6",
+      "bytes": 232
+    },
+    {
+      "path": "reports/audits/cofre-a-2t-2026-10-26/evidence/runs.json",
+      "sha256": "71556d7fcf3bc54afa1070becd5be1029773a14cd68622daa46e67bb4b723bf7",
+      "bytes": 95398
+    },
+    {
+      "path": "reports/audits/cofre-a-2t-2026-10-26/evidence/status_current.json",
+      "sha256": "6f98c9f99987250dbda6df761d7afe7729707e16dbee1cef1661a7a11264b38a",
+      "bytes": 392
+    },
+    {
+      "path": "reports/audits/cofre-a-2t-2026-10-26/evidence/tag_refs.json",
+      "sha256": "bab40ef21becd3582175f1cd7221d7678b6b0ef774f05eeb7725a1dffd798dba",
+      "bytes": 158
+    },
+    {
+      "path": "reports/audits/cofre-a-2t-2026-10-26/evidence/tags-error.json",
+      "sha256": "87af17e69a22bbb00512bddcaa53aa02a3abb0c320c9feca494439ed28b70f94",
+      "bytes": 166
+    },
+    {
+      "path": "reports/audits/cofre-a-2t-2026-10-26/evidence/tree.json",
+      "sha256": "2488e66374da192cb90eee7c7aeab14c8f72832ee3b6e618f689a6f307af8e45",
+      "bytes": 22216
+    },
+    {
+      "path": "reports/audits/cofre-a-2t-2026-10-26/evidence/tree_1t.json",
+      "sha256": "7a069f89f690ec919913e25e98b1c2a98a7beb7d439d00e30e0a5d5a9c1c379e",
+      "bytes": 17776
+    },
+    {
+      "path": "reports/audits/cofre-a-2t-2026-10-26/evidence/tse-config-request.json",
+      "sha256": "8175dacf214d163eea6971d127d55df96c0e09dcb8f5b382d2d80ec1502a1ad9",
+      "bytes": 1115
+    },
+    {
+      "path": "reports/audits/cofre-a-2t-2026-10-26/evidence/tse-ea20-request.json",
+      "sha256": "da42a45e6100c693f7b81d83aeb3dbb05b07bb615aa0cda4776882c3bf2b3a87",
+      "bytes": 2444
+    },
+    {
+      "path": "reports/audits/cofre-a-2t-2026-10-26/evidence/tse-result-request.json",
+      "sha256": "c40cdb425c6cae09f404ea1c411beb902bc1e41d6d33bd4a3f9ddf3d67395c28",
+      "bytes": 1362
+    },
+    {
+      "path": "reports/audits/cofre-a-2t-2026-10-26/evidence/tse-technical-request.json",
+      "sha256": "598e756b7a5f9553b10d8f01f76da1f823109054f9fc412cb619ba89ffe39cdd",
+      "bytes": 2131
+    },
+    {
+      "path": "reports/audits/cofre-a-2t-2026-10-26/status.json",
+      "sha256": "c826547df5f083265d67f3980ec73f1a62d1321a2715113a87f2bc958ef10f32",
+      "bytes": 1799
+    },
+    {
+      "path": "reports/audits/cofre-a-2t-2026-10-26/verify.py",
+      "sha256": "710c673c6002e8712d79b20b049e7d3b2277931041e7f241d30bfcbeac750134",
+      "bytes": 2707
+    }
+  ]
+}

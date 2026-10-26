@@ -1,0 +1,246 @@
+{
+  "retrieved_at": "2026-10-26T17:42:45.233Z",
+  "source_url": "https://api.github.com/repos/Drmcoelho/Eleicoes/commits?sha=628bea69766ea997fba48bde7e05443593992cc8&per_page=100",
+  "response": [
+    {
+      "sha": "628bea69766ea997fba48bde7e05443593992cc8",
+      "node_id": "C_kwDOUV6LktoAKDYyOGJlYTY5NzY2ZWE5OTdmYmE0OGJkZTdlMDU0NDM1OTM5OTJjYzg",
+      "commit": {
+        "author": {
+          "name": "Matheus Migliolo Coelho",
+          "email": "drmatheuscoelho@gmail.com",
+          "date": "2026-09-11T01:28:46Z"
+        },
+        "committer": {
+          "name": "Matheus Migliolo Coelho",
+          "email": "drmatheuscoelho@gmail.com",
+          "date": "2026-09-11T01:28:46Z"
+        },
+        "message": "docs: add canonical agent operating constitution",
+        "tree": {
+          "sha": "0cb0866c3f6dbbe433aa38d8bb960b0d99b0082e",
+          "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/trees/0cb0866c3f6dbbe433aa38d8bb960b0d99b0082e"
+        },
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/commits/628bea69766ea997fba48bde7e05443593992cc8",
+        "comment_count": 0,
+        "verification": {
+          "verified": false,
+          "reason": "unsigned",
+          "signature": null,
+          "payload": null,
+          "verified_at": null
+        }
+      },
+      "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/commits/628bea69766ea997fba48bde7e05443593992cc8",
+      "html_url": "https://github.com/Drmcoelho/Eleicoes/commit/628bea69766ea997fba48bde7e05443593992cc8",
+      "comments_url": "https://api.github.com/repos/Drmcoelho/Eleicoes/commits/628bea69766ea997fba48bde7e05443593992cc8/comments",
+      "author": {
+        "login": "Drmcoelho",
+        "id": 132965963,
+        "node_id": "U_kgDOB-zmSw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/132965963?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Drmcoelho",
+        "html_url": "https://github.com/Drmcoelho",
+        "followers_url": "https://api.github.com/users/Drmcoelho/followers",
+        "following_url": "https://api.github.com/users/Drmcoelho/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Drmcoelho/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Drmcoelho/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Drmcoelho/subscriptions",
+        "organizations_url": "https://api.github.com/users/Drmcoelho/orgs",
+        "repos_url": "https://api.github.com/users/Drmcoelho/repos",
+        "events_url": "https://api.github.com/users/Drmcoelho/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Drmcoelho/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "committer": {
+        "login": "Drmcoelho",
+        "id": 132965963,
+        "node_id": "U_kgDOB-zmSw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/132965963?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Drmcoelho",
+        "html_url": "https://github.com/Drmcoelho",
+        "followers_url": "https://api.github.com/users/Drmcoelho/followers",
+        "following_url": "https://api.github.com/users/Drmcoelho/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Drmcoelho/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Drmcoelho/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Drmcoelho/subscriptions",
+        "organizations_url": "https://api.github.com/users/Drmcoelho/orgs",
+        "repos_url": "https://api.github.com/users/Drmcoelho/repos",
+        "events_url": "https://api.github.com/users/Drmcoelho/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Drmcoelho/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "parents": [
+        {
+          "sha": "0d52c4b15c2e90b46533bd27dda977281956d75e",
+          "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/commits/0d52c4b15c2e90b46533bd27dda977281956d75e",
+          "html_url": "https://github.com/Drmcoelho/Eleicoes/commit/0d52c4b15c2e90b46533bd27dda977281956d75e"
+        }
+      ]
+    },
+    {
+      "sha": "0d52c4b15c2e90b46533bd27dda977281956d75e",
+      "node_id": "C_kwDOUV6LktoAKDBkNTJjNGIxNWMyZTkwYjQ2NTMzYmQyN2RkYTk3NzI4MTk1NmQ3NWU",
+      "commit": {
+        "author": {
+          "name": "Matheus Migliolo Coelho",
+          "email": "drmatheuscoelho@gmail.com",
+          "date": "2026-09-11T01:28:01Z"
+        },
+        "committer": {
+          "name": "Matheus Migliolo Coelho",
+          "email": "drmatheuscoelho@gmail.com",
+          "date": "2026-09-11T01:28:01Z"
+        },
+        "message": "docs: complete canonical research mega-prompt v0.2",
+        "tree": {
+          "sha": "767a2cac501b9b451a054aa88aae7a7d85f25738",
+          "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/trees/767a2cac501b9b451a054aa88aae7a7d85f25738"
+        },
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/commits/0d52c4b15c2e90b46533bd27dda977281956d75e",
+        "comment_count": 0,
+        "verification": {
+          "verified": false,
+          "reason": "unsigned",
+          "signature": null,
+          "payload": null,
+          "verified_at": null
+        }
+      },
+      "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/commits/0d52c4b15c2e90b46533bd27dda977281956d75e",
+      "html_url": "https://github.com/Drmcoelho/Eleicoes/commit/0d52c4b15c2e90b46533bd27dda977281956d75e",
+      "comments_url": "https://api.github.com/repos/Drmcoelho/Eleicoes/commits/0d52c4b15c2e90b46533bd27dda977281956d75e/comments",
+      "author": {
+        "login": "Drmcoelho",
+        "id": 132965963,
+        "node_id": "U_kgDOB-zmSw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/132965963?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Drmcoelho",
+        "html_url": "https://github.com/Drmcoelho",
+        "followers_url": "https://api.github.com/users/Drmcoelho/followers",
+        "following_url": "https://api.github.com/users/Drmcoelho/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Drmcoelho/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Drmcoelho/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Drmcoelho/subscriptions",
+        "organizations_url": "https://api.github.com/users/Drmcoelho/orgs",
+        "repos_url": "https://api.github.com/users/Drmcoelho/repos",
+        "events_url": "https://api.github.com/users/Drmcoelho/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Drmcoelho/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "committer": {
+        "login": "Drmcoelho",
+        "id": 132965963,
+        "node_id": "U_kgDOB-zmSw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/132965963?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Drmcoelho",
+        "html_url": "https://github.com/Drmcoelho",
+        "followers_url": "https://api.github.com/users/Drmcoelho/followers",
+        "following_url": "https://api.github.com/users/Drmcoelho/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Drmcoelho/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Drmcoelho/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Drmcoelho/subscriptions",
+        "organizations_url": "https://api.github.com/users/Drmcoelho/orgs",
+        "repos_url": "https://api.github.com/users/Drmcoelho/repos",
+        "events_url": "https://api.github.com/users/Drmcoelho/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Drmcoelho/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "parents": [
+        {
+          "sha": "966c54e26df61020bd9df2ebf939178d15f06f5e",
+          "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/commits/966c54e26df61020bd9df2ebf939178d15f06f5e",
+          "html_url": "https://github.com/Drmcoelho/Eleicoes/commit/966c54e26df61020bd9df2ebf939178d15f06f5e"
+        }
+      ]
+    },
+    {
+      "sha": "966c54e26df61020bd9df2ebf939178d15f06f5e",
+      "node_id": "C_kwDOUV6LktoAKDk2NmM1NGUyNmRmNjEwMjBiZDlkZjJlYmY5MzkxNzhkMTVmMDZmNWU",
+      "commit": {
+        "author": {
+          "name": "Matheus Migliolo Coelho",
+          "email": "drmatheuscoelho@gmail.com",
+          "date": "2026-09-11T01:26:31Z"
+        },
+        "committer": {
+          "name": "Matheus Migliolo Coelho",
+          "email": "drmatheuscoelho@gmail.com",
+          "date": "2026-09-11T01:26:31Z"
+        },
+        "message": "docs: add canonical research mega-prompt v0.2",
+        "tree": {
+          "sha": "4807af57c97f991f62e42dbaede5f03c4539243b",
+          "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/trees/4807af57c97f991f62e42dbaede5f03c4539243b"
+        },
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/commits/966c54e26df61020bd9df2ebf939178d15f06f5e",
+        "comment_count": 0,
+        "verification": {
+          "verified": false,
+          "reason": "unsigned",
+          "signature": null,
+          "payload": null,
+          "verified_at": null
+        }
+      },
+      "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/commits/966c54e26df61020bd9df2ebf939178d15f06f5e",
+      "html_url": "https://github.com/Drmcoelho/Eleicoes/commit/966c54e26df61020bd9df2ebf939178d15f06f5e",
+      "comments_url": "https://api.github.com/repos/Drmcoelho/Eleicoes/commits/966c54e26df61020bd9df2ebf939178d15f06f5e/comments",
+      "author": {
+        "login": "Drmcoelho",
+        "id": 132965963,
+        "node_id": "U_kgDOB-zmSw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/132965963?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Drmcoelho",
+        "html_url": "https://github.com/Drmcoelho",
+        "followers_url": "https://api.github.com/users/Drmcoelho/followers",
+        "following_url": "https://api.github.com/users/Drmcoelho/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Drmcoelho/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Drmcoelho/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Drmcoelho/subscriptions",
+        "organizations_url": "https://api.github.com/users/Drmcoelho/orgs",
+        "repos_url": "https://api.github.com/users/Drmcoelho/repos",
+        "events_url": "https://api.github.com/users/Drmcoelho/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Drmcoelho/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "committer": {
+        "login": "Drmcoelho",
+        "id": 132965963,
+        "node_id": "U_kgDOB-zmSw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/132965963?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Drmcoelho",
+        "html_url": "https://github.com/Drmcoelho",
+        "followers_url": "https://api.github.com/users/Drmcoelho/followers",
+        "following_url": "https://api.github.com/users/Drmcoelho/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Drmcoelho/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Drmcoelho/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Drmcoelho/subscriptions",
+        "organizations_url": "https://api.github.com/users/Drmcoelho/orgs",
+        "repos_url": "https://api.github.com/users/Drmcoelho/repos",
+        "events_url": "https://api.github.com/users/Drmcoelho/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Drmcoelho/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "parents": []
+    }
+  ]
+}

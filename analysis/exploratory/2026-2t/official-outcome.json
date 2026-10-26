@@ -1,0 +1,93 @@
+{
+  "P": null,
+  "Q1": "NOT_EVALUABLE_NO_VALID_FREEZE",
+  "Q2": "NOT_EVALUABLE_NO_VALID_FREEZE",
+  "candidates": [
+    {
+      "R_valid_votes": 0.517851828842626,
+      "R_valid_votes_fraction": {
+        "denominator": 124082273,
+        "numerator": 64256232
+      },
+      "ballot_name": "LULA",
+      "ballot_number": "13",
+      "name": "LUIZ INÁCIO LULA DA SILVA",
+      "official_status": "Eleito",
+      "party": "PT",
+      "published_percent_votable": "51,785182884",
+      "source_pointer": "/carg/0/agr/1/par/0/cand/0",
+      "tse_id": "280002542548",
+      "vote_destination": "Válido",
+      "votes": 64256232
+    },
+    {
+      "R_valid_votes": 0.48214817115737396,
+      "R_valid_votes_fraction": {
+        "denominator": 124082273,
+        "numerator": 59826041
+      },
+      "ballot_name": "FLAVIO BOLSONARO",
+      "ballot_number": "22",
+      "name": "FLAVIO NANTES BOLSONARO",
+      "official_status": "Não eleito",
+      "party": "PL",
+      "published_percent_votable": "48,214817116",
+      "source_pointer": "/carg/0/agr/0/par/0/cand/0",
+      "tse_id": "280002551544",
+      "vote_destination": "Válido",
+      "votes": 59826041
+    }
+  ],
+  "classification": "EXPLORATORY_POST_ELECTION",
+  "data_class": "DADO_OFICIAL; R_valid_votes is TRANSFORMAÇÃO",
+  "denominator": "v.vv (votos válidos)",
+  "e_ref_2T": null,
+  "intervals": null,
+  "limitations": [
+    "Versioned snapshot, not a claim that the source can never be revised.",
+    "No independent reconciliation with section-level BUs has been performed.",
+    "No poll aggregation or candidate-versus-bloc classification is made.",
+    "2026 outcomes are already known; subsequent analysis is exploratory."
+  ],
+  "office": "Presidente",
+  "prospective_evaluation": "NOT_EVALUABLE_NO_VALID_FREEZE",
+  "prospective_forecast": false,
+  "q90": null,
+  "retrieved_at": "2026-10-26T17:46:22.632422+00:00",
+  "scope": "Brasil incluindo exterior",
+  "sections": {
+    "pstn": "100",
+    "snt": "0",
+    "st": "499248",
+    "ts": "499248"
+  },
+  "sigma_hat": null,
+  "source_generation": {
+    "and": "f",
+    "dg": "25/10/2026",
+    "dt": "25/10/2026",
+    "hg": "23:27:02",
+    "ht": "23:26:38",
+    "idg": "4241309",
+    "tf": "s"
+  },
+  "source_path": "analysis/exploratory/2026-2t/raw/tse-result-2t-67fae708b0c7.json",
+  "source_sha256": "67fae708b0c7977fc9847d36100c63313621bff971178c48f2da99969707c263",
+  "source_url": "https://resultados.tse.jus.br/oficial/ele2026/6258/dados/br/br-c0001-e006258-u.json",
+  "transformation": "official_6258_valid_votes_v1: integer vap / integer v.vv",
+  "turn": 2,
+  "votes": {
+    "tv": 128236074,
+    "tvn": 2723305,
+    "van": 0,
+    "vansj": 0,
+    "vb": 1430496,
+    "vn": 2723305,
+    "vnom": 124082273,
+    "vnt": 0,
+    "vscv": 0,
+    "vv": 124082273,
+    "vvc": 124082273
+  },
+  "year": 2026
+}

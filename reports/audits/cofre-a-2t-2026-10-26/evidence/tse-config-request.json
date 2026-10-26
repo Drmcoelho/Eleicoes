@@ -1,0 +1,27 @@
+{
+  "source_url": "https://resultados.tse.jus.br/oficial/comum/config/ele-c.json",
+  "retrieved_at": "2026-10-26T17:45:50.567784+00:00",
+  "http_status": 200,
+  "final_url": "https://resultados.tse.jus.br/oficial/comum/config/ele-c.json",
+  "headers": {
+    "last-modified": "Sun, 18 Oct 2026 15:38:28 GMT",
+    "etag": "\"412f3d30a4a1edf91bd647ae5257612d\"",
+    "x-amz-request-id": "tx000005d01c0b3c81f3607-006ade489f-cd510a-default",
+    "x-ratelimit-limit": "5000, 5000;w=1",
+    "x-ratelimit-remaining": "4947",
+    "x-ratelimit-reset": "1",
+    "vary": "Accept-Encoding",
+    "cache-control": "max-age=55",
+    "expires": "Mon, 26 Oct 2026 17:46:51 GMT",
+    "date": "Mon, 26 Oct 2026 17:45:56 GMT",
+    "content-length": "26574",
+    "alt-svc": "h3=\":443\"; ma=93600",
+    "content-type": "application/json",
+    "strict-transport-security": "max-age=63072000 ; includeSubDomains ; preload",
+    "akamai-grn": "0.04152117.1793036756.28f39a",
+    "cdn-cache-status": "RefreshHit from child, Hit from parent",
+    "x-envoy-upstream-service-time": "109",
+    "server": "envoy",
+    "connection": "close"
+  }
+}

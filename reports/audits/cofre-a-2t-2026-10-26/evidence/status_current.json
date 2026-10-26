@@ -1,0 +1,9 @@
+{
+  "year": 2026,
+  "turn": 2,
+  "collection_complete": false,
+  "packet": null,
+  "inventory": "data/canonical/prospective-2t-inventory.json",
+  "reason": "No audited national poll inventory, published results, official two-candidate qualification or PL/endorsement evidence has been certified. The publication window remains open until 2026-10-25T12:00:00-03:00.",
+  "late_discovery": []
+}

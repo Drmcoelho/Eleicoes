@@ -1,0 +1,167 @@
+{
+  "classification": "EXPLORATORY_POST_ELECTION",
+  "created_at": "2026-10-26T17:48:07.837632+00:00",
+  "sources": [
+    {
+      "name": "tse-config",
+      "path": "analysis/exploratory/2026-2t/raw/tse-config-91d1c4fe50db.json",
+      "sha256": "91d1c4fe50dbe92067b83677d77a4f1856f5deca69a04b013a679ff690791721",
+      "bytes": 26574,
+      "acquisition": {
+        "source_url": "https://resultados.tse.jus.br/oficial/comum/config/ele-c.json",
+        "retrieved_at": "2026-10-26T17:45:50.567784+00:00",
+        "http_status": 200,
+        "final_url": "https://resultados.tse.jus.br/oficial/comum/config/ele-c.json",
+        "headers": {
+          "last-modified": "Sun, 18 Oct 2026 15:38:28 GMT",
+          "etag": "\"412f3d30a4a1edf91bd647ae5257612d\"",
+          "x-amz-request-id": "tx000005d01c0b3c81f3607-006ade489f-cd510a-default",
+          "x-ratelimit-limit": "5000, 5000;w=1",
+          "x-ratelimit-remaining": "4947",
+          "x-ratelimit-reset": "1",
+          "vary": "Accept-Encoding",
+          "cache-control": "max-age=55",
+          "expires": "Mon, 26 Oct 2026 17:46:51 GMT",
+          "date": "Mon, 26 Oct 2026 17:45:56 GMT",
+          "content-length": "26574",
+          "alt-svc": "h3=\":443\"; ma=93600",
+          "content-type": "application/json",
+          "strict-transport-security": "max-age=63072000 ; includeSubDomains ; preload",
+          "akamai-grn": "0.04152117.1793036756.28f39a",
+          "cdn-cache-status": "RefreshHit from child, Hit from parent",
+          "x-envoy-upstream-service-time": "109",
+          "server": "envoy",
+          "connection": "close"
+        }
+      }
+    },
+    {
+      "name": "tse-result-2t",
+      "path": "analysis/exploratory/2026-2t/raw/tse-result-2t-67fae708b0c7.json",
+      "sha256": "67fae708b0c7977fc9847d36100c63313621bff971178c48f2da99969707c263",
+      "bytes": 3233,
+      "acquisition": {
+        "source_url": "https://resultados.tse.jus.br/oficial/ele2026/6258/dados/br/br-c0001-e006258-u.json",
+        "requested_at": "2026-10-26T17:46:15.891313+00:00",
+        "construction": "Official base/ambiente and election 6258 from TSE documentation; cycle and election confirmed in ele-c.json; EA20 filename pattern from official example.",
+        "http_status": 200,
+        "final_url": "https://resultados.tse.jus.br/oficial/ele2026/6258/dados/br/br-c0001-e006258-u.json",
+        "headers": {
+          "last-modified": "Mon, 26 Oct 2026 02:27:45 GMT",
+          "etag": "\"815654d1ff9c95fa3af56f4bf4af7124\"",
+          "x-amz-request-id": "tx00000fca315667b1b7867-006adebaa6-9a743a-default",
+          "x-ratelimit-limit": "5000, 5000;w=1",
+          "x-ratelimit-remaining": "4921",
+          "x-ratelimit-reset": "1",
+          "vary": "Accept-Encoding",
+          "cache-control": "max-age=16",
+          "expires": "Mon, 26 Oct 2026 17:46:38 GMT",
+          "date": "Mon, 26 Oct 2026 17:46:22 GMT",
+          "content-length": "3233",
+          "alt-svc": "h3=\":443\"; ma=93600",
+          "content-type": "application/json",
+          "strict-transport-security": "max-age=63072000 ; includeSubDomains ; preload",
+          "akamai-grn": "0.04152117.1793036782.2aee47",
+          "cdn-cache-status": "Hit from child",
+          "x-envoy-upstream-service-time": "21",
+          "server": "envoy",
+          "connection": "close"
+        },
+        "retrieved_at": "2026-10-26T17:46:22.632422+00:00"
+      }
+    },
+    {
+      "name": "tse-ea20",
+      "path": "analysis/exploratory/2026-2t/raw/tse-ea20-9355fb0ab2c9.pdf",
+      "sha256": "9355fb0ab2c918f9d80b252e3e5416ff8304ee3f710ea2f5288d9600d95e307d",
+      "bytes": 598853,
+      "acquisition": {
+        "source_url": "https://www.tse.jus.br/eleicoes/eleicoes-2026-content/arquivos/divulgacao-de-resultados/tse-ea20-arquivo-de-resultado-unificado",
+        "requested_at": "2026-10-26T17:47:33.993434+00:00",
+        "retrieved_at": "2026-10-26T17:47:55.445240+00:00",
+        "http_status": 200,
+        "headers": {
+          "content-type": "application/pdf",
+          "content-length": "598853",
+          "last-modified": "Mon, 19 Oct 2026 18:42:31 GMT",
+          "link": "<https://www.tse.jus.br/eleicoes/eleicoes-2026-content/arquivos/divulgacao-de-resultados/tse-ea20-arquivo-de-resultado-unificado/@@download/file/TSE-EA20-Arquivo-de-resultado-unificado.pdf>; rel=\"canonical\"",
+          "x-cache-operation": "plone.app.caching.moderateCaching",
+          "x-cache-rule": "plone.content.file",
+          "x-frame-options": "SAMEORIGIN",
+          "x-tse-object-type": "Static Resource",
+          "x-tse-cache-ttl": "2592000.000",
+          "x-object-id": "7227001 7258555",
+          "gzip": "false",
+          "x-cache-hits": "1",
+          "accept-ranges": "bytes",
+          "x-content-type-options": "nosniff",
+          "x-xss-protection": "1; mode=block",
+          "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' *.tse.jus.br *.googleapis.com *.gstatic.com *.hcaptcha.com https://*.rybena.com.br *.youtube.com *.ytimg.com *.google-analytics.com *.googletagmanager.com; style-src 'self' 'unsafe-inline' *.tse.jus.br *.googleapis.com *.rybena.com.br; img-src 'self' data: blob: https: *.tse.jus.br; font-src 'self' *.tse.jus.br *.googleapis.com *.gstatic.com *.rybena.com.br; connect-src blob: 'self' *.tse.jus.br *.hcaptcha.com *.google.com *.google-analytics.com stats.g.doubleclick.net; frame-src 'self' blob: *.tse.jus.br *.youtube.com *.youtube-nocookie.com *.hcaptcha.com *.google.com *.tse.jus.br *.rybena.com.br *.powerbi.com *.justicaeleitoral.jus.br; object-src https: blob:; base-uri 'self'; form-action 'self'; media-src 'self' data:; worker-src 'self' blob:; upgrade-insecure-requests;",
+          "x-permitted-cross-domain-policies": "none",
+          "x-download-options": "noopen",
+          "referrer-policy": "strict-origin-when-cross-origin",
+          "cache-control": "must-revalidate, max-age=0, s-maxage=86400",
+          "date": "Mon, 26 Oct 2026 17:47:55 GMT",
+          "alt-svc": "h3=\":443\"; ma=93600",
+          "strict-transport-security": "max-age=63072000 ; includeSubDomains ; preload",
+          "x-envoy-upstream-service-time": "117",
+          "server": "envoy",
+          "connection": "close"
+        },
+        "bytes": 598853
+      }
+    },
+    {
+      "name": "tse-technical",
+      "path": "analysis/exploratory/2026-2t/raw/tse-technical-b044c65c6ffc.html",
+      "sha256": "b044c65c6ffc32c444020a6015ceeb2a481e11f99e563e788f0097becd483b16",
+      "bytes": 133849,
+      "acquisition": {
+        "source_url": "https://www.tse.jus.br/eleicoes/informacoes-tecnicas-sobre-a-divulgacao-de-resultados",
+        "requested_at": "2026-10-26T17:47:27.137263+00:00",
+        "retrieved_at": "2026-10-26T17:47:33.993219+00:00",
+        "http_status": 200,
+        "headers": {
+          "content-type": "text/html;charset=utf-8",
+          "content-language": "pt-br",
+          "x-cache-operation": "plone.app.caching.moderateCaching",
+          "x-cache-rule": "plone.content.itemView",
+          "x-frame-options": "SAMEORIGIN",
+          "x-tse-cache-ttl": "86400.000",
+          "x-object-id": "10181978 12099982",
+          "gzip": "false",
+          "x-cache-hits": "17",
+          "x-content-type-options": "nosniff",
+          "x-xss-protection": "1; mode=block",
+          "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' *.tse.jus.br *.googleapis.com *.gstatic.com *.hcaptcha.com https://*.rybena.com.br *.youtube.com *.ytimg.com *.google-analytics.com *.googletagmanager.com; style-src 'self' 'unsafe-inline' *.tse.jus.br *.googleapis.com *.rybena.com.br; img-src 'self' data: blob: https: *.tse.jus.br; font-src 'self' *.tse.jus.br *.googleapis.com *.gstatic.com *.rybena.com.br; connect-src blob: 'self' *.tse.jus.br *.hcaptcha.com *.google.com *.google-analytics.com stats.g.doubleclick.net; frame-src 'self' blob: *.tse.jus.br *.youtube.com *.youtube-nocookie.com *.hcaptcha.com *.google.com *.tse.jus.br *.rybena.com.br *.powerbi.com *.justicaeleitoral.jus.br; object-src https: blob:; base-uri 'self'; form-action 'self'; media-src 'self' data:; worker-src 'self' blob:; upgrade-insecure-requests;",
+          "x-permitted-cross-domain-policies": "none",
+          "x-download-options": "noopen",
+          "referrer-policy": "strict-origin-when-cross-origin",
+          "vary": "Accept-Encoding",
+          "cache-control": "must-revalidate, max-age=0, s-maxage=86400",
+          "date": "Mon, 26 Oct 2026 17:47:33 GMT",
+          "alt-svc": "h3=\":443\"; ma=93600",
+          "strict-transport-security": "max-age=63072000 ; includeSubDomains ; preload",
+          "x-envoy-upstream-service-time": "153",
+          "server": "envoy",
+          "connection": "close",
+          "transfer-encoding": "chunked"
+        },
+        "bytes": 133849
+      }
+    },
+    {
+      "name": "tse-totalizacao-br",
+      "path": "analysis/exploratory/2026-2t/raw/tse-totalizacao-br-0fb4dd31623a.zip",
+      "sha256": "0fb4dd31623af16bc6d5b4471a69c7391e4273c9af1c2b0350885abea39696b1",
+      "bytes": 287009,
+      "acquisition": {
+        "attempted_at": "2026-10-26T17:44:36.815824+00:00",
+        "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/relatorio_resultado_totalizacao/Relatorio_Resultado_Totalizacao_2026_BR.zip",
+        "status": 200,
+        "bytes": 287009,
+        "content_type": "application/zip"
+      }
+    }
+  ]
+}

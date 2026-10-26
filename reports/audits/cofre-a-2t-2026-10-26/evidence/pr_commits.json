@@ -1,0 +1,334 @@
+{
+  "retrieved_at": "2026-10-26T17:42:14.086Z",
+  "source_url": "https://api.github.com/repos/Drmcoelho/Eleicoes/pulls/3/commits?per_page=100",
+  "response": [
+    {
+      "sha": "985f60597a55468ea63801a7b96ccb60683b56f7",
+      "node_id": "C_kwDOUV6LktoAKDk4NWY2MDU5N2E1NTQ2OGVhNjM4MDFhN2I5NmNjYjYwNjgzYjU2Zjc",
+      "commit": {
+        "author": {
+          "name": "Matheus Migliolo Coelho",
+          "email": "drmatheuscoelho@gmail.com",
+          "date": "2026-10-18T22:08:16Z"
+        },
+        "committer": {
+          "name": "Matheus Migliolo Coelho",
+          "email": "drmatheuscoelho@gmail.com",
+          "date": "2026-10-18T22:08:16Z"
+        },
+        "message": "feat(cofre-a): implement audited prospective second-round workflow\n\nReuse the unchanged estimator and prereg. Isolate 2T input ledgers, family provenance, coverage and immutable-reference guards from 1T artifacts. Add synthetic end-to-end and Git freeze tests.",
+        "tree": {
+          "sha": "d183da7ae64babd531bf0ddc87dfec60c823575e",
+          "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/trees/d183da7ae64babd531bf0ddc87dfec60c823575e"
+        },
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/commits/985f60597a55468ea63801a7b96ccb60683b56f7",
+        "comment_count": 0,
+        "verification": {
+          "verified": false,
+          "reason": "unsigned",
+          "signature": null,
+          "payload": null,
+          "verified_at": null
+        }
+      },
+      "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/commits/985f60597a55468ea63801a7b96ccb60683b56f7",
+      "html_url": "https://github.com/Drmcoelho/Eleicoes/commit/985f60597a55468ea63801a7b96ccb60683b56f7",
+      "comments_url": "https://api.github.com/repos/Drmcoelho/Eleicoes/commits/985f60597a55468ea63801a7b96ccb60683b56f7/comments",
+      "author": {
+        "login": "Drmcoelho",
+        "id": 132965963,
+        "node_id": "U_kgDOB-zmSw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/132965963?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Drmcoelho",
+        "html_url": "https://github.com/Drmcoelho",
+        "followers_url": "https://api.github.com/users/Drmcoelho/followers",
+        "following_url": "https://api.github.com/users/Drmcoelho/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Drmcoelho/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Drmcoelho/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Drmcoelho/subscriptions",
+        "organizations_url": "https://api.github.com/users/Drmcoelho/orgs",
+        "repos_url": "https://api.github.com/users/Drmcoelho/repos",
+        "events_url": "https://api.github.com/users/Drmcoelho/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Drmcoelho/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "committer": {
+        "login": "Drmcoelho",
+        "id": 132965963,
+        "node_id": "U_kgDOB-zmSw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/132965963?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Drmcoelho",
+        "html_url": "https://github.com/Drmcoelho",
+        "followers_url": "https://api.github.com/users/Drmcoelho/followers",
+        "following_url": "https://api.github.com/users/Drmcoelho/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Drmcoelho/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Drmcoelho/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Drmcoelho/subscriptions",
+        "organizations_url": "https://api.github.com/users/Drmcoelho/orgs",
+        "repos_url": "https://api.github.com/users/Drmcoelho/repos",
+        "events_url": "https://api.github.com/users/Drmcoelho/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Drmcoelho/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "parents": [
+        {
+          "sha": "d92008b5bae107c0c380209931c31f07a911cba4",
+          "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/commits/d92008b5bae107c0c380209931c31f07a911cba4",
+          "html_url": "https://github.com/Drmcoelho/Eleicoes/commit/d92008b5bae107c0c380209931c31f07a911cba4"
+        }
+      ]
+    },
+    {
+      "sha": "67572a67b37ff4f046fbf6fb7e94cd0ba41907f5",
+      "node_id": "C_kwDOUV6LktoAKDY3NTcyYTY3YjM3ZmY0ZjA0NmZiZjZmYjdlOTRjZDBiYTQxOTA3ZjU",
+      "commit": {
+        "author": {
+          "name": "Matheus Migliolo Coelho",
+          "email": "drmatheuscoelho@gmail.com",
+          "date": "2026-10-18T22:08:25Z"
+        },
+        "committer": {
+          "name": "Matheus Migliolo Coelho",
+          "email": "drmatheuscoelho@gmail.com",
+          "date": "2026-10-18T22:08:25Z"
+        },
+        "message": "docs(cofre-a): record separate BLOCKED second-round preparation\n\nNo frozen inputs or election estimates are asserted. Historical years remain excluded; E_hist is empty and e_ref(2T), q90 and sample SD are null. No freeze tag is created.",
+        "tree": {
+          "sha": "ea6bfcfea812bb4656b2424de0a2fbab06cf7588",
+          "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/trees/ea6bfcfea812bb4656b2424de0a2fbab06cf7588"
+        },
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/commits/67572a67b37ff4f046fbf6fb7e94cd0ba41907f5",
+        "comment_count": 0,
+        "verification": {
+          "verified": false,
+          "reason": "unsigned",
+          "signature": null,
+          "payload": null,
+          "verified_at": null
+        }
+      },
+      "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/commits/67572a67b37ff4f046fbf6fb7e94cd0ba41907f5",
+      "html_url": "https://github.com/Drmcoelho/Eleicoes/commit/67572a67b37ff4f046fbf6fb7e94cd0ba41907f5",
+      "comments_url": "https://api.github.com/repos/Drmcoelho/Eleicoes/commits/67572a67b37ff4f046fbf6fb7e94cd0ba41907f5/comments",
+      "author": {
+        "login": "Drmcoelho",
+        "id": 132965963,
+        "node_id": "U_kgDOB-zmSw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/132965963?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Drmcoelho",
+        "html_url": "https://github.com/Drmcoelho",
+        "followers_url": "https://api.github.com/users/Drmcoelho/followers",
+        "following_url": "https://api.github.com/users/Drmcoelho/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Drmcoelho/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Drmcoelho/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Drmcoelho/subscriptions",
+        "organizations_url": "https://api.github.com/users/Drmcoelho/orgs",
+        "repos_url": "https://api.github.com/users/Drmcoelho/repos",
+        "events_url": "https://api.github.com/users/Drmcoelho/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Drmcoelho/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "committer": {
+        "login": "Drmcoelho",
+        "id": 132965963,
+        "node_id": "U_kgDOB-zmSw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/132965963?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Drmcoelho",
+        "html_url": "https://github.com/Drmcoelho",
+        "followers_url": "https://api.github.com/users/Drmcoelho/followers",
+        "following_url": "https://api.github.com/users/Drmcoelho/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Drmcoelho/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Drmcoelho/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Drmcoelho/subscriptions",
+        "organizations_url": "https://api.github.com/users/Drmcoelho/orgs",
+        "repos_url": "https://api.github.com/users/Drmcoelho/repos",
+        "events_url": "https://api.github.com/users/Drmcoelho/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Drmcoelho/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "parents": [
+        {
+          "sha": "985f60597a55468ea63801a7b96ccb60683b56f7",
+          "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/commits/985f60597a55468ea63801a7b96ccb60683b56f7",
+          "html_url": "https://github.com/Drmcoelho/Eleicoes/commit/985f60597a55468ea63801a7b96ccb60683b56f7"
+        }
+      ]
+    },
+    {
+      "sha": "b2c5ed9ea08429220da07a5153c2feb25bf1d051",
+      "node_id": "C_kwDOUV6LktoAKGIyYzVlZDllYTA4NDI5MjIwZGEwN2E1MTUzYzJmZWIyNWJmMWQwNTE",
+      "commit": {
+        "author": {
+          "name": "Matheus Migliolo Coelho",
+          "email": "drmatheuscoelho@gmail.com",
+          "date": "2026-10-19T00:32:50Z"
+        },
+        "committer": {
+          "name": "Matheus Migliolo Coelho",
+          "email": "drmatheuscoelho@gmail.com",
+          "date": "2026-10-19T00:32:50Z"
+        },
+        "message": "fix(cofre-a): enforce committed input seals and exact freeze bytes\n\nReject duplicate JSON/YAML keys and non-finite numbers. Validate acquisition clocks across provenance and Brasilia publication dates. Detect hidden working-tree changes; run freeze tests with the current interpreter. Add nine regression tests.",
+        "tree": {
+          "sha": "2a25f7114c27ee59eb9473185746957baf6095fa",
+          "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/trees/2a25f7114c27ee59eb9473185746957baf6095fa"
+        },
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/commits/b2c5ed9ea08429220da07a5153c2feb25bf1d051",
+        "comment_count": 0,
+        "verification": {
+          "verified": false,
+          "reason": "unsigned",
+          "signature": null,
+          "payload": null,
+          "verified_at": null
+        }
+      },
+      "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/commits/b2c5ed9ea08429220da07a5153c2feb25bf1d051",
+      "html_url": "https://github.com/Drmcoelho/Eleicoes/commit/b2c5ed9ea08429220da07a5153c2feb25bf1d051",
+      "comments_url": "https://api.github.com/repos/Drmcoelho/Eleicoes/commits/b2c5ed9ea08429220da07a5153c2feb25bf1d051/comments",
+      "author": {
+        "login": "Drmcoelho",
+        "id": 132965963,
+        "node_id": "U_kgDOB-zmSw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/132965963?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Drmcoelho",
+        "html_url": "https://github.com/Drmcoelho",
+        "followers_url": "https://api.github.com/users/Drmcoelho/followers",
+        "following_url": "https://api.github.com/users/Drmcoelho/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Drmcoelho/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Drmcoelho/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Drmcoelho/subscriptions",
+        "organizations_url": "https://api.github.com/users/Drmcoelho/orgs",
+        "repos_url": "https://api.github.com/users/Drmcoelho/repos",
+        "events_url": "https://api.github.com/users/Drmcoelho/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Drmcoelho/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "committer": {
+        "login": "Drmcoelho",
+        "id": 132965963,
+        "node_id": "U_kgDOB-zmSw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/132965963?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Drmcoelho",
+        "html_url": "https://github.com/Drmcoelho",
+        "followers_url": "https://api.github.com/users/Drmcoelho/followers",
+        "following_url": "https://api.github.com/users/Drmcoelho/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Drmcoelho/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Drmcoelho/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Drmcoelho/subscriptions",
+        "organizations_url": "https://api.github.com/users/Drmcoelho/orgs",
+        "repos_url": "https://api.github.com/users/Drmcoelho/repos",
+        "events_url": "https://api.github.com/users/Drmcoelho/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Drmcoelho/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "parents": [
+        {
+          "sha": "67572a67b37ff4f046fbf6fb7e94cd0ba41907f5",
+          "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/commits/67572a67b37ff4f046fbf6fb7e94cd0ba41907f5",
+          "html_url": "https://github.com/Drmcoelho/Eleicoes/commit/67572a67b37ff4f046fbf6fb7e94cd0ba41907f5"
+        }
+      ]
+    },
+    {
+      "sha": "5691f15f20feeaa10decb2abbbc11dc150f162f3",
+      "node_id": "C_kwDOUV6LktoAKDU2OTFmMTVmMjBmZWVhYTEwZGVjYjJhYmJiYzExZGMxNTBmMTYyZjM",
+      "commit": {
+        "author": {
+          "name": "Matheus Migliolo Coelho",
+          "email": "drmatheuscoelho@gmail.com",
+          "date": "2026-10-19T00:32:57Z"
+        },
+        "committer": {
+          "name": "Matheus Migliolo Coelho",
+          "email": "drmatheuscoelho@gmail.com",
+          "date": "2026-10-19T00:32:57Z"
+        },
+        "message": "docs(cofre-a): refresh BLOCKED 2T hashes after audit hardening\n\nNo inputs certified, no historical values imputed, no freeze reference created.",
+        "tree": {
+          "sha": "8ce1d2a7ca75e6ec2d4285c1679a71a9ea7d01f1",
+          "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/trees/8ce1d2a7ca75e6ec2d4285c1679a71a9ea7d01f1"
+        },
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/commits/5691f15f20feeaa10decb2abbbc11dc150f162f3",
+        "comment_count": 0,
+        "verification": {
+          "verified": false,
+          "reason": "unsigned",
+          "signature": null,
+          "payload": null,
+          "verified_at": null
+        }
+      },
+      "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/commits/5691f15f20feeaa10decb2abbbc11dc150f162f3",
+      "html_url": "https://github.com/Drmcoelho/Eleicoes/commit/5691f15f20feeaa10decb2abbbc11dc150f162f3",
+      "comments_url": "https://api.github.com/repos/Drmcoelho/Eleicoes/commits/5691f15f20feeaa10decb2abbbc11dc150f162f3/comments",
+      "author": {
+        "login": "Drmcoelho",
+        "id": 132965963,
+        "node_id": "U_kgDOB-zmSw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/132965963?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Drmcoelho",
+        "html_url": "https://github.com/Drmcoelho",
+        "followers_url": "https://api.github.com/users/Drmcoelho/followers",
+        "following_url": "https://api.github.com/users/Drmcoelho/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Drmcoelho/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Drmcoelho/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Drmcoelho/subscriptions",
+        "organizations_url": "https://api.github.com/users/Drmcoelho/orgs",
+        "repos_url": "https://api.github.com/users/Drmcoelho/repos",
+        "events_url": "https://api.github.com/users/Drmcoelho/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Drmcoelho/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "committer": {
+        "login": "Drmcoelho",
+        "id": 132965963,
+        "node_id": "U_kgDOB-zmSw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/132965963?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Drmcoelho",
+        "html_url": "https://github.com/Drmcoelho",
+        "followers_url": "https://api.github.com/users/Drmcoelho/followers",
+        "following_url": "https://api.github.com/users/Drmcoelho/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Drmcoelho/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Drmcoelho/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Drmcoelho/subscriptions",
+        "organizations_url": "https://api.github.com/users/Drmcoelho/orgs",
+        "repos_url": "https://api.github.com/users/Drmcoelho/repos",
+        "events_url": "https://api.github.com/users/Drmcoelho/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Drmcoelho/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "parents": [
+        {
+          "sha": "b2c5ed9ea08429220da07a5153c2feb25bf1d051",
+          "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/commits/b2c5ed9ea08429220da07a5153c2feb25bf1d051",
+          "html_url": "https://github.com/Drmcoelho/Eleicoes/commit/b2c5ed9ea08429220da07a5153c2feb25bf1d051"
+        }
+      ]
+    }
+  ]
+}

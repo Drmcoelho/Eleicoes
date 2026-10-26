@@ -1,0 +1,29 @@
+{
+  "source_url": "https://resultados.tse.jus.br/oficial/ele2026/6258/dados/br/br-c0001-e006258-u.json",
+  "requested_at": "2026-10-26T17:46:15.891313+00:00",
+  "construction": "Official base/ambiente and election 6258 from TSE documentation; cycle and election confirmed in ele-c.json; EA20 filename pattern from official example.",
+  "http_status": 200,
+  "final_url": "https://resultados.tse.jus.br/oficial/ele2026/6258/dados/br/br-c0001-e006258-u.json",
+  "headers": {
+    "last-modified": "Mon, 26 Oct 2026 02:27:45 GMT",
+    "etag": "\"815654d1ff9c95fa3af56f4bf4af7124\"",
+    "x-amz-request-id": "tx00000fca315667b1b7867-006adebaa6-9a743a-default",
+    "x-ratelimit-limit": "5000, 5000;w=1",
+    "x-ratelimit-remaining": "4921",
+    "x-ratelimit-reset": "1",
+    "vary": "Accept-Encoding",
+    "cache-control": "max-age=16",
+    "expires": "Mon, 26 Oct 2026 17:46:38 GMT",
+    "date": "Mon, 26 Oct 2026 17:46:22 GMT",
+    "content-length": "3233",
+    "alt-svc": "h3=\":443\"; ma=93600",
+    "content-type": "application/json",
+    "strict-transport-security": "max-age=63072000 ; includeSubDomains ; preload",
+    "akamai-grn": "0.04152117.1793036782.2aee47",
+    "cdn-cache-status": "Hit from child",
+    "x-envoy-upstream-service-time": "21",
+    "server": "envoy",
+    "connection": "close"
+  },
+  "retrieved_at": "2026-10-26T17:46:22.632422+00:00"
+}
