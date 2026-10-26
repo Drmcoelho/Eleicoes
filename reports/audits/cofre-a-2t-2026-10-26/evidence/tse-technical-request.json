@@ -1,0 +1,33 @@
+{
+  "source_url": "https://www.tse.jus.br/eleicoes/informacoes-tecnicas-sobre-a-divulgacao-de-resultados",
+  "requested_at": "2026-10-26T17:47:27.137263+00:00",
+  "retrieved_at": "2026-10-26T17:47:33.993219+00:00",
+  "http_status": 200,
+  "headers": {
+    "content-type": "text/html;charset=utf-8",
+    "content-language": "pt-br",
+    "x-cache-operation": "plone.app.caching.moderateCaching",
+    "x-cache-rule": "plone.content.itemView",
+    "x-frame-options": "SAMEORIGIN",
+    "x-tse-cache-ttl": "86400.000",
+    "x-object-id": "10181978 12099982",
+    "gzip": "false",
+    "x-cache-hits": "17",
+    "x-content-type-options": "nosniff",
+    "x-xss-protection": "1; mode=block",
+    "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' *.tse.jus.br *.googleapis.com *.gstatic.com *.hcaptcha.com https://*.rybena.com.br *.youtube.com *.ytimg.com *.google-analytics.com *.googletagmanager.com; style-src 'self' 'unsafe-inline' *.tse.jus.br *.googleapis.com *.rybena.com.br; img-src 'self' data: blob: https: *.tse.jus.br; font-src 'self' *.tse.jus.br *.googleapis.com *.gstatic.com *.rybena.com.br; connect-src blob: 'self' *.tse.jus.br *.hcaptcha.com *.google.com *.google-analytics.com stats.g.doubleclick.net; frame-src 'self' blob: *.tse.jus.br *.youtube.com *.youtube-nocookie.com *.hcaptcha.com *.google.com *.tse.jus.br *.rybena.com.br *.powerbi.com *.justicaeleitoral.jus.br; object-src https: blob:; base-uri 'self'; form-action 'self'; media-src 'self' data:; worker-src 'self' blob:; upgrade-insecure-requests;",
+    "x-permitted-cross-domain-policies": "none",
+    "x-download-options": "noopen",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "vary": "Accept-Encoding",
+    "cache-control": "must-revalidate, max-age=0, s-maxage=86400",
+    "date": "Mon, 26 Oct 2026 17:47:33 GMT",
+    "alt-svc": "h3=\":443\"; ma=93600",
+    "strict-transport-security": "max-age=63072000 ; includeSubDomains ; preload",
+    "x-envoy-upstream-service-time": "153",
+    "server": "envoy",
+    "connection": "close",
+    "transfer-encoding": "chunked"
+  },
+  "bytes": 133849
+}

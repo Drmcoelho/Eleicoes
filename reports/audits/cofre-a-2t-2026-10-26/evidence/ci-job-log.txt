@@ -1,0 +1,300 @@
+﻿2026-10-19T00:33:07.1307221Z Current runner version: '2.337.0'
+2026-10-19T00:33:07.1332258Z ##[group]Runner Image Provisioner
+2026-10-19T00:33:07.1333219Z Hosted Compute Agent
+2026-10-19T00:33:07.1333819Z Version: 20261012.601
+2026-10-19T00:33:07.1334483Z Commit: f3dc54e1fb89da6852db922499a0233137369e1d
+2026-10-19T00:33:07.1335248Z Build Date: 2026-10-12T17:48:21Z
+2026-10-19T00:33:07.1335930Z Worker ID: {334beea8-f001-4f0a-a432-cbe60f86e5dd}
+2026-10-19T00:33:07.1336727Z Region: westus
+2026-10-19T00:33:07.1337262Z Cloud: Azure
+2026-10-19T00:33:07.1337825Z ##[endgroup]
+2026-10-19T00:33:07.1339330Z ##[group]Operating System
+2026-10-19T00:33:07.1339978Z Ubuntu
+2026-10-19T00:33:07.1340580Z 24.04.5
+2026-10-19T00:33:07.1341087Z LTS
+2026-10-19T00:33:07.1341837Z ##[endgroup]
+2026-10-19T00:33:07.1342513Z ##[group]Runner Image
+2026-10-19T00:33:07.1343113Z Image: ubuntu-24.04
+2026-10-19T00:33:07.1343760Z Version: 20261012.334.1
+2026-10-19T00:33:07.1345036Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261012.334/images/ubuntu/Ubuntu2404-Readme.md
+2026-10-19T00:33:07.1346696Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261012.334
+2026-10-19T00:33:07.1347666Z ##[endgroup]
+2026-10-19T00:33:07.1348902Z ##[group]GITHUB_TOKEN Permissions
+2026-10-19T00:33:07.1350801Z Contents: read
+2026-10-19T00:33:07.1351801Z Metadata: read
+2026-10-19T00:33:07.1352380Z Packages: read
+2026-10-19T00:33:07.1352921Z ##[endgroup]
+2026-10-19T00:33:07.1355051Z Secret source: Actions
+2026-10-19T00:33:07.1355988Z Cache mode: write
+2026-10-19T00:33:07.1356800Z Prepare workflow directory
+2026-10-19T00:33:07.1698687Z Prepare all required actions
+2026-10-19T00:33:07.1750511Z Getting action download info
+2026-10-19T00:33:07.5438561Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-10-19T00:33:07.6730339Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+2026-10-19T00:33:07.8539837Z Complete job name: verify
+2026-10-19T00:33:07.9320403Z ##[group]Run actions/checkout@v4
+2026-10-19T00:33:07.9321502Z with:
+2026-10-19T00:33:07.9321930Z   fetch-depth: 0
+2026-10-19T00:33:07.9322387Z   repository: Drmcoelho/Eleicoes
+2026-10-19T00:33:07.9326237Z   token: ***
+2026-10-19T00:33:07.9326662Z   ssh-strict: true
+2026-10-19T00:33:07.9327093Z   ssh-user: git
+2026-10-19T00:33:07.9327528Z   persist-credentials: true
+2026-10-19T00:33:07.9328010Z   clean: true
+2026-10-19T00:33:07.9328455Z   sparse-checkout-cone-mode: true
+2026-10-19T00:33:07.9328961Z   fetch-tags: false
+2026-10-19T00:33:07.9329390Z   show-progress: true
+2026-10-19T00:33:07.9329838Z   lfs: false
+2026-10-19T00:33:07.9330259Z   submodules: false
+2026-10-19T00:33:07.9330705Z   set-safe-directory: true
+2026-10-19T00:33:07.9331529Z   allow-unsafe-pr-checkout: false
+2026-10-19T00:33:07.9332397Z ##[endgroup]
+2026-10-19T00:33:08.0364276Z Syncing repository: Drmcoelho/Eleicoes
+2026-10-19T00:33:08.0366255Z ##[group]Getting Git version info
+2026-10-19T00:33:08.0367479Z Working directory is '/home/runner/work/Eleicoes/Eleicoes'
+2026-10-19T00:33:08.0369140Z [command]/usr/bin/git version
+2026-10-19T00:33:08.0458787Z git version 2.55.0
+2026-10-19T00:33:08.0497482Z ##[endgroup]
+2026-10-19T00:33:08.0506374Z Temporarily overriding HOME='/home/runner/work/_temp/39106073-1fab-4b9a-ac69-4d62c7639114' before making global git config changes
+2026-10-19T00:33:08.0508911Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-19T00:33:08.0511014Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Eleicoes/Eleicoes
+2026-10-19T00:33:08.0565858Z Deleting the contents of '/home/runner/work/Eleicoes/Eleicoes'
+2026-10-19T00:33:08.0579261Z ##[group]Initializing the repository
+2026-10-19T00:33:08.0588773Z [command]/usr/bin/git init /home/runner/work/Eleicoes/Eleicoes
+2026-10-19T00:33:08.0697017Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-10-19T00:33:08.0702158Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-19T00:33:08.0707599Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-10-19T00:33:08.0709511Z hint: call:
+2026-10-19T00:33:08.0710518Z hint:
+2026-10-19T00:33:08.0711912Z hint: 	git config --global init.defaultBranch <name>
+2026-10-19T00:33:08.0713011Z hint:
+2026-10-19T00:33:08.0713973Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-10-19T00:33:08.0715659Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-10-19T00:33:08.0716945Z hint:
+2026-10-19T00:33:08.0717602Z hint: 	git branch -m <name>
+2026-10-19T00:33:08.0718343Z hint:
+2026-10-19T00:33:08.0719374Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-19T00:33:08.0720728Z Initialized empty Git repository in /home/runner/work/Eleicoes/Eleicoes/.git/
+2026-10-19T00:33:08.0724172Z [command]/usr/bin/git remote add origin https://github.com/Drmcoelho/Eleicoes
+2026-10-19T00:33:08.0787577Z ##[endgroup]
+2026-10-19T00:33:08.0788776Z ##[group]Disabling automatic garbage collection
+2026-10-19T00:33:08.0792457Z [command]/usr/bin/git config --local gc.auto 0
+2026-10-19T00:33:08.0834924Z ##[endgroup]
+2026-10-19T00:33:08.0836024Z ##[group]Setting up auth
+2026-10-19T00:33:08.0843725Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-19T00:33:08.0880573Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-19T00:33:08.1255766Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-19T00:33:08.1304535Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-19T00:33:08.1533950Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-19T00:33:08.1569083Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-19T00:33:08.1793272Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-10-19T00:33:08.1833716Z ##[endgroup]
+2026-10-19T00:33:08.1834586Z ##[group]Fetching the repository
+2026-10-19T00:33:08.1844209Z [command]/usr/bin/git -c protocol.version=2 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/* +b0b022e673f381918f40aa9a239e7a4f370d0713:refs/remotes/pull/3/merge
+2026-10-19T00:33:09.9202336Z From https://github.com/Drmcoelho/Eleicoes
+2026-10-19T00:33:09.9204075Z  * [new branch]      claude/analise-dialogo-anterior-ttqrk4   -> origin/claude/analise-dialogo-anterior-ttqrk4
+2026-10-19T00:33:09.9205518Z  * [new branch]      codex/cofre-a-freeze-1t                  -> origin/codex/cofre-a-freeze-1t
+2026-10-19T00:33:09.9207172Z  * [new branch]      codex/cofre-a-prospectivo-2t             -> origin/codex/cofre-a-prospectivo-2t
+2026-10-19T00:33:09.9208251Z  * [new branch]      main                                     -> origin/main
+2026-10-19T00:33:09.9209146Z  * [new ref]         b0b022e673f381918f40aa9a239e7a4f370d0713 -> pull/3/merge
+2026-10-19T00:33:09.9213174Z ##[endgroup]
+2026-10-19T00:33:09.9216706Z ##[group]Determining the checkout info
+2026-10-19T00:33:09.9217923Z ##[endgroup]
+2026-10-19T00:33:09.9223677Z [command]/usr/bin/git sparse-checkout disable
+2026-10-19T00:33:09.9567653Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-10-19T00:33:09.9615649Z ##[group]Checking out the ref
+2026-10-19T00:33:09.9618436Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/3/merge
+2026-10-19T00:33:10.0093474Z Note: switching to 'refs/remotes/pull/3/merge'.
+2026-10-19T00:33:10.0094691Z 
+2026-10-19T00:33:10.0095762Z You are in 'detached HEAD' state. You can look around, make experimental
+2026-10-19T00:33:10.0098473Z changes and commit them, and you can discard any commits you make in this
+2026-10-19T00:33:10.0101024Z state without impacting any branches by switching back to a branch.
+2026-10-19T00:33:10.0102753Z 
+2026-10-19T00:33:10.0103720Z If you want to create a new branch to retain commits you create, you may
+2026-10-19T00:33:10.0106168Z do so (now or later) by using -c with the switch command. Example:
+2026-10-19T00:33:10.0107639Z 
+2026-10-19T00:33:10.0108233Z   git switch -c <new-branch-name>
+2026-10-19T00:33:10.0109349Z 
+2026-10-19T00:33:10.0109984Z Or undo this operation with:
+2026-10-19T00:33:10.0110602Z 
+2026-10-19T00:33:10.0110957Z   git switch -
+2026-10-19T00:33:10.0111767Z 
+2026-10-19T00:33:10.0112774Z Turn off this advice by setting config variable advice.detachedHead to false
+2026-10-19T00:33:10.0114498Z 
+2026-10-19T00:33:10.0116141Z HEAD is now at b0b022e Merge 5691f15f20feeaa10decb2abbbc11dc150f162f3 into d92008b5bae107c0c380209931c31f07a911cba4
+2026-10-19T00:33:10.0139594Z ##[endgroup]
+2026-10-19T00:33:10.0186299Z [command]/usr/bin/git log -1 --format=%H
+2026-10-19T00:33:10.0218372Z b0b022e673f381918f40aa9a239e7a4f370d0713
+2026-10-19T00:33:10.0605358Z ##[group]Run actions/setup-python@v5
+2026-10-19T00:33:10.0606657Z with:
+2026-10-19T00:33:10.0607577Z   python-version: 3.11
+2026-10-19T00:33:10.0608689Z   check-latest: false
+2026-10-19T00:33:10.0619425Z   token: ***
+2026-10-19T00:33:10.0620430Z   update-environment: true
+2026-10-19T00:33:10.0621730Z   allow-prereleases: false
+2026-10-19T00:33:10.0622835Z   freethreaded: false
+2026-10-19T00:33:10.0623838Z ##[endgroup]
+2026-10-19T00:33:10.2110409Z ##[group]Installed versions
+2026-10-19T00:33:10.5110253Z (node:2288) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-19T00:33:10.5111895Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-19T00:33:10.5112713Z Successfully set up CPython (3.11.17)
+2026-10-19T00:33:10.5113707Z ##[endgroup]
+2026-10-19T00:33:10.5538018Z ##[group]Run python -m pip install -r requirements.txt
+2026-10-19T00:33:10.5538673Z [36;1mpython -m pip install -r requirements.txt[0m
+2026-10-19T00:33:10.7248029Z shell: /usr/bin/bash -e {0}
+2026-10-19T00:33:10.7248516Z env:
+2026-10-19T00:33:10.7248970Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.17/x64
+2026-10-19T00:33:10.7249678Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.17/x64/lib/pkgconfig
+2026-10-19T00:33:10.7250372Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+2026-10-19T00:33:10.7251014Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+2026-10-19T00:33:10.7251867Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+2026-10-19T00:33:10.7252512Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.17/x64/lib
+2026-10-19T00:33:10.7252994Z ##[endgroup]
+2026-10-19T00:33:11.7707548Z Collecting PyYAML==6.0.3 (from -r requirements.txt (line 1))
+2026-10-19T00:33:12.0025844Z   Downloading pyyaml-6.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+2026-10-19T00:33:12.0713388Z Downloading pyyaml-6.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (806 kB)
+2026-10-19T00:33:12.3891701Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 806.6/806.6 kB 4.2 MB/s  0:00:00
+2026-10-19T00:33:12.4374136Z Installing collected packages: PyYAML
+2026-10-19T00:33:12.4905113Z Successfully installed PyYAML-6.0.3
+2026-10-19T00:33:12.5369837Z ##[group]Run python -m unittest discover -s tests -v
+2026-10-19T00:33:12.5370292Z [36;1mpython -m unittest discover -s tests -v[0m
+2026-10-19T00:33:12.5436700Z shell: /usr/bin/bash -e {0}
+2026-10-19T00:33:12.5436982Z env:
+2026-10-19T00:33:12.5437282Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.17/x64
+2026-10-19T00:33:12.5437779Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.17/x64/lib/pkgconfig
+2026-10-19T00:33:12.5438272Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+2026-10-19T00:33:12.5438945Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+2026-10-19T00:33:12.5439380Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+2026-10-19T00:33:12.5439827Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.17/x64/lib
+2026-10-19T00:33:12.5440203Z ##[endgroup]
+2026-10-19T00:33:12.7468773Z test_all_years_missing_blocks (test_cofre_a.CofreATests.test_all_years_missing_blocks) ... ok
+2026-10-19T00:33:12.7469970Z test_bad_dates (test_cofre_a.CofreATests.test_bad_dates) ... ok
+2026-10-19T00:33:12.7471610Z test_duplicate_id (test_cofre_a.CofreATests.test_duplicate_id) ... ok
+2026-10-19T00:33:12.7475469Z test_empty_hypothesis_not_unavailable (test_cofre_a.CofreATests.test_empty_hypothesis_not_unavailable) ... ok
+2026-10-19T00:33:12.7478580Z test_equal_weight_not_sample_weight (test_cofre_a.CofreATests.test_equal_weight_not_sample_weight) ... ok
+2026-10-19T00:33:12.7480228Z test_family_successor_collapsed (test_cofre_a.CofreATests.test_family_successor_collapsed) ... ok
+2026-10-19T00:33:12.7482417Z test_floor_no_number (test_cofre_a.CofreATests.test_floor_no_number) ... ok
+2026-10-19T00:33:12.7485419Z test_incomplete_year_excluded_as_whole (test_cofre_a.CofreATests.test_incomplete_year_excluded_as_whole) ... ok
+2026-10-19T00:33:12.7487126Z test_intervals (test_cofre_a.CofreATests.test_intervals) ... ok
+2026-10-19T00:33:12.7488620Z test_invalid_shares (test_cofre_a.CofreATests.test_invalid_shares) ... ok
+2026-10-19T00:33:12.7489693Z test_logit_no_clipping (test_cofre_a.CofreATests.test_logit_no_clipping) ... ok
+2026-10-19T00:33:12.7490760Z test_missing_not_zero (test_cofre_a.CofreATests.test_missing_not_zero) ... ok
+2026-10-19T00:33:12.7492294Z test_missing_second_turn_not_complete (test_cofre_a.CofreATests.test_missing_second_turn_not_complete) ... ok
+2026-10-19T00:33:12.7493741Z test_missing_year_not_silent (test_cofre_a.CofreATests.test_missing_year_not_silent) ... ok
+2026-10-19T00:33:12.7494979Z test_noncompositional_vector (test_cofre_a.CofreATests.test_noncompositional_vector) ... ok
+2026-10-19T00:33:12.7496180Z test_publication_cutoff (test_cofre_a.CofreATests.test_publication_cutoff) ... ok
+2026-10-19T00:33:12.7497434Z test_published_precedence_mismatch (test_cofre_a.CofreATests.test_published_precedence_mismatch) ... ok
+2026-10-19T00:33:12.7498644Z test_q90_known_type7 (test_cofre_a.CofreATests.test_q90_known_type7) ... ok
+2026-10-19T00:33:12.7499950Z test_recency_then_sample_then_registration (test_cofre_a.CofreATests.test_recency_then_sample_then_registration) ... ok
+2026-10-19T00:33:12.7501788Z test_reference_direction_and_sample_sd (test_cofre_a.CofreATests.test_reference_direction_and_sample_sd) ... ok
+2026-10-19T00:33:12.7503384Z test_scenario_max_intersection_before_size (test_cofre_a.CofreATests.test_scenario_max_intersection_before_size) ... ok
+2026-10-19T00:33:12.7504836Z test_scenario_unresolved_tie_stops (test_cofre_a.CofreATests.test_scenario_unresolved_tie_stops) ... ok
+2026-10-19T00:33:12.7506104Z test_trim_and_total_conversion (test_cofre_a.CofreATests.test_trim_and_total_conversion) ... ok
+2026-10-19T00:33:12.7507355Z test_unknown_family_flag (test_cofre_a.CofreATests.test_unknown_family_flag) ... ok
+2026-10-19T00:33:12.7508474Z test_window_end_inclusive (test_cofre_a.CofreATests.test_window_end_inclusive) ... ok
+2026-10-19T00:33:12.7535152Z test_aliases_and_unmapped_policy (test_freeze.FreezeTests.test_aliases_and_unmapped_policy) ... ok
+2026-10-19T00:33:12.7543883Z test_bad_raw_hash_rejected (test_freeze.FreezeTests.test_bad_raw_hash_rejected) ... ok
+2026-10-19T00:33:15.6409076Z test_incomplete_state_has_no_fake_forecast (test_freeze.FreezeTests.test_incomplete_state_has_no_fake_forecast) ... ok
+2026-10-19T00:33:18.2564717Z test_lossless_raw_and_historical_regressions (test_freeze.FreezeTests.test_lossless_raw_and_historical_regressions) ... ok
+2026-10-19T00:33:18.2566341Z test_no_2026_outcome_ingestion (test_freeze.FreezeTests.test_no_2026_outcome_ingestion) ... ok
+2026-10-19T00:33:18.2567677Z test_prereg_original_hash (test_freeze.FreezeTests.test_prereg_original_hash) ... ok
+2026-10-19T00:33:18.2572257Z test_prereg_tampering_blocks_before_reading_data (test_freeze.FreezeTests.test_prereg_tampering_blocks_before_reading_data) ... ok
+2026-10-19T00:33:18.2574413Z test_provenance_is_required (test_freeze.FreezeTests.test_provenance_is_required) ... ok
+2026-10-19T00:33:18.4539878Z test_registration_inventory_raw_and_duplicates (test_freeze.FreezeTests.test_registration_inventory_raw_and_duplicates) ... ok
+2026-10-19T00:33:18.4563185Z test_immutable_idempotent_originals (test_freeze_2t.AcquisitionTests.test_immutable_idempotent_originals) ... ok
+2026-10-19T00:33:18.4686049Z test_absolute_or_noncanonical_evidence_paths_are_rejected (test_freeze_2t.DocumentValidationTests.test_absolute_or_noncanonical_evidence_paths_are_rejected) ... ok
+2026-10-19T00:33:18.4793667Z test_any_source_in_future_blocks_freeze_clock_gate (test_freeze_2t.DocumentValidationTests.test_any_source_in_future_blocks_freeze_clock_gate) ... ok
+2026-10-19T00:33:18.4905150Z test_duplicate_json_keys_are_rejected (test_freeze_2t.DocumentValidationTests.test_duplicate_json_keys_are_rejected) ... ok
+2026-10-19T00:33:18.5040829Z test_duplicate_yaml_family_definition_is_rejected (test_freeze_2t.DocumentValidationTests.test_duplicate_yaml_family_definition_is_rejected) ... ok
+2026-10-19T00:33:18.5153082Z test_family_evidence_after_deadline_is_rejected (test_freeze_2t.DocumentValidationTests.test_family_evidence_after_deadline_is_rejected) ... ok
+2026-10-19T00:33:18.5262193Z test_nonfinite_json_numbers_are_rejected (test_freeze_2t.DocumentValidationTests.test_nonfinite_json_numbers_are_rejected) ... ok
+2026-10-19T00:33:18.5429265Z test_publication_calendar_is_brasilia_even_when_timestamp_is_utc (test_freeze_2t.DocumentValidationTests.test_publication_calendar_is_brasilia_even_when_timestamp_is_utc) ... ok
+2026-10-19T00:33:18.5569847Z test_duplicate_registration_does_not_multiply_families (test_freeze_2t.EligibilityTests.test_duplicate_registration_does_not_multiply_families) ... ok
+2026-10-19T00:33:18.5717088Z test_exact_pair_scenario_tie_fails (test_freeze_2t.EligibilityTests.test_exact_pair_scenario_tie_fails) ... ok
+2026-10-19T00:33:18.5939973Z test_extra_candidate_spontaneous_and_wrong_pair_rejected (test_freeze_2t.EligibilityTests.test_extra_candidate_spontaneous_and_wrong_pair_rejected) ... ok
+2026-10-19T00:33:18.6049958Z test_family_selection_tiebreakers_and_one_wave (test_freeze_2t.EligibilityTests.test_family_selection_tiebreakers_and_one_wave) ... ok
+2026-10-19T00:33:18.6186650Z test_future_or_naive_or_early_coverage_fails (test_freeze_2t.EligibilityTests.test_future_or_naive_or_early_coverage_fails) ... ok
+2026-10-19T00:33:18.6297176Z test_inclusive_fieldwork_and_publication_boundaries (test_freeze_2t.EligibilityTests.test_inclusive_fieldwork_and_publication_boundaries) ... ok
+2026-10-19T00:33:18.6425753Z test_inventory_mismatch_or_unaccounted_poll_fails (test_freeze_2t.EligibilityTests.test_inventory_mismatch_or_unaccounted_poll_fails) ... ok
+2026-10-19T00:33:18.6581507Z test_missing_target_or_qualification_fails (test_freeze_2t.EligibilityTests.test_missing_target_or_qualification_fails) ... ok
+2026-10-19T00:33:18.6718782Z test_missing_transcription_source_fails (test_freeze_2t.EligibilityTests.test_missing_transcription_source_fails) ... ok
+2026-10-19T00:33:18.6853659Z test_outcome_guard_is_recursive (test_freeze_2t.EligibilityTests.test_outcome_guard_is_recursive) ... ok
+2026-10-19T00:33:18.7031474Z test_ready_packet_uses_two_candidates_and_unmapped_families (test_freeze_2t.EligibilityTests.test_ready_packet_uses_two_candidates_and_unmapped_families) ... ok
+2026-10-19T00:33:18.7157519Z test_source_tampering_and_escape_fail (test_freeze_2t.EligibilityTests.test_source_tampering_and_escape_fail) ... ok
+2026-10-19T00:33:18.7353291Z test_artifact_tampering_fails (test_freeze_2t.FlowTests.test_artifact_tampering_fails) ... ok
+2026-10-19T00:33:18.7616770Z test_blocked_freeze_creates_no_tag (test_freeze_2t.FlowTests.test_blocked_freeze_creates_no_tag) ... ok
+2026-10-19T00:33:18.7803397Z test_claimed_complete_year_missing_second_packet_fails (test_freeze_2t.FlowTests.test_claimed_complete_year_missing_second_packet_fails) ... ok
+2026-10-19T00:33:18.8102707Z test_complete_history_and_prospective_reuse_estimator (test_freeze_2t.FlowTests.test_complete_history_and_prospective_reuse_estimator) ... ok
+2026-10-19T00:33:18.8394515Z test_family_review_hash_and_alias_conflicts_fail (test_freeze_2t.FlowTests.test_family_review_hash_and_alias_conflicts_fail) ... ok
+2026-10-19T00:33:18.8727804Z test_family_review_missing_blocks_without_fabrication (test_freeze_2t.FlowTests.test_family_review_missing_blocks_without_fabrication) ... ok
+2026-10-19T00:33:18.8925152Z test_incomplete_year_excludes_both_turns (test_freeze_2t.FlowTests.test_incomplete_year_excludes_both_turns) ... ok
+2026-10-19T00:33:18.9179452Z test_initial_state_nulls_and_1t_preservation (test_freeze_2t.FlowTests.test_initial_state_nulls_and_1t_preservation) ... ok
+2026-10-19T00:33:18.9297880Z test_known_family_needs_raw_review (test_freeze_2t.FlowTests.test_known_family_needs_raw_review) ... ok
+2026-10-19T00:33:18.9487703Z test_late_discovery_cannot_reenter_inputs (test_freeze_2t.FlowTests.test_late_discovery_cannot_reenter_inputs) ... ok
+2026-10-19T00:33:18.9749110Z test_nonpositive_second_reference_is_vazia (test_freeze_2t.FlowTests.test_nonpositive_second_reference_is_vazia) ... ok
+2026-10-19T00:33:18.9859815Z test_original_prereg_preserved (test_freeze_2t.FlowTests.test_original_prereg_preserved) ... ok
+2026-10-19T00:33:18.9968158Z test_time_gate_exact_boundaries_and_future_attestation (test_freeze_2t.FlowTests.test_time_gate_exact_boundaries_and_future_attestation) ... ok
+2026-10-19T00:33:19.2525239Z test_assume_unchanged_cannot_hide_uncommitted_bytes (test_freeze_2t.GitFreezeTests.test_assume_unchanged_cannot_hide_uncommitted_bytes) ... ok
+2026-10-19T00:33:19.5009025Z test_clean_committed_input_set_passes_without_creating_tag (test_freeze_2t.GitFreezeTests.test_clean_committed_input_set_passes_without_creating_tag) ... ok
+2026-10-19T00:33:19.6677807Z test_committed_change_to_1t_cannot_be_hidden_by_regeneration (test_freeze_2t.GitFreezeTests.test_committed_change_to_1t_cannot_be_hidden_by_regeneration) ... ok
+2026-10-19T00:33:19.9362652Z test_deadline_rechecked_after_test_suite (test_freeze_2t.GitFreezeTests.test_deadline_rechecked_after_test_suite) ... ok
+2026-10-19T00:33:20.1775341Z test_existing_reference_is_never_moved (test_freeze_2t.GitFreezeTests.test_existing_reference_is_never_moved) ... ok
+2026-10-19T00:33:20.4305123Z test_failed_tests_never_create_reference (test_freeze_2t.GitFreezeTests.test_failed_tests_never_create_reference) ... ok
+2026-10-19T00:33:20.5537790Z test_pre_tag_ready_commit_seals_inputs (test_freeze_2t.GitFreezeTests.test_pre_tag_ready_commit_seals_inputs) ... ok
+2026-10-19T00:33:20.9536152Z test_successful_freeze_creates_annotated_exact_head_reference (test_freeze_2t.GitFreezeTests.test_successful_freeze_creates_annotated_exact_head_reference) ... ok
+2026-10-19T00:33:21.0680785Z test_untracked_file_blocks (test_freeze_2t.GitFreezeTests.test_untracked_file_blocks) ... ok
+2026-10-19T00:33:21.0681778Z 
+2026-10-19T00:33:21.0682044Z ----------------------------------------------------------------------
+2026-10-19T00:33:21.0682589Z Ran 76 tests in 8.321s
+2026-10-19T00:33:21.0682799Z 
+2026-10-19T00:33:21.0682912Z OK
+2026-10-19T00:33:21.0683716Z Created local annotated pre-election-freeze-2026-2t at f5adc1d6557408d581141d20f1a56e184d29d9c7; never replace it
+2026-10-19T00:33:21.0948305Z ##[group]Run git worktree add --detach /tmp/cofre-a-1t d92008b5bae107c0c380209931c31f07a911cba4
+2026-10-19T00:33:21.0949017Z [36;1mgit worktree add --detach /tmp/cofre-a-1t d92008b5bae107c0c380209931c31f07a911cba4[0m
+2026-10-19T00:33:21.0949473Z [36;1mcd /tmp/cofre-a-1t[0m
+2026-10-19T00:33:21.0949749Z [36;1mpython -m src.statistics.freeze_1t[0m
+2026-10-19T00:33:21.0950316Z [36;1mgit diff --exit-code -- data/derived/cofre-a-1t-2026.json methodology/preregistration/0001-freeze-manifest.md[0m
+2026-10-19T00:33:21.1015343Z shell: /usr/bin/bash -e {0}
+2026-10-19T00:33:21.1015592Z env:
+2026-10-19T00:33:21.1016074Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.17/x64
+2026-10-19T00:33:21.1016530Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.17/x64/lib/pkgconfig
+2026-10-19T00:33:21.1016988Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+2026-10-19T00:33:21.1017383Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+2026-10-19T00:33:21.1017808Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+2026-10-19T00:33:21.1018205Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.17/x64/lib
+2026-10-19T00:33:21.1018534Z ##[endgroup]
+2026-10-19T00:33:21.1115091Z Preparing worktree (detached HEAD d92008b)
+2026-10-19T00:33:21.1553758Z HEAD is now at d92008b feat(cofre-a): add audited historical ingestion, estimator and fail-closed freeze manifest
+2026-10-19T00:33:24.0440466Z BLOCKED
+2026-10-19T00:33:24.1019086Z ##[group]Run python -m src.statistics.freeze_2t --verify-artifacts
+2026-10-19T00:33:24.1019604Z [36;1mpython -m src.statistics.freeze_2t --verify-artifacts[0m
+2026-10-19T00:33:24.1084396Z shell: /usr/bin/bash -e {0}
+2026-10-19T00:33:24.1084638Z env:
+2026-10-19T00:33:24.1084900Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.17/x64
+2026-10-19T00:33:24.1085348Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.17/x64/lib/pkgconfig
+2026-10-19T00:33:24.1085787Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+2026-10-19T00:33:24.1086171Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+2026-10-19T00:33:24.1086560Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+2026-10-19T00:33:24.1086948Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.17/x64/lib
+2026-10-19T00:33:24.1087268Z ##[endgroup]
+2026-10-19T00:33:24.1950817Z BLOCKED
+2026-10-19T00:33:24.2155299Z Post job cleanup.
+2026-10-19T00:33:24.3319670Z (node:3021) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-19T00:33:24.3320553Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-19T00:33:24.3527399Z Post job cleanup.
+2026-10-19T00:33:24.4464352Z [command]/usr/bin/git version
+2026-10-19T00:33:24.4506795Z git version 2.55.0
+2026-10-19T00:33:24.4546960Z Temporarily overriding HOME='/home/runner/work/_temp/9d8a323e-7dc6-4f95-933c-a48963dd3f5b' before making global git config changes
+2026-10-19T00:33:24.4548383Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-19T00:33:24.4554270Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Eleicoes/Eleicoes
+2026-10-19T00:33:24.4596094Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-19T00:33:24.4634228Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-19T00:33:24.4892463Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-19T00:33:24.4922002Z http.https://github.com/.extraheader
+2026-10-19T00:33:24.4924134Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-10-19T00:33:24.4967985Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-19T00:33:24.5235847Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-19T00:33:24.5264211Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-19T00:33:24.5679104Z Cleaning up orphan processes
+2026-10-19T00:33:24.5961763Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+

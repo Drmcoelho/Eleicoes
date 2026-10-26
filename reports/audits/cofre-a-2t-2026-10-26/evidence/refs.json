@@ -1,0 +1,106 @@
+{
+  "retrieved_at": "2026-10-26T17:42:11.673Z",
+  "source_url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/matching-refs/",
+  "response": [
+    {
+      "ref": "refs/heads/claude/analise-dialogo-anterior-ttqrk4",
+      "node_id": "REF_kwDOUV6LktoAMXJlZnMvaGVhZHMvY2xhdWRlL2FuYWxpc2UtZGlhbG9nby1hbnRlcmlvci10dHFyazQ",
+      "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/refs/heads/claude/analise-dialogo-anterior-ttqrk4",
+      "object": {
+        "sha": "c377991a9dd645ec77df903179b0b44f4b54bfc7",
+        "type": "commit",
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/commits/c377991a9dd645ec77df903179b0b44f4b54bfc7"
+      }
+    },
+    {
+      "ref": "refs/heads/codex/cofre-a-freeze-1t",
+      "node_id": "REF_kwDOUV6LktoAInJlZnMvaGVhZHMvY29kZXgvY29mcmUtYS1mcmVlemUtMXQ",
+      "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/refs/heads/codex/cofre-a-freeze-1t",
+      "object": {
+        "sha": "d92008b5bae107c0c380209931c31f07a911cba4",
+        "type": "commit",
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/commits/d92008b5bae107c0c380209931c31f07a911cba4"
+      }
+    },
+    {
+      "ref": "refs/heads/codex/cofre-a-prospectivo-2t",
+      "node_id": "REF_kwDOUV6LktoAJ3JlZnMvaGVhZHMvY29kZXgvY29mcmUtYS1wcm9zcGVjdGl2by0ydA",
+      "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/refs/heads/codex/cofre-a-prospectivo-2t",
+      "object": {
+        "sha": "5691f15f20feeaa10decb2abbbc11dc150f162f3",
+        "type": "commit",
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/commits/5691f15f20feeaa10decb2abbbc11dc150f162f3"
+      }
+    },
+    {
+      "ref": "refs/heads/main",
+      "node_id": "REF_kwDOUV6Lkq9yZWZzL2hlYWRzL21haW4",
+      "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/refs/heads/main",
+      "object": {
+        "sha": "628bea69766ea997fba48bde7e05443593992cc8",
+        "type": "commit",
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/commits/628bea69766ea997fba48bde7e05443593992cc8"
+      }
+    },
+    {
+      "ref": "refs/pull/1/head",
+      "node_id": "REF_kwDOUV6LkrByZWZzL3B1bGwvMS9oZWFk",
+      "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/refs/pull/1/head",
+      "object": {
+        "sha": "c377991a9dd645ec77df903179b0b44f4b54bfc7",
+        "type": "commit",
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/commits/c377991a9dd645ec77df903179b0b44f4b54bfc7"
+      }
+    },
+    {
+      "ref": "refs/pull/1/merge",
+      "node_id": "REF_kwDOUV6LkrFyZWZzL3B1bGwvMS9tZXJnZQ",
+      "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/refs/pull/1/merge",
+      "object": {
+        "sha": "13eafb0ce8883fecaf1758898efbaaa430788203",
+        "type": "commit",
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/commits/13eafb0ce8883fecaf1758898efbaaa430788203"
+      }
+    },
+    {
+      "ref": "refs/pull/2/head",
+      "node_id": "REF_kwDOUV6LkrByZWZzL3B1bGwvMi9oZWFk",
+      "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/refs/pull/2/head",
+      "object": {
+        "sha": "d92008b5bae107c0c380209931c31f07a911cba4",
+        "type": "commit",
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/commits/d92008b5bae107c0c380209931c31f07a911cba4"
+      }
+    },
+    {
+      "ref": "refs/pull/2/merge",
+      "node_id": "REF_kwDOUV6LkrFyZWZzL3B1bGwvMi9tZXJnZQ",
+      "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/refs/pull/2/merge",
+      "object": {
+        "sha": "eceec0484876889e1b45af29162889eb92f22fbf",
+        "type": "commit",
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/commits/eceec0484876889e1b45af29162889eb92f22fbf"
+      }
+    },
+    {
+      "ref": "refs/pull/3/head",
+      "node_id": "REF_kwDOUV6LkrByZWZzL3B1bGwvMy9oZWFk",
+      "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/refs/pull/3/head",
+      "object": {
+        "sha": "5691f15f20feeaa10decb2abbbc11dc150f162f3",
+        "type": "commit",
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/commits/5691f15f20feeaa10decb2abbbc11dc150f162f3"
+      }
+    },
+    {
+      "ref": "refs/pull/3/merge",
+      "node_id": "REF_kwDOUV6LkrFyZWZzL3B1bGwvMy9tZXJnZQ",
+      "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/refs/pull/3/merge",
+      "object": {
+        "sha": "b0b022e673f381918f40aa9a239e7a4f370d0713",
+        "type": "commit",
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/commits/b0b022e673f381918f40aa9a239e7a4f370d0713"
+      }
+    }
+  ]
+}

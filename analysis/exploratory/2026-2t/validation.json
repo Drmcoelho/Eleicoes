@@ -1,0 +1,59 @@
+{
+  "executed_at": "2026-10-26T17:51:02.191540+00:00",
+  "commands": [
+    {
+      "command": [
+        "python",
+        "analysis/exploratory/2026-2t/reproduce.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stdout": "OK: hashes, official snapshot scope, reconciliation and deterministic reproduction\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "analysis/exploratory/2026-2t",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_changed_vote_destination_rejected (test_reproduce.OfficialSnapshotTests.test_changed_vote_destination_rejected) ... ok\ntest_duplicate_candidate_identity_rejected (test_reproduce.OfficialSnapshotTests.test_duplicate_candidate_identity_rejected) ... ok\ntest_duplicate_keys_and_nonfinite_rejected (test_reproduce.OfficialSnapshotTests.test_duplicate_keys_and_nonfinite_rejected) ... ok\ntest_never_promotes_outcome_to_forecast (test_reproduce.OfficialSnapshotTests.test_never_promotes_outcome_to_forecast) ... ok\ntest_snapshot_reproduces_exactly (test_reproduce.OfficialSnapshotTests.test_snapshot_reproduces_exactly) ... ok\ntest_total_mismatch_rejected (test_reproduce.OfficialSnapshotTests.test_total_mismatch_rejected) ... ok\ntest_wrong_scope_round_simulation_and_partial_rejected (test_reproduce.OfficialSnapshotTests.test_wrong_scope_round_simulation_and_partial_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.006s\n\nOK\n"
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "src.statistics.freeze_2t",
+        "--verify-artifacts"
+      ],
+      "exit_code": 0,
+      "stdout": "BLOCKED\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "src.statistics.freeze_2t",
+        "--check"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "BLOCKED: BLOCKED: HISTORICAL_CALIBRATION_INCOMPLETE: numeric ê_ref(2T), q90 and sample SD required; PROSPECTIVE_COLLECTION_INCOMPLETE: No audited national poll inventory, published results, official two-candidate qualification or PL/endorsement evidence has been certified. The publication window remains open until 2026-10-25T12:00:00-03:00.; FAMILY_PROVENANCE_INCOMPLETE: legal identities and continuity await source review\n"
+    }
+  ],
+  "real_clock_gate": {
+    "checked_at": "2026-10-26T17:51:02.185467+00:00",
+    "rejected": true,
+    "message": "outside freeze interval: publication cutoff <= now < 17:00 BRT deadline"
+  },
+  "old_full_suite": "Not rerun locally: five historical raw blobs absent. Original 76-test CI run and log preserved; new CI will run full original suite without skipping tests."
+}

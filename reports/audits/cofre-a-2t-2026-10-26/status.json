@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "audit_date": "2026-10-26",
+  "timezone": "America/Sao_Paulo",
+  "audit_type": [
+    "DOCS",
+    "RED_TEAM",
+    "POST_DEADLINE_PROCESS_AUDIT"
+  ],
+  "audited_commit": "5691f15f20feeaa10decb2abbbc11dc150f162f3",
+  "pr": 3,
+  "freeze_deadline": "2026-10-25T17:00:00-03:00",
+  "freeze_deadline_utc": "2026-10-25T20:00:00Z",
+  "deadline_is_exclusive": true,
+  "finding": "NO_VALID_PROSPECTIVE_FREEZE_EVIDENCED",
+  "prospective_endpoint_status": "NOT_EVALUABLE_PROSPECTIVELY",
+  "historical_artifact_status": "BLOCKED",
+  "historical_E_hist_size": 0,
+  "prospective_P": null,
+  "prospective_intervals": null,
+  "prospective_e_ref_2T": null,
+  "prospective_q90": null,
+  "prospective_sigma_hat": null,
+  "tag_count_observed": 0,
+  "freeze_publication_before_deadline": "NOT_DEMONSTRATED",
+  "inference_scope": "Current refs, reachable branch histories, two output revisions, PR metadata, six CI runs and their artifacts; not deleted refs or private/external evidence.",
+  "Q1": "NOT_EVALUABLE_NO_VALID_FREEZE",
+  "Q2": "NOT_EVALUABLE_NO_VALID_FREEZE",
+  "hypothesis_evidence_grade": null,
+  "exploratory_track": "analysis/exploratory/2026-2t/README.md",
+  "official_outcome_snapshot": "analysis/exploratory/2026-2t/official-outcome.json",
+  "original_blobs_to_preserve": 51,
+  "policy": {
+    "create_retroactive_freeze_tag": false,
+    "modify_preregistration": false,
+    "overwrite_previous_artifacts": false,
+    "claim_post_election_estimate_is_prospective": false
+  },
+  "remaining_work": [
+    "Complete and audit poll inventory in isolated exploratory track",
+    "Collect and audit historical poll publications in new versions",
+    "Reconstruct benchmarks only as EXPLORATORY_POST_ELECTION",
+    "Use independent future holdout for new confirmatory hypotheses"
+  ]
+}

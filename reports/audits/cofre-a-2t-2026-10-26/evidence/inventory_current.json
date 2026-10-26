@@ -1,0 +1,9 @@
+{
+  "year": 2026,
+  "turn": 2,
+  "status": "NOT_COLLECTED",
+  "complete": false,
+  "sources": [],
+  "rows": [],
+  "warning": "An empty inventory is missing evidence, not proof that no eligible polls exist. BR registration alone does not certify national scope."
+}

@@ -1,0 +1,158 @@
+{
+  "checked_at": "2026-10-26T17:46:34.556505+00:00",
+  "audited_commit": "5691f15f20feeaa10decb2abbbc11dc150f162f3",
+  "checks": [
+    {
+      "path": ".github/workflows/cofre-a.yml",
+      "expected_sha256": "3b61b7e64c5755e9fca0d21d646860a7918a1000c962f10a297aeec6b3fed75a",
+      "actual_sha256": "3b61b7e64c5755e9fca0d21d646860a7918a1000c962f10a297aeec6b3fed75a"
+    },
+    {
+      "path": ".gitignore",
+      "expected_sha256": "4cad133d4f0a6cf4bba15f1b8bbae48d6a55f20b94f75487c51a93cc6a5af59f",
+      "actual_sha256": "4cad133d4f0a6cf4bba15f1b8bbae48d6a55f20b94f75487c51a93cc6a5af59f"
+    },
+    {
+      "path": "AGENTS.md",
+      "expected_sha256": "c0b2b7a948191711f75b5c60c1dd4fce244a4c7587547a7f4777b8f6d906fd9f",
+      "actual_sha256": "c0b2b7a948191711f75b5c60c1dd4fce244a4c7587547a7f4777b8f6d906fd9f"
+    },
+    {
+      "path": "PROMPT.md",
+      "expected_sha256": "c4454166b67296897ad8d0e2c67343d32c8d78fd7a627c9c53e94d1502aa170e",
+      "actual_sha256": "c4454166b67296897ad8d0e2c67343d32c8d78fd7a627c9c53e94d1502aa170e"
+    },
+    {
+      "path": "data/canonical/historical-coverage-2t.json",
+      "expected_sha256": "9ce483eb544c6e9454585b8ab006cbc7668d4c16b3bfccf5c6c20f2cd9af659c",
+      "actual_sha256": "9ce483eb544c6e9454585b8ab006cbc7668d4c16b3bfccf5c6c20f2cd9af659c"
+    },
+    {
+      "path": "data/canonical/historical-coverage.json",
+      "expected_sha256": "9ce483eb544c6e9454585b8ab006cbc7668d4c16b3bfccf5c6c20f2cd9af659c",
+      "actual_sha256": "9ce483eb544c6e9454585b8ab006cbc7668d4c16b3bfccf5c6c20f2cd9af659c"
+    },
+    {
+      "path": "data/canonical/prospective-1t-status.json",
+      "expected_sha256": "b5cfe99f65d19f2dc5a1e77b8c643df4030b7ce02c3dd500f601c6f48b520b46",
+      "actual_sha256": "b5cfe99f65d19f2dc5a1e77b8c643df4030b7ce02c3dd500f601c6f48b520b46"
+    },
+    {
+      "path": "data/canonical/prospective-2t-inventory.json",
+      "expected_sha256": "8ee7032da3468ef454480dc8673e76827ed80900fb993e5356781a76dd88138c",
+      "actual_sha256": "8ee7032da3468ef454480dc8673e76827ed80900fb993e5356781a76dd88138c"
+    },
+    {
+      "path": "data/canonical/prospective-2t-status.json",
+      "expected_sha256": "6f98c9f99987250dbda6df761d7afe7729707e16dbee1cef1661a7a11264b38a",
+      "actual_sha256": "6f98c9f99987250dbda6df761d7afe7729707e16dbee1cef1661a7a11264b38a"
+    },
+    {
+      "path": "data/derived/cofre-a-1t-2026.json",
+      "expected_sha256": "39c352b883142aa5797015e346f0a48b906fb18f97c5d0065d137f44fc5a22cb",
+      "actual_sha256": "39c352b883142aa5797015e346f0a48b906fb18f97c5d0065d137f44fc5a22cb"
+    },
+    {
+      "path": "docs/cofre-a-freeze-2t.md",
+      "expected_sha256": "b8b1c41e31f1507b7421424833ae5c116feb623b67d4d9cce65cb15badb37d45",
+      "actual_sha256": "b8b1c41e31f1507b7421424833ae5c116feb623b67d4d9cce65cb15badb37d45"
+    },
+    {
+      "path": "docs/cofre-a-freeze.md",
+      "expected_sha256": "5547882dc6768443b5a4c2a63402dfce57e7d630f13edc29da412a850570ad5f",
+      "actual_sha256": "5547882dc6768443b5a4c2a63402dfce57e7d630f13edc29da412a850570ad5f"
+    },
+    {
+      "path": "methodology/model_specifications/cofre-a-1t-v1.md",
+      "expected_sha256": "6744f30028dfa5621c45ac227441c594e0513394ef1801b23d0be388b13dc1fc",
+      "actual_sha256": "6744f30028dfa5621c45ac227441c594e0513394ef1801b23d0be388b13dc1fc"
+    },
+    {
+      "path": "methodology/model_specifications/cofre-a-2t-v1.md",
+      "expected_sha256": "edcfe8a6e5697e7bb5be298fbfda761c1a2be469ee10b3bdfc070d2fb8ab9f3a",
+      "actual_sha256": "edcfe8a6e5697e7bb5be298fbfda761c1a2be469ee10b3bdfc070d2fb8ab9f3a"
+    },
+    {
+      "path": "methodology/preregistration/0001-cofre-A-2026.md",
+      "expected_sha256": "b5757670a716af3f297808d5ef33c47f242bcbfa09918085ff138924a88aade1",
+      "actual_sha256": "b5757670a716af3f297808d5ef33c47f242bcbfa09918085ff138924a88aade1"
+    },
+    {
+      "path": "methodology/preregistration/0001-freeze-manifest.md",
+      "expected_sha256": "404675c4d5de95b5c4e256086819156eba2ff3275d06e3eb26ab92942667d86c",
+      "actual_sha256": "404675c4d5de95b5c4e256086819156eba2ff3275d06e3eb26ab92942667d86c"
+    },
+    {
+      "path": "requirements.txt",
+      "expected_sha256": "0969da99a0bc2a1b71ed50584560f4588a37567ac63af3ddbaf3c4617ca5621a",
+      "actual_sha256": "0969da99a0bc2a1b71ed50584560f4588a37567ac63af3ddbaf3c4617ca5621a"
+    },
+    {
+      "path": "sources/institutes/families-2t-review.json",
+      "expected_sha256": "0bb37411be3bd6775d8951356a2c999fefcbcc0db1205b791dbab92676874aa3",
+      "actual_sha256": "0bb37411be3bd6775d8951356a2c999fefcbcc0db1205b791dbab92676874aa3"
+    },
+    {
+      "path": "sources/institutes/families-2t.yaml",
+      "expected_sha256": "3c9366db234f13e4261efd58a9f5b678f19ce322544b2b843165c929f0a01f1f",
+      "actual_sha256": "3c9366db234f13e4261efd58a9f5b678f19ce322544b2b843165c929f0a01f1f"
+    },
+    {
+      "path": "sources/institutes/families.yaml",
+      "expected_sha256": "3c9366db234f13e4261efd58a9f5b678f19ce322544b2b843165c929f0a01f1f",
+      "actual_sha256": "3c9366db234f13e4261efd58a9f5b678f19ce322544b2b843165c929f0a01f1f"
+    },
+    {
+      "path": "src/ingestion/pesqele.py",
+      "expected_sha256": "da69c9f40c2f2b04dcf4f8fa6304917f7ede1f46c87216788dcd29835b455397",
+      "actual_sha256": "da69c9f40c2f2b04dcf4f8fa6304917f7ede1f46c87216788dcd29835b455397"
+    },
+    {
+      "path": "src/ingestion/prospective.py",
+      "expected_sha256": "7966f264b69b30e954f4c89d32e1b80d4bbe920e48a6ed3085f82681e2d61198",
+      "actual_sha256": "7966f264b69b30e954f4c89d32e1b80d4bbe920e48a6ed3085f82681e2d61198"
+    },
+    {
+      "path": "src/ingestion/tse.py",
+      "expected_sha256": "2513eb8fd8e915bd8927a7026f43284249a1a1321355c661d76cee8de78401a7",
+      "actual_sha256": "2513eb8fd8e915bd8927a7026f43284249a1a1321355c661d76cee8de78401a7"
+    },
+    {
+      "path": "src/statistics/cofre_a.py",
+      "expected_sha256": "0d7eed38773c4a5ea5f9e7e54535b72b2dbb117d97b5dd037578486c09a050cb",
+      "actual_sha256": "0d7eed38773c4a5ea5f9e7e54535b72b2dbb117d97b5dd037578486c09a050cb"
+    },
+    {
+      "path": "src/statistics/freeze_1t.py",
+      "expected_sha256": "1a67db1082d5b3d9ab743ead5f9213c08d338e66f9b9feb02f20a0963ee19afe",
+      "actual_sha256": "1a67db1082d5b3d9ab743ead5f9213c08d338e66f9b9feb02f20a0963ee19afe"
+    },
+    {
+      "path": "src/statistics/freeze_2t.py",
+      "expected_sha256": "aa28e828e459d40a5f2da8ee9f18a0ba11731dcdbf58edf1710a76334fe0f05c",
+      "actual_sha256": "aa28e828e459d40a5f2da8ee9f18a0ba11731dcdbf58edf1710a76334fe0f05c"
+    },
+    {
+      "path": "src/validation/prospective.py",
+      "expected_sha256": "02b00e6bcb58532047684251d2a63da4978f518786baf40ec9efa2b1a25dd2dc",
+      "actual_sha256": "02b00e6bcb58532047684251d2a63da4978f518786baf40ec9efa2b1a25dd2dc"
+    },
+    {
+      "path": "tests/test_cofre_a.py",
+      "expected_sha256": "39719f7e91878239e863d94bc147ce746a880f86ea5fcc77a24be73c0de1c3c7",
+      "actual_sha256": "39719f7e91878239e863d94bc147ce746a880f86ea5fcc77a24be73c0de1c3c7"
+    },
+    {
+      "path": "tests/test_freeze.py",
+      "expected_sha256": "2bf93ccb09ac6beed12f0f1d99a7b9d2560dba0dea1728d9d67e1e07546da268",
+      "actual_sha256": "2bf93ccb09ac6beed12f0f1d99a7b9d2560dba0dea1728d9d67e1e07546da268"
+    },
+    {
+      "path": "tests/test_freeze_2t.py",
+      "expected_sha256": "68e2e4a7279725bff51e80d819c2a531ba0314c5a9c2b8b722aa327b3ffd161c",
+      "actual_sha256": "68e2e4a7279725bff51e80d819c2a531ba0314c5a9c2b8b722aa327b3ffd161c"
+    }
+  ],
+  "output_sha256": "c5517d1ee7c6df134367695ce6e98137300fed1ed6a7e0ec0c921eeb274312df",
+  "manifest_sha256": "d67081b6e9e555655117c6017e12dfbbb189fe456a1c30424cc0385dac9a45aa"
+}

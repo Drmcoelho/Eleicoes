@@ -1,0 +1,117 @@
+{
+  "retrieved_at": "2026-10-26T17:42:14.292Z",
+  "source_url": "https://api.github.com/repos/Drmcoelho/Eleicoes/actions/runs/39181274071/jobs?per_page=100",
+  "response": {
+    "total_count": 1,
+    "jobs": [
+      {
+        "id": 117834340248,
+        "run_id": 39181274071,
+        "workflow_name": "Cofre A tests and artifact reproduction",
+        "head_branch": "codex/cofre-a-prospectivo-2t",
+        "run_url": "https://api.github.com/repos/Drmcoelho/Eleicoes/actions/runs/39181274071",
+        "run_attempt": 1,
+        "node_id": "CR_kwDOUV6Lks8AAAAbb3lXmA",
+        "head_sha": "5691f15f20feeaa10decb2abbbc11dc150f162f3",
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/actions/jobs/117834340248",
+        "html_url": "https://github.com/Drmcoelho/Eleicoes/actions/runs/39181274071/job/117834340248",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-10-19T00:33:03Z",
+        "started_at": "2026-10-19T00:33:06Z",
+        "completed_at": "2026-10-19T00:33:27Z",
+        "name": "verify",
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1,
+            "started_at": "2026-10-19T00:33:07Z",
+            "completed_at": "2026-10-19T00:33:07Z"
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2,
+            "started_at": "2026-10-19T00:33:07Z",
+            "completed_at": "2026-10-19T00:33:10Z"
+          },
+          {
+            "name": "Run actions/setup-python@v5",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3,
+            "started_at": "2026-10-19T00:33:10Z",
+            "completed_at": "2026-10-19T00:33:10Z"
+          },
+          {
+            "name": "Run python -m pip install -r requirements.txt",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4,
+            "started_at": "2026-10-19T00:33:10Z",
+            "completed_at": "2026-10-19T00:33:12Z"
+          },
+          {
+            "name": "Run python -m unittest discover -s tests -v",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5,
+            "started_at": "2026-10-19T00:33:12Z",
+            "completed_at": "2026-10-19T00:33:21Z"
+          },
+          {
+            "name": "Reproduce original 1T at its own immutable baseline",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 6,
+            "started_at": "2026-10-19T00:33:21Z",
+            "completed_at": "2026-10-19T00:33:24Z"
+          },
+          {
+            "name": "Reproduce separate 2T preparation (BLOCKED is expected without evidence)",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 7,
+            "started_at": "2026-10-19T00:33:24Z",
+            "completed_at": "2026-10-19T00:33:24Z"
+          },
+          {
+            "name": "Post Run actions/setup-python@v5",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 13,
+            "started_at": "2026-10-19T00:33:24Z",
+            "completed_at": "2026-10-19T00:33:24Z"
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 14,
+            "started_at": "2026-10-19T00:33:24Z",
+            "completed_at": "2026-10-19T00:33:24Z"
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 15,
+            "started_at": "2026-10-19T00:33:24Z",
+            "completed_at": "2026-10-19T00:33:24Z"
+          }
+        ],
+        "check_run_url": "https://api.github.com/repos/Drmcoelho/Eleicoes/check-runs/117834340248",
+        "labels": [
+          "ubuntu-latest"
+        ],
+        "runner_id": 1000003386,
+        "runner_name": "GitHub Actions 1000003386",
+        "runner_group_id": 0,
+        "runner_group_name": "GitHub Actions"
+      }
+    ]
+  }
+}

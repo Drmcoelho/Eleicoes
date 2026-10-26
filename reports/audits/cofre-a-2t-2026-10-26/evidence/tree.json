@@ -1,0 +1,559 @@
+{
+  "retrieved_at": "2026-10-26T17:42:14.158Z",
+  "source_url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/trees/5691f15f20feeaa10decb2abbbc11dc150f162f3?recursive=1",
+  "response": {
+    "sha": "5691f15f20feeaa10decb2abbbc11dc150f162f3",
+    "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/trees/5691f15f20feeaa10decb2abbbc11dc150f162f3",
+    "tree": [
+      {
+        "path": ".github",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "0cee93725fe0e923fa28efc1c544620c09909c82",
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/trees/0cee93725fe0e923fa28efc1c544620c09909c82"
+      },
+      {
+        "path": ".github/workflows",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "0f0ea3507556b8507b76f0a39823ec8d76cdd175",
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/trees/0f0ea3507556b8507b76f0a39823ec8d76cdd175"
+      },
+      {
+        "path": ".github/workflows/cofre-a.yml",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6cad72409b33ae21a88c5e38ff12732e9f5814d1",
+        "size": 913,
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/blobs/6cad72409b33ae21a88c5e38ff12732e9f5814d1"
+      },
+      {
+        "path": ".gitignore",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "00f2d38d8063d0c6b219c0081e51888063b0c55e",
+        "size": 26,
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/blobs/00f2d38d8063d0c6b219c0081e51888063b0c55e"
+      },
+      {
+        "path": "AGENTS.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "caca3e23c8f78f0b54ea0ff2e95911477a2d06b5",
+        "size": 10321,
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/blobs/caca3e23c8f78f0b54ea0ff2e95911477a2d06b5"
+      },
+      {
+        "path": "PROMPT.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "cdf691e0449638904eb4ddbeaf0679756381f8a0",
+        "size": 12820,
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/blobs/cdf691e0449638904eb4ddbeaf0679756381f8a0"
+      },
+      {
+        "path": "data",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "13929cc3628778199fbfef661f82fee725e93dd3",
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/trees/13929cc3628778199fbfef661f82fee725e93dd3"
+      },
+      {
+        "path": "data/canonical",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "db4f40d588518f64e39a729ec2e7a729bbf0064f",
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/trees/db4f40d588518f64e39a729ec2e7a729bbf0064f"
+      },
+      {
+        "path": "data/canonical/historical-coverage-2t.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c54ea7b632bbc33d2e772551d0ea7bc193117248",
+        "size": 1647,
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/blobs/c54ea7b632bbc33d2e772551d0ea7bc193117248"
+      },
+      {
+        "path": "data/canonical/historical-coverage.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c54ea7b632bbc33d2e772551d0ea7bc193117248",
+        "size": 1647,
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/blobs/c54ea7b632bbc33d2e772551d0ea7bc193117248"
+      },
+      {
+        "path": "data/canonical/pesqele-inventory-2014.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "15f23c5c237e75b9976914d11257c2651a6382a4",
+        "size": 421555,
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/blobs/15f23c5c237e75b9976914d11257c2651a6382a4"
+      },
+      {
+        "path": "data/canonical/pesqele-inventory-2018.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "5e20eb496d5827c93d7807471b234840e8aa1915",
+        "size": 385863,
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/blobs/5e20eb496d5827c93d7807471b234840e8aa1915"
+      },
+      {
+        "path": "data/canonical/pesqele-inventory-2022.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "2e72e35bd2138768fbc0f9d74a66d05b78d0fef0",
+        "size": 640738,
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/blobs/2e72e35bd2138768fbc0f9d74a66d05b78d0fef0"
+      },
+      {
+        "path": "data/canonical/prospective-1t-status.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d5d838030ca3a69de15c2c953b10dd89f9eaf385",
+        "size": 418,
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/blobs/d5d838030ca3a69de15c2c953b10dd89f9eaf385"
+      },
+      {
+        "path": "data/canonical/prospective-2t-inventory.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "06fd6e21a356d3af2930cc76e657e2f8ac84d892",
+        "size": 264,
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/blobs/06fd6e21a356d3af2930cc76e657e2f8ac84d892"
+      },
+      {
+        "path": "data/canonical/prospective-2t-status.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "cf3331a32dac91395a52bbdb8400810e366c889a",
+        "size": 392,
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/blobs/cf3331a32dac91395a52bbdb8400810e366c889a"
+      },
+      {
+        "path": "data/canonical/tse-results-2014.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "69a7ae3920ce3004f72d323464b3fd3025a2bb3f",
+        "size": 4781,
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/blobs/69a7ae3920ce3004f72d323464b3fd3025a2bb3f"
+      },
+      {
+        "path": "data/canonical/tse-results-2018.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "9bc1d47d78b7e77e35d7275e0569c359c4a2a0eb",
+        "size": 5642,
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/blobs/9bc1d47d78b7e77e35d7275e0569c359c4a2a0eb"
+      },
+      {
+        "path": "data/canonical/tse-results-2022.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "213a0325b9c3a9e89cd62f3b0faddf9f504c6744",
+        "size": 4894,
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/blobs/213a0325b9c3a9e89cd62f3b0faddf9f504c6744"
+      },
+      {
+        "path": "data/derived",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "375a9b95d21fe33b766904a3f70612606eeb7666",
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/trees/375a9b95d21fe33b766904a3f70612606eeb7666"
+      },
+      {
+        "path": "data/derived/cofre-a-1t-2026.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "2ec3353a4de007f84e59438aa84c8264567f1d9c",
+        "size": 6610,
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/blobs/2ec3353a4de007f84e59438aa84c8264567f1d9c"
+      },
+      {
+        "path": "data/derived/cofre-a-2t-2026.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6b0927c2f6af116618b13c09b81e2577f6c4b604",
+        "size": 6586,
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/blobs/6b0927c2f6af116618b13c09b81e2577f6c4b604"
+      },
+      {
+        "path": "data/raw",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "97a64444bdcee1863f02ddb251987eaa0faaeb85",
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/trees/97a64444bdcee1863f02ddb251987eaa0faaeb85"
+      },
+      {
+        "path": "data/raw/pesqele",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "0887500ff2857a8590ca80bd3e94affc24ad67ec",
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/trees/0887500ff2857a8590ca80bd3e94affc24ad67ec"
+      },
+      {
+        "path": "data/raw/pesqele/2014-e6781bab1a0b.manifest.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "711d2aaa432fc4c296afea9c6a26337c43ac981b",
+        "size": 410,
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/blobs/711d2aaa432fc4c296afea9c6a26337c43ac981b"
+      },
+      {
+        "path": "data/raw/pesqele/2014-e6781bab1a0b.zip",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "905cadde8b5187b3c128bfe1cb60f238eccd362a",
+        "size": 3412816,
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/blobs/905cadde8b5187b3c128bfe1cb60f238eccd362a"
+      },
+      {
+        "path": "data/raw/pesqele/2018-6c26a1510b5a.manifest.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "bc720847a35758b47f8c6d4234dde72036128005",
+        "size": 410,
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/blobs/bc720847a35758b47f8c6d4234dde72036128005"
+      },
+      {
+        "path": "data/raw/pesqele/2018-6c26a1510b5a.zip",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "ef3b8a64a0a08170c795cae5f82eb52ed768e9cc",
+        "size": 1278059,
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/blobs/ef3b8a64a0a08170c795cae5f82eb52ed768e9cc"
+      },
+      {
+        "path": "data/raw/pesqele/2022-5565b63ced39.manifest.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "a710da762866a46582d1df4def252073f7ab24c4",
+        "size": 410,
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/blobs/a710da762866a46582d1df4def252073f7ab24c4"
+      },
+      {
+        "path": "data/raw/pesqele/2022-5565b63ced39.zip",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "2938f339bec35f906088bdbc8597c54f7fea8343",
+        "size": 3171871,
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/blobs/2938f339bec35f906088bdbc8597c54f7fea8343"
+      },
+      {
+        "path": "data/raw/tse",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "883dde8ef539627979ed8424160517524942788f",
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/trees/883dde8ef539627979ed8424160517524942788f"
+      },
+      {
+        "path": "data/raw/tse/2014-a3e6bd5796ce.csv.gz",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "7e9e28a418ff02240aa78a181f7b06f395c701de",
+        "size": 664728,
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/blobs/7e9e28a418ff02240aa78a181f7b06f395c701de"
+      },
+      {
+        "path": "data/raw/tse/2014-a3e6bd5796ce.csv.manifest.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6ebea2bc4ec8510d9527a3b32d764c1b10ae0bf9",
+        "size": 687,
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/blobs/6ebea2bc4ec8510d9527a3b32d764c1b10ae0bf9"
+      },
+      {
+        "path": "data/raw/tse/2018-c495390fbb87.csv.gz",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "bedfb4f9aee994f26cd3b895bcbfae02ed3a4925",
+        "size": 2299038,
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/blobs/bedfb4f9aee994f26cd3b895bcbfae02ed3a4925"
+      },
+      {
+        "path": "data/raw/tse/2018-c495390fbb87.csv.manifest.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "0d2047296b266f87ceed58d4e0e0476506dc36ce",
+        "size": 687,
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/blobs/0d2047296b266f87ceed58d4e0e0476506dc36ce"
+      },
+      {
+        "path": "data/raw/tse/2022-5b81790dac81.csv.gz",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6f8e17d3585f4e87661f93688a30f33bebe4d873",
+        "size": 1922131,
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/blobs/6f8e17d3585f4e87661f93688a30f33bebe4d873"
+      },
+      {
+        "path": "data/raw/tse/2022-5b81790dac81.csv.manifest.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "b12793b31cc59aee2f08c4d9819b9d030e0edf25",
+        "size": 687,
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/blobs/b12793b31cc59aee2f08c4d9819b9d030e0edf25"
+      },
+      {
+        "path": "docs",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "257e160b8bf5256129f9856ddee2d8b655fc08f0",
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/trees/257e160b8bf5256129f9856ddee2d8b655fc08f0"
+      },
+      {
+        "path": "docs/cofre-a-freeze-2t.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "16df64b414317969e9f9af4eb364cef6a87bbc8b",
+        "size": 9682,
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/blobs/16df64b414317969e9f9af4eb364cef6a87bbc8b"
+      },
+      {
+        "path": "docs/cofre-a-freeze.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "972f0036db54ff9e9ea0e00cc4c7b4d081a6e29b",
+        "size": 4768,
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/blobs/972f0036db54ff9e9ea0e00cc4c7b4d081a6e29b"
+      },
+      {
+        "path": "methodology",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "1bf49e2346a15af9c40bdc853853032da404cd33",
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/trees/1bf49e2346a15af9c40bdc853853032da404cd33"
+      },
+      {
+        "path": "methodology/decisions",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "821ef345de6f8fb832da0e4554ff884ada3500b7",
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/trees/821ef345de6f8fb832da0e4554ff884ada3500b7"
+      },
+      {
+        "path": "methodology/decisions/ADR-0001-revisao-critica-constituicao.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "dc9927063278f9e45bc254ac2ef35f9357e063bd",
+        "size": 7680,
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/blobs/dc9927063278f9e45bc254ac2ef35f9357e063bd"
+      },
+      {
+        "path": "methodology/model_specifications",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "61819b6ad57b46da1de21de744f3571e53193749",
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/trees/61819b6ad57b46da1de21de744f3571e53193749"
+      },
+      {
+        "path": "methodology/model_specifications/cofre-a-1t-v1.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "407b859159d69c2ed1b1443d98e83ba25c458462",
+        "size": 2935,
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/blobs/407b859159d69c2ed1b1443d98e83ba25c458462"
+      },
+      {
+        "path": "methodology/model_specifications/cofre-a-2t-v1.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "0e951e36a9c1fe56893579b16b7b123e0eabaa20",
+        "size": 2093,
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/blobs/0e951e36a9c1fe56893579b16b7b123e0eabaa20"
+      },
+      {
+        "path": "methodology/preregistration",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "7a8829c6d34e6bdba3f484bad5255f45a242143c",
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/trees/7a8829c6d34e6bdba3f484bad5255f45a242143c"
+      },
+      {
+        "path": "methodology/preregistration/0001-cofre-A-2026.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "7642be5f1813a43c75c6da438dec20f90cc10c91",
+        "size": 13997,
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/blobs/7642be5f1813a43c75c6da438dec20f90cc10c91"
+      },
+      {
+        "path": "methodology/preregistration/0001-freeze-manifest-2t.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "52aa89a27459ba137d90fea5286417c8dc28e3b4",
+        "size": 3119,
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/blobs/52aa89a27459ba137d90fea5286417c8dc28e3b4"
+      },
+      {
+        "path": "methodology/preregistration/0001-freeze-manifest.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "7a6fb37f6158932a3dafe86bc9722ef594f544b4",
+        "size": 3141,
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/blobs/7a6fb37f6158932a3dafe86bc9722ef594f544b4"
+      },
+      {
+        "path": "requirements.txt",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f62ce0c56db2b5d134cff98f7fb1625023cd2874",
+        "size": 14,
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/blobs/f62ce0c56db2b5d134cff98f7fb1625023cd2874"
+      },
+      {
+        "path": "sources",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "6598da130cf7b0eb78f1fdba6f990935d924ae0c",
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/trees/6598da130cf7b0eb78f1fdba6f990935d924ae0c"
+      },
+      {
+        "path": "sources/institutes",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "4d9f7dacf04650e4147bbdb6c499e2a1642c906e",
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/trees/4d9f7dacf04650e4147bbdb6c499e2a1642c906e"
+      },
+      {
+        "path": "sources/institutes/families-2t-review.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "685fd79d45741a0e4a2d47d2026b7d5c52b8917f",
+        "size": 302,
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/blobs/685fd79d45741a0e4a2d47d2026b7d5c52b8917f"
+      },
+      {
+        "path": "sources/institutes/families-2t.yaml",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "147ee221794901c6698362c1403d4f8b63b1780e",
+        "size": 1126,
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/blobs/147ee221794901c6698362c1403d4f8b63b1780e"
+      },
+      {
+        "path": "sources/institutes/families.yaml",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "147ee221794901c6698362c1403d4f8b63b1780e",
+        "size": 1126,
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/blobs/147ee221794901c6698362c1403d4f8b63b1780e"
+      },
+      {
+        "path": "src",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "a609a76e27c708fb9a49cbca9859758f881eda67",
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/trees/a609a76e27c708fb9a49cbca9859758f881eda67"
+      },
+      {
+        "path": "src/ingestion",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "d7f1da86616314e6600170c72f1e57cdcee2e3ca",
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/trees/d7f1da86616314e6600170c72f1e57cdcee2e3ca"
+      },
+      {
+        "path": "src/ingestion/pesqele.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f8315abac4a699bafd168d715a30ab2bc37d3966",
+        "size": 5919,
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/blobs/f8315abac4a699bafd168d715a30ab2bc37d3966"
+      },
+      {
+        "path": "src/ingestion/prospective.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "309d86a740f4e0371d6e7431a369c1c432995ecc",
+        "size": 2932,
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/blobs/309d86a740f4e0371d6e7431a369c1c432995ecc"
+      },
+      {
+        "path": "src/ingestion/tse.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "434789b83f23b4061a6ca7bde70ec693be5c522d",
+        "size": 6448,
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/blobs/434789b83f23b4061a6ca7bde70ec693be5c522d"
+      },
+      {
+        "path": "src/statistics",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "831edf677a8a7ad377cf7c95c623670d6f2f5a95",
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/trees/831edf677a8a7ad377cf7c95c623670d6f2f5a95"
+      },
+      {
+        "path": "src/statistics/cofre_a.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "8424dfa71319242b7c4063582906338a708ac7e1",
+        "size": 10563,
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/blobs/8424dfa71319242b7c4063582906338a708ac7e1"
+      },
+      {
+        "path": "src/statistics/freeze_1t.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "3bca172771e5aeba2c6363db7cc3631db820cbeb",
+        "size": 14146,
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/blobs/3bca172771e5aeba2c6363db7cc3631db820cbeb"
+      },
+      {
+        "path": "src/statistics/freeze_2t.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "e6d148488419ae34be5d6428eebd15d16d46bb0b",
+        "size": 16356,
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/blobs/e6d148488419ae34be5d6428eebd15d16d46bb0b"
+      },
+      {
+        "path": "src/validation",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "40cbd93e3de399255ce218937309536e818d7906",
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/trees/40cbd93e3de399255ce218937309536e818d7906"
+      },
+      {
+        "path": "src/validation/prospective.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "fc2a3eac1cb30a0bb112fbc1810ff78211362144",
+        "size": 11307,
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/blobs/fc2a3eac1cb30a0bb112fbc1810ff78211362144"
+      },
+      {
+        "path": "tests",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "177fb8f2edcc13299c8459b6f7dd7c5d305e12bc",
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/trees/177fb8f2edcc13299c8459b6f7dd7c5d305e12bc"
+      },
+      {
+        "path": "tests/test_cofre_a.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "bac786b428a6e6435fd47840ad94e57f7b2d0e37",
+        "size": 7150,
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/blobs/bac786b428a6e6435fd47840ad94e57f7b2d0e37"
+      },
+      {
+        "path": "tests/test_freeze.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "bb238fc1c61bd2dedf16b8b246e10e1a7fecd07c",
+        "size": 4091,
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/blobs/bb238fc1c61bd2dedf16b8b246e10e1a7fecd07c"
+      },
+      {
+        "path": "tests/test_freeze_2t.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "9a98e86f5280020e0c2bc3d1e8ae5117af089ba9",
+        "size": 25618,
+        "url": "https://api.github.com/repos/Drmcoelho/Eleicoes/git/blobs/9a98e86f5280020e0c2bc3d1e8ae5117af089ba9"
+      }
+    ],
+    "truncated": false
+  }
+}
